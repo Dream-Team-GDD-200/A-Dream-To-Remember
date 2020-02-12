@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    static float baseSpeed = 10f;
+    static float baseSpeed = 4f;
     float runSpeed = baseSpeed;
     float deadZone = .15f;
 

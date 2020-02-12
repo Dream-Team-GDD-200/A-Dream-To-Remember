@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
 
     static float baseSpeed = 10f;
     float runSpeed = baseSpeed;
-    float deadZone = .15f;
 
     public Joystick joystick;
 
@@ -21,7 +20,7 @@ public class PlayerMovement : MonoBehaviour {
     void Update()
     {
         //Movement
-        if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone) {
+        if (joystick.Horizontal <= .1f && joystick.Horizontal >= -.1f && joystick.Vertical <= .1f && joystick.Vertical >= -.1f) {
             runSpeed = 0f;
         } else {
             runSpeed = baseSpeed;

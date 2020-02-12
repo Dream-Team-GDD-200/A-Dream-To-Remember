@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         // Move our character
         Vector2 movement = new Vector2(joystick.Horizontal, joystick.Vertical);
-        Debug.Log("movement:" + movement + " ruNSpeed: " + runSpeed + " Time: " + Time.deltaTime);
+
         transform.Translate(movement * runSpeed * Time.deltaTime); 
     }
 }

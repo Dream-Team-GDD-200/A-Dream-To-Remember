@@ -19,20 +19,12 @@ public class PlayerMovement : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        //Horizontal Movement
-        if (joystick.Horizontal <= .1f && joystick.Horizontal >= -.1f) {
+        //Movement
+        if (joystick.Horizontal <= .1f && joystick.Horizontal >= -.1f && joystick.Vertical <= .1f && joystick.Vertical >= -.1f) {
             runSpeed = 0f;
         } else {
             runSpeed = baseSpeed;
         }
-
-        //Vertical Movement
-        if (joystick.Vertical <= .1f && joystick.Vertical >= -.1f) {
-            runSpeed = 0f;
-        } else {
-            runSpeed = baseSpeed;
-        }
-        // Debug.Log(joystick.Horizontal);
     }
 
     void FixedUpdate()

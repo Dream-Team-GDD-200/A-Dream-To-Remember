@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
     static float baseSpeed = 4f;
     float runSpeed = baseSpeed;
@@ -13,7 +14,8 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody2D rb2d;
 
     // Use this for initialization
-    private void Start() {
+    private void Start()
+    {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
@@ -21,9 +23,12 @@ public class PlayerMovement : MonoBehaviour {
     void Update()
     {
         //Movement
-        if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone) {
+        if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone)
+        {
             runSpeed = 0f;
-        } else {
+        }
+        else
+        {
             runSpeed = baseSpeed;
         }
     }
@@ -33,6 +38,7 @@ public class PlayerMovement : MonoBehaviour {
         // Move our character
         Vector2 movement = new Vector2(joystick.Horizontal, joystick.Vertical);
 
-        transform.Translate(movement * runSpeed * Time.deltaTime); 
+        transform.Translate(movement * runSpeed * Time.deltaTime);
     }
+
 }

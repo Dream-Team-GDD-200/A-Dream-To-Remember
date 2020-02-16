@@ -16,7 +16,7 @@ public class Button : MonoBehaviour
 
        //potentially inefficient if we want more than four buttons-- this may need to be changed in the future**
        
-            if (Input.GetKeyDown(KeyCode.Alpha1)) //this takes the primary input from the mouse (which is usaully the left mouse button---this will need to be changed latter pottentialy when we port it over to tablet **
+            if (Input.GetMouseButtonDown(0)) //this takes the primary input from the mouse (which is usaully the left mouse button---this will need to be changed latter pottentialy when we port it over to tablet **
             {
                 if (skills[0].currentCoolDown >= skills[0].cooldown) //if currentCoolDown is greater than or equal to cooldown you can use the skill again (we are counting up here)
                 {

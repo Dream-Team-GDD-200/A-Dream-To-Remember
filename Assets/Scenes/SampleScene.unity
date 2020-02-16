@@ -173,8 +173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e59329f3b3d2a4aa009fa3e1d59da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FinalPosition: {x: 0, y: 0}
-  direction: {x: 0, y: 0}
 --- !u!61 &61198210
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -193,13 +191,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.015625, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 1.015625, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6, y: 0.6}
   m_EdgeRadius: 0
 --- !u!212 &61198211
 SpriteRenderer:
@@ -245,7 +243,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.015625, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -800,7 +798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395046872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 5, y: -1, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -957,8 +955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e59329f3b3d2a4aa009fa3e1d59da2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FinalPosition: {x: 0, y: 0}
-  direction: {x: 0, y: 0}
 --- !u!61 &2123628483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -983,7 +979,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!212 &2123628484
 SpriteRenderer:

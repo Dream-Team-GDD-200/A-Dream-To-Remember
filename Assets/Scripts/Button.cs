@@ -16,15 +16,7 @@ public class Button : MonoBehaviour
 
        //potentially inefficient if we want more than four buttons-- this may need to be changed in the future**
        
-            if (Input.GetMouseButtonDown(0)) //this takes the primary input from the mouse (which is usaully the left mouse button---this will need to be changed latter pottentialy when we port it over to tablet **
-            {
-                if (skills[0].currentCoolDown >= skills[0].cooldown) //if currentCoolDown is greater than or equal to cooldown you can use the skill again (we are counting up here)
-                {
-                    //do something on press -- like the actual skill XD
-                    skills[0].currentCoolDown = 0; //resets currentCoolDown timer
-
-                }
-            }
+            
             //continue this chain by adding an else if (button you want pressed) if you want more buttons 
 
         foreach (Skill s in skills)
@@ -34,6 +26,15 @@ public class Button : MonoBehaviour
                 s.currentCoolDown += Time.deltaTime;
                 s.skillIcon.fillAmount = s.currentCoolDown / s.cooldown; //gives a number between 0 and 1 and will fill that percent of the button accordingly
             }
+        }
+    }
+    public void Click()
+    {
+        if (skills[0].currentCoolDown >= skills[0].cooldown) //if currentCoolDown is greater than or equal to cooldown you can use the skill again (we are counting up here)
+        {
+            //do something on press -- like the actual skill XD
+            skills[0].currentCoolDown = 0; //resets currentCoolDown timer
+
         }
     }
 }

@@ -15,7 +15,7 @@ public class HoleCollision : MonoBehaviour
     {
         end = this.transform.position;
         Hole = this.gameObject;
-        puzzleBox = GameObject.Find("Puzzle Box");
+        
     }
 
     // Update is called once per frame
@@ -34,8 +34,9 @@ public class HoleCollision : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //Checks if the Puzzle box has collided
-        if (other.gameObject.name.Equals("Puzzle Box") && other.transform.position != transform.position)
+        if (!(other.gameObject.name.Equals("Doctor")))
         {
+            puzzleBox = other.gameObject;
             start = puzzleBox.transform.position;
             other.isTrigger = true;
             //this.gameObject.SetActive(false);

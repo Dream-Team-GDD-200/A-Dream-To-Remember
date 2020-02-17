@@ -4,31 +4,42 @@ using UnityEngine;
 public class HoleCollision : MonoBehaviour
 {
     bool BoxFallFlag = false;
-    bool BoxHasFalled = false;
-    float rateOfFall = .1f;
-    public Vector2 FinalPosition;
-    public Vector2 direction;
+    
+    float lerpPosition = 0.0f;
+    float lerpTime = 1.0f; // This is the number of seconds the Lerp will take
+    Vector2 start;
+    Vector2 end;
+    GameObject puzzleBox, Hole;
     // Start is called before the first frame update
     void Start()
     {
+        end = this.transform.position;
+        Hole = this.gameObject;
+        puzzleBox = GameObject.Find("Puzzle Box");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (BoxFallFlag)
+        {
+            lerpPosition += Time.deltaTime / lerpTime;
+            puzzleBox.transform.position = Vector2.Lerp(start, end, lerpPosition);
+            if (puzzleBox.transform.position.x == transform.position.x && puzzleBox.transform.position.y == transform.position.y)
+            {
+                this.gameObject.SetActive(false);
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //Checks if the Puzzle box has collided
-        if (other.gameObject.name.Equals("Puzzle Box"))
+        if (other.gameObject.name.Equals("Puzzle Box") && other.transform.position != transform.position)
         {
-            //set both objects for hole collision to disapear and not be active
-            GameObject.Find("Hole").SetActive(false);
-            this.gameObject.SetActive(false);
-            //move the box to the holes position
-            other.transform.position = transform.position;
-            //make it so the box cant be collided with
+            start = puzzleBox.transform.position;
             other.isTrigger = true;
+            //this.gameObject.SetActive(false);
+            BoxFallFlag = true;
         }
     }
 }

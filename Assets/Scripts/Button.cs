@@ -9,7 +9,6 @@ using UnityEngine.UI; //this gives me the prebuilt image class as apparently it 
 public class Button : MonoBehaviour
 {
     public List<Skill> skills; //creates a list of skill (the buttons) and calls it skill
- 
 
     void Update()
     {
@@ -34,7 +33,7 @@ public class Button : MonoBehaviour
         {
             //do something on press -- like the actual skill XD
             skills[0].currentCoolDown = 0; //resets currentCoolDown timer
-
+            
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public Vector2 movement;
+    public Vector2 movement = new Vector2(1, 0);
 
     static float baseSpeed = 4f;
     float runSpeed = baseSpeed;
@@ -38,9 +38,13 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Move our character
-        movement = new Vector2(joystick.Horizontal, joystick.Vertical);
+        Vector2 movementReal = new Vector2(joystick.Horizontal, joystick.Vertical);
+        if (movementReal.x != 0f && movementReal.y != 0f)
+        {
+           movement = movementReal;
+        }
 
-        transform.Translate(movement * runSpeed * Time.deltaTime);
+        transform.Translate(movementReal * runSpeed * Time.deltaTime);
     }
 
 }

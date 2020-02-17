@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 2127891705220950376}
   - component: {fileID: 2127891705220950167}
   - component: {fileID: 2127891705220950379}
+  - component: {fileID: -4500259916947666143}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Untagged
@@ -272,4 +273,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5486913b8e2ae4c4389e01c5dd308d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: {x: 0, y: 0}
   joystick: {fileID: 0}
+--- !u!114 &-4500259916947666143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127891705220950166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2fea14be47afd947805fbfb9ed1deff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

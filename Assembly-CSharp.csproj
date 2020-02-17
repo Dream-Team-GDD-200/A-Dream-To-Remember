@@ -68,7 +68,41 @@
     <Compile Include="Assets\Scripts\Joystick\FixedJoystick.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\WhiteBloodCell.cs" />
     <Reference Include="Unity.Timeline.Editor">
+<<<<<<< HEAD
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
       <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -100,6 +134,7 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> 9f447f30d5395874ae09a9e4c42d630d33f72bd0
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

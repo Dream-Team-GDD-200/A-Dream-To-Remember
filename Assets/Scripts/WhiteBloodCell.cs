@@ -16,6 +16,6 @@ public class WhiteBloodCell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      Instantiate(projectile, fireLocation.position, fireLocation.rotation);
+      //Instantiate(projectile, fireLocation.position, fireLocation.rotation);
     }
 }

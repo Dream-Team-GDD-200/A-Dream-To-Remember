@@ -8,7 +8,7 @@ public class WhiteBloodCell : MonoBehaviour
   public GameObject projectile;
   private PlayerMovement playerMovement;
   private Vector2 projectileForce;
-  public float projectileSpeed = 50000f;
+  private float projectileSpeed = 100f;
     
 
   void Start()
@@ -27,7 +27,7 @@ void Update()
   {
     projectile = Instantiate(projectile, fireLocation.position, fireLocation.rotation);
     Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
-    //projectileForce.Normalize();
+    projectileForce.Normalize();
     body.AddForce(projectileForce * projectileSpeed);
     Debug.Log(projectileSpeed);
   }

@@ -29,11 +29,12 @@ public class Button : MonoBehaviour
     }
     public void Click()
     {
+        
         if (skills[0].currentCoolDown >= skills[0].cooldown) //if currentCoolDown is greater than or equal to cooldown you can use the skill again (we are counting up here)
         {
             //do something on press -- like the actual skill XD
             skills[0].currentCoolDown = 0; //resets currentCoolDown timer
-            
+            GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot();  
         }
     }
 }

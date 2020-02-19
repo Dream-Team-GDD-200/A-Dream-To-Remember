@@ -30,13 +30,15 @@ public class HoleCollision : MonoBehaviour
             if (puzzleBox.transform.position.x == transform.position.x && puzzleBox.transform.position.y == transform.position.y)
             {
                 this.gameObject.SetActive(false);
+                puzzleBox.gameObject.tag = "Untagged";
+                puzzleBox.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Game";
             }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         //Checks for collision and make sure it  isn't doctor
-        if (!(other.gameObject.name.Equals("Doctor") || other.gameObject.CompareTag("Projectile")))
+        if (other.gameObject.CompareTag("Box"))
         {
             // set the object that is falling into the hole as the object colliding with hole
             puzzleBox = other.gameObject;

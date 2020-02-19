@@ -62,13 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Projectile_Destruction.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\HealthDoctor.cs" />
     <Compile Include="Assets\Scripts\HoleCollision.cs" />
     <Compile Include="Assets\Scripts\Joystick\FixedJoystick.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Projectile_Destruction.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCell.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/vangk0035/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

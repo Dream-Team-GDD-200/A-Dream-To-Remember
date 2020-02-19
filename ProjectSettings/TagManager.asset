@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Projectile
+  - Hole
+  - Box
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -44,6 +47,12 @@ TagManager:
     locked: 0
   - name: Game
     uniqueID: 4029141385
+    locked: 0
+  - name: Hole
+    uniqueID: 3542123089
+    locked: 0
+  - name: Box
+    uniqueID: 3844022405
     locked: 0
   - name: Player
     uniqueID: 480781361

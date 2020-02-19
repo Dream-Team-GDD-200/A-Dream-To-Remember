@@ -30,6 +30,8 @@ public class HoleCollision : MonoBehaviour
             if (puzzleBox.transform.position.x == transform.position.x && puzzleBox.transform.position.y == transform.position.y)
             {
                 this.gameObject.SetActive(false);
+                puzzleBox.gameObject.tag = "Untagged";
+                puzzleBox.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Game";
             }
         }
     }

@@ -9,7 +9,7 @@ public class HoleCollision : MonoBehaviour
     float lerpTime = 1.0f; // This is the number of seconds the Lerp will take
     Vector2 start; // Starting position for lerp
     Vector2 end; // destination for lerp
-    GameObject puzzleBox, Hole;
+    GameObject puzzleBox, Hole; 
     // Start is called before the first frame update
     void Start()
     {

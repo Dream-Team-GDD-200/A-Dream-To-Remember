@@ -17,7 +17,7 @@ public class Projectile_Destruction : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Box"))
+        if(other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("DeployedCell"))
         {
             Destroy(this.gameObject);
         }

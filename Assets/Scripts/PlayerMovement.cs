@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(movementReal * runSpeed * Time.deltaTime);
 
-        Debug.Log(movement);
+        //Debug.Log(movement);
 
         // Handle animation
         // 1 - idle down | 2 - idle up | 3 - idle right | 4 - idle left

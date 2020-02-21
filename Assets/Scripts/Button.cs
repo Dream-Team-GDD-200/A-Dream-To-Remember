@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; //this gives me the prebuilt image class as apparently it is not in on default... it also does other things but idk  ¯\_(ツ)_/¯  
@@ -45,4 +45,4 @@ public class Button : MonoBehaviour
         public Image skillIcon;
         //[HideInInspector]
         public float currentCoolDown; //although important to access we don't need to edit this within unity... so i hid it within the editor
-    }
+    }*/

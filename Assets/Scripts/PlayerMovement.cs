@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 movement = new Vector2(0, -1);
 
-    static float baseSpeed = 4f;
+    static float baseSpeed = 3f;
     float runSpeed = baseSpeed;
     float deadZone = .15f;
 

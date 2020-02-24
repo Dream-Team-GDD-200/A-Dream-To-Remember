@@ -16,14 +16,21 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private Animator anim;
 
-    bool facingRight = false;
-    bool facingLeft = false;
+    private bool isFemale = true;
 
-    // Use this for initialization
-    private void Start()
+    void OnEnable()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        if (isFemale)
+        {
+            anim.SetBool("isFemale", true);
+
+        }
+        else
+        {
+            anim.SetBool("isFemale", false);
+        }
     }
 
     // Update is called once per frame
@@ -37,6 +44,67 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             runSpeed = baseSpeed;
+        }
+
+        // Handle animation
+        // 1 - idle down | 2 - idle up | 3 - idle right | 4 - idle left
+        // -1 - walk down | -2 - walk up | -3 - walk right | -4 - walk left
+        if (movement.y > deadZone && movement.y > Mathf.Abs(movement.x))
+        {
+            // Facing Up
+            if (runSpeed != 0f)
+            {
+                //Walking Up
+                anim.SetInteger("direction", -2);
+            }
+            else
+            {
+                //Idle Up
+                anim.SetInteger("direction", 2);
+            }
+        }
+        else if (Mathf.Abs(movement.y) > deadZone && Mathf.Abs(movement.y) > Mathf.Abs(movement.x))
+        {
+            //Facing Down
+            if (runSpeed != 0f)
+            {
+                //Walking Down
+                anim.SetInteger("direction", -1);
+            }
+            else
+            {
+                //Idle down
+                anim.SetInteger("direction", 1);
+            }
+        }
+        else if (movement.x > deadZone && movement.x > Mathf.Abs(movement.y))
+        {
+            //Facing Right
+            if (runSpeed != 0f)
+            {
+                //walking right
+                anim.SetInteger("direction", -3);
+            }
+            else
+            {
+                //idle right
+                anim.SetInteger("direction", 3);
+            }
+
+        }
+        else if (Mathf.Abs(movement.x) > deadZone && Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
+        {
+            //Facing Left
+            if (runSpeed != 0f)
+            {
+                // walking left
+                anim.SetInteger("direction", -4);
+            }
+            else
+            {
+                //walking left
+                anim.SetInteger("direction", 4);
+            }
         }
     }
 
@@ -52,60 +120,6 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(movementReal * runSpeed * Time.deltaTime);
 
         //Debug.Log(movement);
-
-        // Handle animation
-        // 1 - idle down | 2 - idle up | 3 - idle right | 4 - idle left
-        // -1 - walk down | -2 - walk up | -3 - walk right | -4 - walk left
-        if (movement.y > deadZone && movement.y > Mathf.Abs(movement.x))
-        {
-            // Facing Up
-            if (runSpeed != 0f)
-            {
-                //Walking Up
-                anim.SetInteger("direction", -2);
-            } else
-            {
-                //Idle Up
-                anim.SetInteger("direction", 2);
-            }
-        } else if (Mathf.Abs(movement.y) > deadZone && Mathf.Abs(movement.y) > Mathf.Abs(movement.x))
-        {
-            //Facing Down
-            if (runSpeed != 0f)
-            {
-                //Walking Down
-                anim.SetInteger("direction", -1);
-            } else
-            {
-                //Idle down
-                anim.SetInteger("direction", 1);
-            }
-        } else if (movement.x > deadZone && movement.x > Mathf.Abs(movement.y))
-        {
-            //Facing Right
-            if (runSpeed != 0f)
-            {
-                //walking right
-                anim.SetInteger("direction", -3);
-            } else
-            {
-                //idle right
-                anim.SetInteger("direction", 3);
-            }
-
-        } else if (Mathf.Abs(movement.x) > deadZone && Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
-        {
-            //Facing Left
-            if (runSpeed != 0f)
-            {
-                // walking left
-                anim.SetInteger("direction", -4);
-            } else
-            {
-                //walking left
-                anim.SetInteger("direction", 4);
-            }
-        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -128,4 +142,9 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+
+    public void updateIsFemale(bool val)
+    {
+        isFemale = val;
+    }
 }

@@ -1,43 +1,55 @@
 fileFormatVersion: 2
-guid: 2f0f64a653001ae4fbde5d04b605daa4
+guid: 2f9a28f0b007f394cab0fc383cd191f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3793594195976258380
-    second: FemaleDoctorWalking_0
+      213: 8037560420614067750
+    second: DTR_FemaleDoctor_Idle_0
   - first:
-      213: 8301637576424553089
-    second: FemaleDoctorWalking_1
+      213: 1424074806173199358
+    second: DTR_FemaleDoctor_Idle_1
   - first:
-      213: 3212453625172204697
-    second: FemaleDoctorWalking_2
+      213: -4416715409043460429
+    second: DTR_FemaleDoctor_Idle_2
   - first:
-      213: 5595186460476491180
-    second: FemaleDoctorWalking_3
+      213: -3245208159765089704
+    second: DTR_FemaleDoctor_Idle_3
   - first:
-      213: -2690014227513387510
-    second: FemaleDoctorWalking_4
+      213: -8979471501052576189
+    second: DTR_FemaleDoctor_Idle_4
   - first:
-      213: 2857831297019012269
-    second: FemaleDoctorWalking_5
+      213: -6173672041732731856
+    second: DTR_FemaleDoctor_Idle_5
   - first:
-      213: 6932576537408136784
-    second: FemaleDoctorWalking_6
+      213: -6612550039683302993
+    second: DTR_FemaleDoctor_Idle_6
   - first:
-      213: 3646295036893983307
-    second: FemaleDoctorWalking_7
+      213: 6737092926259692370
+    second: DTR_FemaleDoctor_Idle_7
   - first:
-      213: -2409307576740340020
-    second: FemaleDoctorWalking_8
+      213: 6984807272719406184
+    second: DTR_FemaleDoctor_Idle_8
   - first:
-      213: -3469611357330452926
-    second: FemaleDoctorWalking_9
+      213: 1326490680354380088
+    second: DTR_FemaleDoctor_Idle_9
   - first:
-      213: 6852272690947954066
-    second: FemaleDoctorWalking_10
+      213: -5861895093113940278
+    second: DTR_FemaleDoctor_Idle_10
   - first:
-      213: -250610331812705456
-    second: FemaleDoctorWalking_11
+      213: 992520386064015310
+    second: DTR_FemaleDoctor_Idle_11
+  - first:
+      213: -1289770973585138693
+    second: DTR_FemaleDoctor_Idle_12
+  - first:
+      213: -353177357834496431
+    second: DTR_FemaleDoctor_Idle_13
+  - first:
+      213: -8973503044272677204
+    second: DTR_FemaleDoctor_Idle_14
+  - first:
+      213: -7296617644184005972
+    second: DTR_FemaleDoctor_Idle_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -67,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -194,11 +206,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FemaleDoctorWalking_0
+      name: DTR_FemaleDoctor_Idle_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
+        x: 4
+        y: 2
         width: 10
         height: 29
       alignment: 0
@@ -208,18 +220,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4827ec10c8e20c848ae555a83b2a9dec
-      internalID: 3793594195976258380
+      spriteID: 00308adce2d9e1b43ba876255d40d09d
+      internalID: 8037560420614067750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_1
+      name: DTR_FemaleDoctor_Idle_1
       rect:
         serializedVersion: 2
-        x: 23
-        y: 0
+        x: 24
+        y: 2
         width: 11
         height: 29
       alignment: 0
@@ -229,18 +241,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79c19dddf1cdb0d429e88b040e005abd
-      internalID: 8301637576424553089
+      spriteID: 62c89082b9c58cb4f9cecbf1c0c20027
+      internalID: 1424074806173199358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_2
+      name: DTR_FemaleDoctor_Idle_2
       rect:
         serializedVersion: 2
-        x: 43
-        y: 0
+        x: 44
+        y: 2
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a74cfc6dedf1d48b4fd2305105576d
+      internalID: -4416715409043460429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_FemaleDoctor_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae54964c20d60b044af3fc9e983450cb
+      internalID: -3245208159765089704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_FemaleDoctor_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2
         width: 10
         height: 29
       alignment: 0
@@ -250,18 +304,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453663d7a5f939b4fa661177aedc3b7f
-      internalID: 3212453625172204697
+      spriteID: 6dceed257a28d8045a6584e14ff18959
+      internalID: -8979471501052576189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_3
+      name: DTR_FemaleDoctor_Idle_5
       rect:
         serializedVersion: 2
-        x: 62
-        y: 0
+        x: 103
+        y: 2
         width: 11
         height: 29
       alignment: 0
@@ -271,81 +325,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcaa43f989fb60b47b7d7c3badddc251
-      internalID: 5595186460476491180
+      spriteID: 56c4c9a69089efa428cd35c11e743e16
+      internalID: -6173672041732731856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_4
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 0
-        width: 10
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1bbea8da74d2294cb8fa8bf3b7505b0
-      internalID: -2690014227513387510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FemaleDoctorWalking_5
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 11
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5c6f3e99478eb24e9b4c41216dc15b8
-      internalID: 2857831297019012269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FemaleDoctorWalking_6
+      name: DTR_FemaleDoctor_Idle_6
       rect:
         serializedVersion: 2
         x: 123
-        y: 0
-        width: 10
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61d10081921761548a6bcda53c0ba600
-      internalID: 6932576537408136784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FemaleDoctorWalking_7
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 0
+        y: 2
         width: 11
         height: 29
       alignment: 0
@@ -355,18 +346,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46ca315579e603647aaf0885af36ebe3
-      internalID: 3646295036893983307
+      spriteID: 1f15349dc8aa74a468d6e38d8213116a
+      internalID: -6612550039683302993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_8
+      name: DTR_FemaleDoctor_Idle_7
       rect:
         serializedVersion: 2
-        x: 163
-        y: 0
+        x: 143
+        y: 2
+        width: 11
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ccf75f5aace204abd6459b845cc5a9
+      internalID: 6737092926259692370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_FemaleDoctor_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2
         width: 14
         height: 29
       alignment: 0
@@ -376,19 +388,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2efe01ccfae7da428e02b7a2566099c
-      internalID: -2409307576740340020
+      spriteID: 3a0f8372804d69e4783ec9739a291761
+      internalID: 6984807272719406184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_9
+      name: DTR_FemaleDoctor_Idle_9
       rect:
         serializedVersion: 2
-        x: 182
-        y: 0
-        width: 16
+        x: 184
+        y: 2
+        width: 15
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -397,18 +409,60 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb97c4d6187e5dd438caf89d237b275c
-      internalID: -3469611357330452926
+      spriteID: 10db39fe8ba134f4facf5beb1c1243a7
+      internalID: 1326490680354380088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_10
+      name: DTR_FemaleDoctor_Idle_10
       rect:
         serializedVersion: 2
-        x: 203
-        y: 0
+        x: 204
+        y: 2
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3ceaca94f13ab49acf3b13b5a518c7
+      internalID: -5861895093113940278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_FemaleDoctor_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b50b7eee058f14288e80e0af28f3fc
+      internalID: 992520386064015310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_FemaleDoctor_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2
         width: 14
         height: 29
       alignment: 0
@@ -418,19 +472,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd46d06f49d73748992d249ea623597
-      internalID: 6852272690947954066
+      spriteID: 7654a179fb45d0745ad764f30d629bee
+      internalID: -1289770973585138693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FemaleDoctorWalking_11
+      name: DTR_FemaleDoctor_Idle_13
       rect:
         serializedVersion: 2
-        x: 222
-        y: 0
-        width: 14
+        x: 261
+        y: 2
+        width: 15
         height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -439,8 +493,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87612366626c6f04ca542bbb01d09850
-      internalID: -250610331812705456
+      spriteID: fbf970a5baa69c645bc90d8ee5734742
+      internalID: -353177357834496431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_FemaleDoctor_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505880d930337924488480fbae8ba78a
+      internalID: -8973503044272677204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_FemaleDoctor_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 2
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a73596aa804aa4e8e0865e31cc0187
+      internalID: -7296617644184005972
       vertices: []
       indices: 
       edges: []

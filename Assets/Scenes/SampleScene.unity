@@ -3256,6 +3256,21 @@ PrefabInstance:
       propertyPath: doctor
       value: 
       objectReference: {fileID: 467357568}
+    - target: {fileID: 5711995213631978295, guid: 095491ad0c0a4e6458036500b9933c71,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.23529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711995213631978295, guid: 095491ad0c0a4e6458036500b9933c71,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.23529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711995213631978295, guid: 095491ad0c0a4e6458036500b9933c71,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.23529412
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 095491ad0c0a4e6458036500b9933c71, type: 3}
 --- !u!1001 &6224790606823939185
@@ -3478,5 +3493,20 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 48195717}
+    - target: {fileID: 9095396558297690011, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.23584908
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095396558297690011, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.23584908
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095396558297690011, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.23584908
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7cae10e23f75e24abf88178bed9fb4f, type: 3}

@@ -18,16 +18,16 @@ public class DoctorSelect : MonoBehaviour
     public void selectMale()
     {
         UI.SetActive(true);
-        doctor.SetActive(true);
         doctor.GetComponent<PlayerMovement>().updateIsFemale(false);
+        doctor.SetActive(true);
         this.gameObject.SetActive(false);
     }
 
     public void selectFemale()
     {
         UI.SetActive(true);
-        doctor.SetActive(true);
         doctor.GetComponent<PlayerMovement>().updateIsFemale(true);
+        doctor.SetActive(true);
         this.gameObject.SetActive(false);
     }
 

@@ -11,7 +11,7 @@ public class WhiteBloodCell : MonoBehaviour
     public GameObject barrier;
     private PlayerMovement playerMovement;
     private Vector2 projectileForce;
-    private float projectileSpeed = 100f;
+    private float projectileSpeed = 150f;
     public bool validShot = true;
 
 

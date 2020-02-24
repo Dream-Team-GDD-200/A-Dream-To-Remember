@@ -28,10 +28,12 @@ public class HealthDoctor : MonoBehaviour
         {
             died();
         }
+        /* not needed anymore
         if(Input.GetKeyDown(KeyCode.F))
         {
             takeDamage(10f);
         }
+        */
     }
 
     // Used to have the player take damage.  Pass in the amount of damage to take

@@ -21,13 +21,14 @@ public class Enemy_Interaction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
            other.gameObject.GetComponent<HealthDoctor>().takeDamage(strength);
-        }
-        if (other.gameObject.CompareTag("Player"))
-        {
             // add a force away from enemy after they collide
             Vector2 knockback = transform.position - other.transform.position;
             //knockback.Normalize();
             this.gameObject.transform.Translate(knockback * .35f);
+        }
+        if(other.gameObject.CompareTag("Projectile"))
+        {
+            Destroy(this.gameObject);
         }
     }
     private void OnCollisionEnter2D(Collision2D other)
@@ -35,9 +36,6 @@ public class Enemy_Interaction : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<HealthDoctor>().takeDamage(strength);
-        }
-        if (other.gameObject.CompareTag("Player"))
-        {
             // add a force away from enemy after they collide
             Vector2 knockback = transform.position - other.transform.position;
             //knockback.Normalize();

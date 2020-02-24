@@ -9,6 +9,7 @@ TagManager:
   - Box
   - Wall
   - DeployedCell
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -54,6 +55,9 @@ TagManager:
     locked: 0
   - name: Box
     uniqueID: 3844022405
+    locked: 0
+  - name: Projectile
+    uniqueID: 934281489
     locked: 0
   - name: Player
     uniqueID: 480781361

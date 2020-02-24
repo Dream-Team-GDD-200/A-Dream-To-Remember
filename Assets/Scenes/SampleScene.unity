@@ -3525,6 +3525,16 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 519137778}
+    - target: {fileID: 7735443614017630684, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: femaleAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: f9c6f535d02d3564d84576882c5e7952, type: 2}
+    - target: {fileID: 7735443614017630684, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: maleAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b54b59d037978049898223541d383f5, type: 2}
     - target: {fileID: 7735443614017630685, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: healthBar
@@ -3540,6 +3550,31 @@ PrefabInstance:
       propertyPath: buttons
       value: 
       objectReference: {fileID: 1206327594}
+    - target: {fileID: 7735443614017630656, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735443614017630656, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735443614017630656, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735443614142189281, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735443614142189281, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.1893
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7cae10e23f75e24abf88178bed9fb4f, type: 3}
 --- !u!1001 &7875333375599544404

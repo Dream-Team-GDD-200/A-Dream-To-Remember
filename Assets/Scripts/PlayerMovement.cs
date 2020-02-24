@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
 
     public Joystick joystick;
 
+    public RuntimeAnimatorController maleAnim;
+    public RuntimeAnimatorController femaleAnim;
+
     private Rigidbody2D rb2d;
     private Animator anim;
 
@@ -22,15 +25,17 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
         if (isFemale)
         {
-            anim.SetBool("isFemale", true);
-
+            anim.runtimeAnimatorController = femaleAnim;
         }
         else
         {
-            anim.SetBool("isFemale", false);
+            anim.runtimeAnimatorController = maleAnim;
         }
+
+        this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
 
     // Update is called once per frame

@@ -48,6 +48,7 @@ public class HoleCollision : MonoBehaviour
             other.isTrigger = true;
             // set the flag for the collision as true which will start the lerp
             BoxFallFlag = true;
+            other.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }

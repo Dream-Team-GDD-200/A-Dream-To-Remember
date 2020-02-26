@@ -14,8 +14,7 @@ public class WhiteBloodCell : MonoBehaviour
     private float projectileSpeed = 150f;
     public bool validShot = true;
 
-
-    void Start()
+  void Start()
     {
         //Creates a projectile and deployable cell off screen. This allows the Shoot and Deploy functions to call parent objects that cannot be destroyed.
         baseProjectile = Instantiate(projectile, new Vector3(1000, 1000, 1000), fireLocation.rotation);
@@ -27,11 +26,11 @@ public class WhiteBloodCell : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        projectileForce = playerMovement.movement;
+      projectileForce = playerMovement.movement;
     }
 
-    // Update is called once per frame
-    public void Shoot()
+  // Update is called once per frame
+  public void Shoot()
     {
         projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
         Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
@@ -42,8 +41,31 @@ public class WhiteBloodCell : MonoBehaviour
 
     public void Deploy()
     {
-        Vector3 deployLocation = new Vector3(fireLocation.position.x + playerMovement.movement.x, fireLocation.position.y + playerMovement.movement.y, fireLocation.position.z);
-        barrier = Instantiate(baseBarrier, deployLocation, fireLocation.rotation);
-        Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
+        bool clear = true;
+        int dVal = 4;
+        float X = fireLocation.position.x + playerMovement.movement.x;
+        float Y = fireLocation.position.y + playerMovement.movement.y;
+        Vector3 deployLocation = new Vector3(X, Y, fireLocation.position.z);
+        while(dVal > 0)
+        {
+          Vector2 rayPos = new Vector2(deployLocation.x / dVal, deployLocation.y / dVal);
+          RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
+          if(hit)
+          {
+            clear = false;
+          }
+          dVal = dVal - 1;
+        }
+
+        if(clear == true)
+        {
+          barrier = Instantiate(baseBarrier, deployLocation, fireLocation.rotation);
+          Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
+        }
+        else
+        {
+          barrier = Instantiate(baseBarrier, fireLocation.position, fireLocation.rotation);
+          Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
+        }
     }
 }

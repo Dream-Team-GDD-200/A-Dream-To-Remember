@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Interaction : MonoBehaviour
 {
-    public float strength;
+    
     // Start is called before the first frame update
     void Start() 
     {
@@ -20,11 +20,12 @@ public class Enemy_Interaction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-           other.gameObject.GetComponent<HealthDoctor>().takeDamage(strength);
-            // add a force away from enemy after they collide
+            // add a knockback away from collision
             Vector2 knockback = transform.position - other.transform.position;
-            //knockback.Normalize();
+            //enemy knockback
             this.gameObject.transform.Translate(knockback * .35f);
+            //player knockback
+            other.gameObject.transform.Translate(-knockback * .15f);
         }
         if(other.gameObject.CompareTag("Projectile") || other.gameObject.CompareTag("DeployedCell"))
         {
@@ -35,11 +36,12 @@ public class Enemy_Interaction : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<HealthDoctor>().takeDamage(strength);
-            // add a force away from enemy after they collide
+            // add a knockback away from collision
             Vector2 knockback = transform.position - other.transform.position;
-            //knockback.Normalize();
+            //Enemy Knockback
             this.gameObject.transform.Translate(knockback * .35f);
+            //player knocked back
+            other.gameObject.transform.Translate(-knockback * .15f);
         }
     }
 }

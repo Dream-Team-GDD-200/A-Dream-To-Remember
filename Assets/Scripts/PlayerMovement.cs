@@ -126,27 +126,6 @@ public class PlayerMovement : MonoBehaviour
 
         //Debug.Log(movement);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            // add a force away from enemy after they collide
-            Vector2 knockback = transform.position - collision.transform.position;
-            //knockback.Normalize();
-            this.gameObject.transform.Translate(knockback * .15f);
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            // add a force away from enemy after they collide
-            Vector2 knockback = transform.position - collision.transform.position;
-            // knockback.Normalize();
-            this.gameObject.transform.Translate(knockback * .15f);
-        }
-    }
-
 
     public void updateIsFemale(bool val)
     {

@@ -64,49 +64,50 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Barrier.cs" />
     <Compile Include="Assets\Scripts\Button.cs" />
+    <Compile Include="Assets\Scripts\DamagePlayer.cs" />
     <Compile Include="Assets\Scripts\DoctorSelect.cs" />
-    <Compile Include="Assets\Scripts\Enemy_Interaction.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\HealthDoctor.cs" />
     <Compile Include="Assets\Scripts\HoleCollision.cs" />
     <Compile Include="Assets\Scripts\Joystick\FixedJoystick.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Knockback.cs" />
     <Compile Include="Assets\Scripts\LongClick.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Projectile_Destruction.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCell.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/boehmz8613/Documents/GitHub/A-Dream-To-Remember/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

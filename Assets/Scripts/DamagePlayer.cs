@@ -21,7 +21,6 @@ public class DamagePlayer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.gameObject.GetComponent<HealthDoctor>().takeDamage(strength);
-           
         }
     }
     private void OnCollisionEnter2D(Collision2D other)

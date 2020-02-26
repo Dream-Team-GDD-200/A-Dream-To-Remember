@@ -23,8 +23,8 @@ public class LongClick : MonoBehaviour
         endTime = 0f;
     }
 
-    //checks to see if the player's mouse is on top of the button (this likely could be improved)
-    private bool CheckBounds()
+  //checks to see if the player's mouse is on top of the button (this likely could be improved)
+  private bool CheckBounds()
     {
         buttonPos = GameObject.Find("Skill1").transform.position;
 
@@ -73,7 +73,6 @@ public class LongClick : MonoBehaviour
         //deploys a cell if the mouse is held down for at least 1/2 of a second
         if ((endTime - startTime <= 0.5f) && (endTime - startTime > 0.001) && CheckBounds() == true && cooldownTime == 0)
         {
-
             Debug.Log("Short Click");
             startTime = 0f;
             endTime = 0f;

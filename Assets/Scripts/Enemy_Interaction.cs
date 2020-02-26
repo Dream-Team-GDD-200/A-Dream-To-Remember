@@ -26,7 +26,7 @@ public class Enemy_Interaction : MonoBehaviour
             //knockback.Normalize();
             this.gameObject.transform.Translate(knockback * .35f);
         }
-        if(other.gameObject.CompareTag("Projectile"))
+        if(other.gameObject.CompareTag("Projectile") || other.gameObject.CompareTag("DeployedCell"))
         {
             Destroy(this.gameObject);
         }

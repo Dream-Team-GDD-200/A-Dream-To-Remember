@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\DamagePlayer.cs" />
     <Compile Include="Assets\Scripts\DoctorSelect.cs" />
+    <Compile Include="Assets\Scripts\EnablePathfinding.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\HealthDoctor.cs" />
     <Compile Include="Assets\Scripts\HoleCollision.cs" />
@@ -298,6 +299,9 @@
     </Reference>
     <Reference Include="FacebookNamedPipeClient">
       <HintPath>D:/Unity/2019.2.1f1/Editor/Data/PlaybackEngines/Facebook/SDK/7.9.4/FacebookNamedPipeClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>D:/Unity Projects/A-Dream-To-Remember/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/Unity/2019.2.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -650,6 +654,20 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>D:/Unity/2019.2.1f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{65FA6483-9A4F-B5A7-34CF-A3736BAA1990}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{266D0022-1185-0032-B55B-E18691232F11}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{B203B20B-814C-6470-4E0A-4ACBA9EAAE85}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

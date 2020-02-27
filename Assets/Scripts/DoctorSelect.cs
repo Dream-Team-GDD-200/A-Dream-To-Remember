@@ -29,6 +29,7 @@ public class DoctorSelect : MonoBehaviour
         doctor.GetComponent<CapsuleCollider2D>().size = MaleScale;
         doctor.GetComponent<BoxCollider2D>().offset = MaleOffset_Box;
         doctor.GetComponent<BoxCollider2D>().size = MaleScale_Box;
+
     }
 
     public void selectFemale()

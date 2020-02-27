@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private bool isFemale = true;
-
+    //A* object
+    public GameObject aStarPath;
     void OnEnable()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -41,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Updates Pathfinding grid
+        aStarPath.gameObject.GetComponent<AstarPath>().Scan();
+
         //Movement
         if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone)
         {

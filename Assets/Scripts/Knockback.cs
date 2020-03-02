@@ -6,6 +6,7 @@ public class Knockback : MonoBehaviour
 {
     //on Collision with enemy a certain damage is delt
     //other is the object that the enemy is colliding with, and other is a Collider2D variable
+   
     private void OnTriggerEnter2D(Collider2D other)
     {
         // if colliding with player

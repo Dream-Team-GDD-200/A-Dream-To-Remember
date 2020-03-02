@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         //Updates Pathfinding grid
-        aStarPath.gameObject.GetComponent<AstarPath>().Scan();
+        //aStarPath.gameObject.GetComponent<AstarPath>().Scan();
 
         //Movement
         if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone)

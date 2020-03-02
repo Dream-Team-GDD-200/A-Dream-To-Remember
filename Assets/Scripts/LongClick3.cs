@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class LongClick2 : MonoBehaviour
+public class LongClick3 : MonoBehaviour
 {
   public Vector3 buttonPos;
   public Image skillImage;
@@ -12,13 +12,9 @@ public class LongClick2 : MonoBehaviour
   //current cooldown time
   private float cooldownTime;
   //the total cooldown time
-  private float cooldownMaxTime = 180;
-  //the radius of the button
+  private float cooldownMaxTime = 250f;
+  //the radous of the button
   private double buttonRad = 60;
-  //total duration of the speed boost
-  private double maxSpeedDuration = 80;
-  //current duration of the speed boost
-  private double speedDuration = 0;
 
   //Use for initialization
   private void Start()
@@ -30,7 +26,7 @@ public class LongClick2 : MonoBehaviour
   //checks to see if the player's mouse is on top of the button (this likely could be improved)
   private bool CheckBounds()
   {
-    buttonPos = GameObject.Find("Skill2 BG").transform.position;
+    buttonPos = GameObject.Find("Skill3 BG").transform.position;
 
 
     if ((Input.mousePosition.x >= (buttonPos.x - buttonRad)) && (Input.mousePosition.x <= (buttonPos.x + buttonRad)) && (Input.mousePosition.y >= (buttonPos.y - buttonRad)) && (Input.mousePosition.y <= (buttonPos.y + buttonRad)))
@@ -59,16 +55,6 @@ public class LongClick2 : MonoBehaviour
     //sets the fill amount for the skill button
     skillImage.fillAmount = (float)1 - (cooldownTime / cooldownMaxTime);
 
-    if(speedDuration > 0)
-    {
-      speedDuration = speedDuration - 1;
-    }
-
-    if(speedDuration == 0)
-    {
-      GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().resetSpeed();
-    }
-
     //keeps track of how long the mouse is being held down for if the mouse is on the button
     if (Input.GetMouseButtonDown(0) && CheckBounds() == true)
       startTime = Time.time;
@@ -78,30 +64,20 @@ public class LongClick2 : MonoBehaviour
     //fires a cell if the mouse is held down for less that 1/2 of a second
     if (endTime - startTime > 0.5f && Input.mousePosition.x >= 786 && CheckBounds() == true && cooldownTime == 0)
     {
-      Debug.Log("Big Heal");
+      Debug.Log("Long Click");
       startTime = 0f;
       endTime = 0f;
-      float healVal = 15;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<StunField>().Shock();
       cooldownTime = cooldownMaxTime;
-      speedDuration = maxSpeedDuration;
-      float speed = 5f;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
     }
     //deploys a cell if the mouse is held down for at least 1/2 of a second
     if ((endTime - startTime <= 0.5f) && (endTime - startTime > 0.001) && CheckBounds() == true && cooldownTime == 0)
     {
-      Debug.Log("Small Heal");
+      Debug.Log("Short Click");
       startTime = 0f;
       endTime = 0f;
-      float healVal = 15;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<StunField>().Shock();
       cooldownTime = cooldownMaxTime;
-      speedDuration = maxSpeedDuration;
-      float speed = 5f;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
     }
     //reduces the cooldown time if it is less than 0 each timestep
     if (cooldownTime > 0)

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private bool isFemale = true;
-
+    //A* object
+    public GameObject aStarPath;
     void OnEnable()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -41,6 +42,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Updates Pathfinding grid
+        aStarPath.gameObject.GetComponent<AstarPath>().Scan();
+
         //Movement
         if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone)
         {
@@ -126,27 +131,6 @@ public class PlayerMovement : MonoBehaviour
 
         //Debug.Log(movement);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            // add a force away from enemy after they collide
-            Vector2 knockback = transform.position - collision.transform.position;
-            //knockback.Normalize();
-            this.gameObject.transform.Translate(knockback * .15f);
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            // add a force away from enemy after they collide
-            Vector2 knockback = transform.position - collision.transform.position;
-            // knockback.Normalize();
-            this.gameObject.transform.Translate(knockback * .15f);
-        }
-    }
-
 
     public void updateIsFemale(bool val)
     {

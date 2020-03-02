@@ -258,6 +258,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3294180980739856365, guid: e6f549794a63c6641abaf73821548666,
+        type: 3}
+      propertyPath: dropsFragment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3159122319337486898, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
       propertyPath: m_Name
@@ -356,7 +361,7 @@ PrefabInstance:
     - target: {fileID: 3159122319337486906, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3159122319337486906, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
@@ -386,6 +391,11 @@ PrefabInstance:
     - target: {fileID: 3689427572245757622, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
       propertyPath: dropsFragment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159122319337486900, guid: e6f549794a63c6641abaf73821548666,
+        type: 3}
+      propertyPath: whenCloseToDestination
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -502,6 +512,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1846229248855550304, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
     - target: {fileID: 1829027762002648651, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -516,11 +531,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MemFragments
-      objectReference: {fileID: 0}
-    - target: {fileID: 1846229248855550304, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_Name
-      value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 1846229248855550300, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
@@ -1443,7 +1453,7 @@ PrefabInstance:
     - target: {fileID: 7081015454558954998, guid: d03dd040d40862242a66f60ce62d54c5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7081015454558954998, guid: d03dd040d40862242a66f60ce62d54c5,
         type: 3}

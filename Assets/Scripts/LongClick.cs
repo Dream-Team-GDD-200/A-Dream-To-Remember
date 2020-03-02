@@ -14,7 +14,7 @@ public class LongClick : MonoBehaviour
     //the total cooldown time
     private float cooldownMaxTime = 125;
     //the radous of the button
-    private double buttonRad = 80;
+    private double buttonRad = 60;
 
     //Use for initialization
     private void Start()
@@ -26,7 +26,7 @@ public class LongClick : MonoBehaviour
   //checks to see if the player's mouse is on top of the button (this likely could be improved)
   private bool CheckBounds()
     {
-        buttonPos = GameObject.Find("Skill1").transform.position;
+        buttonPos = GameObject.Find("Skill1 BG").transform.position;
 
 
         if ((Input.mousePosition.x >= (buttonPos.x- buttonRad)) && (Input.mousePosition.x <= (buttonPos.x + buttonRad)) && (Input.mousePosition.y >= (buttonPos.y - buttonRad)) && (Input.mousePosition.y <= (buttonPos.y + buttonRad)))

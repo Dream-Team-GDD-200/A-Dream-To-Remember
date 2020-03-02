@@ -47,6 +47,7 @@ public class HealthDoctor : MonoBehaviour
     public void heal(float healAmt)
     {
         currentHealth += healAmt;
+        healthBar.SetHealth(currentHealth);
     }
 
     // called when the player died

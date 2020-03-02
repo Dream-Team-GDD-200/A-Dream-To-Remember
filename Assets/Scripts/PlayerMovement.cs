@@ -152,4 +152,14 @@ public class PlayerMovement : MonoBehaviour
     {
         isFemale = val;
     }
+
+    public void setSpeed(float speed)
+    {
+        baseSpeed = speed;
+    }
+
+    public void resetSpeed()
+    {
+        baseSpeed = 3f;
+    }
 }

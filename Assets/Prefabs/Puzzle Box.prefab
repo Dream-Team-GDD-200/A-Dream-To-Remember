@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2654206713104855180}
   - component: {fileID: 2654206713104855181}
   - component: {fileID: 2654206713104855178}
+  - component: {fileID: 726660950858533795}
   m_Layer: 8
   m_Name: Puzzle Box
   m_TagString: Box
@@ -130,3 +131,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &726660950858533795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654206713104855179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3dee2348dcb35142be7fd6e5fbfa55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

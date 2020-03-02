@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1530
+    x: 1531
     y: 0
     width: 390
     height: 947
@@ -149,7 +149,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 383
+    x: 379
     y: 0
     width: 1147
     height: 670
@@ -321,7 +321,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 743
-    width: 1530
+    width: 1531
     height: 258
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -455,9 +455,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1530
+    x: 1531
     y: 73
-    width: 388
+    width: 387
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -493,7 +493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 383
+    width: 379
     height: 651
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
@@ -546,9 +546,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 383
+    x: 379
     y: 73
-    width: 1145
+    width: 1150
     height: 651
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1067.9467, y: 433.4082, z: -478.99582}
+    m_Target: {x: 5.7060633, y: 5.943529, z: -1.4921745}
     speed: 2
     m_Value: {x: 1067.9467, y: 433.4082, z: -478.99582}
   m_RenderMode: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22.218718
+    m_Target: 7.316319
     speed: 2
     m_Value: 22.218718
   m_Ortho:
@@ -617,7 +617,7 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.15235907, y: 0.7914284, z: -0.21929808, w: -0.5498511}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -728,6 +728,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 743
-    width: 1530
+    width: 1531
     height: 258
   m_ViewDataDictionary: {fileID: 0}

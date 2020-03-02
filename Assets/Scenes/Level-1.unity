@@ -258,6 +258,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3159122319337486898, guid: e6f549794a63c6641abaf73821548666,
+        type: 3}
+      propertyPath: m_Name
+      value: Temp Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 4926454777202010819, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
       propertyPath: m_Name
@@ -348,15 +353,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3159122319337486898, guid: e6f549794a63c6641abaf73821548666,
-        type: 3}
-      propertyPath: m_Name
-      value: Temp Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 3159122319337486906, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3159122319337486906, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
@@ -382,6 +382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159122319337486900, guid: e6f549794a63c6641abaf73821548666,
+        type: 3}
+      propertyPath: whenCloseToDestination
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6f549794a63c6641abaf73821548666, type: 3}
@@ -996,7 +1001,7 @@ PrefabInstance:
     - target: {fileID: 3159122319337486906, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3159122319337486906, guid: e6f549794a63c6641abaf73821548666,
         type: 3}
@@ -1032,6 +1037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159122319337486900, guid: e6f549794a63c6641abaf73821548666,
+        type: 3}
+      propertyPath: whenCloseToDestination
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6f549794a63c6641abaf73821548666, type: 3}

@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 3159122319337486903}
   - component: {fileID: 3159122319337486896}
   - component: {fileID: 3159122319337486897}
+  - component: {fileID: 3689427572245757622}
   m_Layer: 0
   m_Name: Temp Enemy (1)
   m_TagString: Enemy
@@ -359,6 +360,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 5
+--- !u!114 &3689427572245757622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3159122319337486898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03293c643dcf0f44896ee4a86780fb4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropsFragment: 0
+  baseMemFrag: {fileID: 2651678592507756008, guid: 90b9b063a1f407e4b92d799a1a5a6a8d,
+    type: 3}
+  memFrag: {fileID: 0}
 --- !u!1 &3159122319348330230
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,6 +38,7 @@ public class Knockback : MonoBehaviour
             this.gameObject.GetComponentsInChildren<RectTransform>()[1].localScale = new Vector3(h, 1f, 1f);
             if (remainingHits <= 0)
             {
+                this.gameObject.GetComponent<MemoryFragmentEnemy>().dropMemFragment();
                 Destroy(this.gameObject);
             }
         }

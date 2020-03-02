@@ -29,7 +29,7 @@ public class LongClick : MonoBehaviour
         buttonPos = GameObject.Find("Skill1 BG").transform.position;
 
 
-        if ((Input.mousePosition.x >= (buttonPos.x- buttonRad)) && (Input.mousePosition.x <= (buttonPos.x + buttonRad)) && (Input.mousePosition.y >= (buttonPos.y - buttonRad)) && (Input.mousePosition.y <= (buttonPos.y + buttonRad)))
+        if ((Input.mousePosition.x >= (buttonPos.x- buttonRad)) && (Input.mousePosition.x <= (buttonPos.x + buttonRad)) && (Input.mousePosition.y >= (buttonPos.y - buttonRad)) && (Input.mousePosition.y <= (buttonPos.y + buttonRad)) && cooldownTime == 0)
         {
             return true;
         }

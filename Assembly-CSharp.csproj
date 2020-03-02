@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\DamagePlayer.cs" />
     <Compile Include="Assets\Scripts\DoctorSelect.cs" />
     <Compile Include="Assets\Scripts\EnablePathfinding.cs" />
+    <Compile Include="Assets\Scripts\HealEffect.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\HealthDoctor.cs" />
     <Compile Include="Assets\Scripts\HoleCollision.cs" />
@@ -75,8 +76,10 @@
     <Compile Include="Assets\Scripts\Knockback.cs" />
     <Compile Include="Assets\Scripts\LongClick.cs" />
     <Compile Include="Assets\Scripts\LongClick2.cs" />
+    <Compile Include="Assets\Scripts\LongClick3.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Projectile_Destruction.cs" />
+    <Compile Include="Assets\Scripts\StunField.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCell.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/levendowskil3713/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

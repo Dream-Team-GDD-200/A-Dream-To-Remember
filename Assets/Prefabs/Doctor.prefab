@@ -50,7 +50,9 @@ GameObject:
   - component: {fileID: 5189961097125950651}
   - component: {fileID: 5189961097125950650}
   - component: {fileID: 5189961097125950653}
+  - component: {fileID: 8269053131149975543}
   - component: {fileID: 5189961097125950652}
+  - component: {fileID: 6483518562221163987}
   - component: {fileID: 5189961097125950655}
   m_Layer: 8
   m_Name: Doctor
@@ -207,6 +209,7 @@ MonoBehaviour:
   joystick: {fileID: 0}
   maleAnim: {fileID: 9100000, guid: 1b54b59d037978049898223541d383f5, type: 2}
   femaleAnim: {fileID: 9100000, guid: f9c6f535d02d3564d84576882c5e7952, type: 2}
+  aStarPath: {fileID: 0}
 --- !u!114 &5189961097125950653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +229,22 @@ MonoBehaviour:
     type: 3}
   buttons: {fileID: 6711708757062488035, guid: 2a0cc619d2766a84c84d987534470df1, type: 3}
   player: {fileID: 5189961097125950654}
+--- !u!114 &8269053131149975543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189961097125950654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e0dc2afeda553d48802d564f3dd10f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLocation: {fileID: 5189961097125442646}
+  baseShockField: {fileID: 7651960780547500388, guid: fd6b6015db1bf3f4fa6ceebe6aa30068,
+    type: 3}
+  shockField: {fileID: 0}
 --- !u!114 &5189961097125950652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +264,25 @@ MonoBehaviour:
   baseBarrier: {fileID: 0}
   barrier: {fileID: 3040613547032440394, guid: b4bbef53c243e0042b000e13d0bff8ad, type: 3}
   validShot: 1
+--- !u!114 &6483518562221163987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189961097125950654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f8e3bca2065a24aae6ea0f9355e440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLocation: {fileID: 5189961097125442646}
+  baseEffectSmall: {fileID: 4197251019089573193, guid: 2d24da52d4dbc544d8859ebbd273f111,
+    type: 3}
+  effectSmall: {fileID: 0}
+  baseEffectLarge: {fileID: 750272912840091828, guid: 2ba7c3a3a2090024697c5b5fc9eab347,
+    type: 3}
+  effectLarge: {fileID: 0}
 --- !u!70 &5189961097125950655
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

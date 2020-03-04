@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 5189961097125950650}
   - component: {fileID: 5189961097125950653}
   - component: {fileID: 8269053131149975543}
-  - component: {fileID: 5189961097125950652}
+  - component: {fileID: 247677043443258024}
   - component: {fileID: 6483518562221163987}
   - component: {fileID: 5189961097125950655}
   m_Layer: 8
@@ -242,10 +242,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireLocation: {fileID: 5189961097125442646}
-  baseShockField: {fileID: 7651960780547500388, guid: fd6b6015db1bf3f4fa6ceebe6aa30068,
+  baseShockField: {fileID: 6443718818334673780, guid: fd6b6015db1bf3f4fa6ceebe6aa30068,
     type: 3}
   shockField: {fileID: 0}
---- !u!114 &5189961097125950652
+--- !u!114 &247677043443258024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,10 +258,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireLocation: {fileID: 5189961097125442646}
-  baseProjectile: {fileID: 0}
+  baseProjectile: {fileID: 3948458559105968854, guid: 575441523952e5747a960031443f4eea,
+    type: 3}
   projectile: {fileID: 3948458559105968854, guid: 575441523952e5747a960031443f4eea,
     type: 3}
-  baseBarrier: {fileID: 0}
+  baseBarrier: {fileID: 3040613547032440394, guid: b4bbef53c243e0042b000e13d0bff8ad,
+    type: 3}
   barrier: {fileID: 3040613547032440394, guid: b4bbef53c243e0042b000e13d0bff8ad, type: 3}
   validShot: 1
 --- !u!114 &6483518562221163987

@@ -20,6 +20,8 @@ public class LongClick2 : MonoBehaviour
   //current duration of the speed boost
   private double speedDuration = 0;
 
+    public AudioClip speedBoost;
+
   //Use for initialization
   private void Start()
   {
@@ -88,6 +90,8 @@ public class LongClick2 : MonoBehaviour
       float speed = 5f;
       GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
       GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
     }
     //deploys a cell if the mouse is held down for at least 1/2 of a second
     if ((endTime - startTime <= 0.5f) && (endTime - startTime > 0.001) && CheckBounds() == true && cooldownTime == 0)
@@ -102,7 +106,9 @@ public class LongClick2 : MonoBehaviour
       float speed = 5f;
       GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
       GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
-    }
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
+        }
     //reduces the cooldown time if it is less than 0 each timestep
     if (cooldownTime > 0)
     {

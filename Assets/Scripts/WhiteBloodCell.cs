@@ -13,6 +13,7 @@ public class WhiteBloodCell : MonoBehaviour
     private Vector2 projectileForce;
     private float projectileSpeed = 150f;
     public bool validShot = true;
+    private int cellHealth = 0;
 
   void Start()
     {
@@ -41,6 +42,10 @@ public class WhiteBloodCell : MonoBehaviour
 
     public void Deploy()
     {
+        if (cellHealth > 0)
+        {
+          Destroy(barrier.gameObject);
+        }
         bool clear = true;
         int dVal = 4;
         float X = fireLocation.position.x + playerMovement.movement.x;
@@ -62,10 +67,23 @@ public class WhiteBloodCell : MonoBehaviour
           barrier = Instantiate(baseBarrier, deployLocation, fireLocation.rotation);
           Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
         }
+
         else
         {
           barrier = Instantiate(baseBarrier, fireLocation.position, fireLocation.rotation);
           Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
         }
+
+        cellHealth = 3;
+    }
+
+    public int getCellHealth()
+    {
+      return cellHealth;
+    }
+
+    public void reduceCellHealth(int i)
+    {
+      cellHealth = cellHealth - i;
     }
 }

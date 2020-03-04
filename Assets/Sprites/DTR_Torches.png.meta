@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 126961701197cf34bbdff53d5ccdfcec
+guid: a5aee7399e06d8944aa1db251dc60cc5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2297443081978318565
-    second: DTR_Crystals_0
+      213: 8840326207340970230
+    second: DTR_Torches_0
   - first:
-      213: -7731452283970431026
-    second: DTR_Crystals_1
+      213: 7501476628556079651
+    second: DTR_Torches_1
   - first:
-      213: 5642425416104165628
-    second: DTR_Crystals_2
+      213: 4764420685514947700
+    second: DTR_Torches_2
   - first:
-      213: -4863202945875539816
-    second: DTR_Crystals_3
-  - first:
-      213: -5662482919403753494
-    second: DTR_Crystals_4
-  - first:
-      213: 8371867772524908497
-    second: DTR_Crystals_5
+      213: 2552670062762455070
+    second: DTR_Torches_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -176,34 +170,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DTR_Crystals_0
+      name: DTR_Torches_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 2
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fff0b15f5c35dc64080fe7b52b55b855
-      internalID: -2297443081978318565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DTR_Crystals_1
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 2
+        y: 1
         width: 7
-        height: 24
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa1fb6354534582448589b318ecd39e0
-      internalID: -7731452283970431026
+      spriteID: aeff87abcce089848a3775da37c64bc4
+      internalID: 8840326207340970230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DTR_Crystals_2
+      name: DTR_Torches_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 2
-        width: 17
-        height: 20
+        x: 11
+        y: 1
+        width: 7
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c47684f148cb914c995179c3fa4c9a2
-      internalID: 5642425416104165628
+      spriteID: f0f051c5e93dbea4488fcba2c524c919
+      internalID: 7501476628556079651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DTR_Crystals_3
+      name: DTR_Torches_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 2
-        width: 9
-        height: 24
+        x: 20
+        y: 1
+        width: 7
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5160e6f9b18e764a9e405d8d4f1c49b
-      internalID: -4863202945875539816
+      spriteID: b3e794b89de5b4a41a014875c9180caa
+      internalID: 4764420685514947700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DTR_Crystals_4
+      name: DTR_Torches_3
       rect:
         serializedVersion: 2
-        x: 82
-        y: 2
-        width: 22
-        height: 31
+        x: 29
+        y: 1
+        width: 7
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,29 +247,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b299d02dfd53fa43bd331b68706f9a6
-      internalID: -5662482919403753494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DTR_Crystals_5
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 2
-        width: 8
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d994ddadaa8d56478ca46622ce3eaf2
-      internalID: 8371867772524908497
+      spriteID: 4f3303807fcb8674d8a0507069fa3f62
+      internalID: 2552670062762455070
       vertices: []
       indices: 
       edges: []

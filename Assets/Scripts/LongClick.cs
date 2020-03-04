@@ -57,9 +57,14 @@ public class LongClick : MonoBehaviour
 
         //keeps track of how long the mouse is being held down for if the mouse is on the button
         if (Input.GetMouseButtonDown(0) && CheckBounds() == true)
+        {
             startTime = Time.time;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("attacking", true);
+        }
         if (Input.GetMouseButtonUp(0) && CheckBounds() == true)
+        {
             endTime = Time.time;
+        }
 
         //fires a cell if the mouse is held down for less that 1/2 of a second
         if (endTime - startTime > 0.5f && Input.mousePosition.x >= 786 && CheckBounds() == true && cooldownTime == 0)
@@ -69,6 +74,7 @@ public class LongClick : MonoBehaviour
             endTime = 0f;
             GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Deploy();
             cooldownTime = cooldownMaxTime;
+            StartCoroutine(waitForAnim());
         }
         //deploys a cell if the mouse is held down for at least 1/2 of a second
         if ((endTime - startTime <= 0.5f) && (endTime - startTime > 0.001) && CheckBounds() == true && cooldownTime == 0)
@@ -78,11 +84,19 @@ public class LongClick : MonoBehaviour
             endTime = 0f;
             GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot();
             cooldownTime = cooldownMaxTime;
+            StartCoroutine(waitForAnim());
         }
         //reduces the cooldown time if it is less than 0 each timestep
         if (cooldownTime > 0)
         {
             cooldownTime -= 1;
         }
+    }
+
+    IEnumerator waitForAnim()
+    {
+        yield return new WaitForSeconds(GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime);
+
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("attacking", false);
     }
 }

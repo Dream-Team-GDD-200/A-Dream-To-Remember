@@ -8,7 +8,7 @@ public class Boss_SpawnEnemy : MonoBehaviour
     // SpawnHord will enable or disable the spawn of the enemies
     public GameObject enemy;
     public bool SpawnHord;
-    public float spawnTime, spawnDelay;
+    public float spawnDelay;
     public float amountOfEnemies;
     public AIPath bossPath;
     void Start()
@@ -17,10 +17,10 @@ public class Boss_SpawnEnemy : MonoBehaviour
     }
     public void CallEnemySpawn()
     {
-        Invoke("SpawnEnemy", spawnTime);
+        Invoke("SpawnEnemy", spawnDelay);
         for(int i = 0; i < amountOfEnemies; i++)
         {
-            Invoke("SpawnEnemy", spawnDelay);
+            Invoke("SpawnEnemy", spawnDelay + spawnDelay);
         }
     }
     //will spawn enemies only if you have the feature turned on
@@ -35,17 +35,17 @@ public class Boss_SpawnEnemy : MonoBehaviour
     {
         StartCoroutine(StartCountdown());
     }
-    float currCountdownValue;
-    public IEnumerator StartCountdown(float countdownValue = 10)
+    public float timeBetweenSpawns;
+    public IEnumerator StartCountdown()
     {
-        currCountdownValue = countdownValue;
-        while (currCountdownValue > 0)
+        //timeBetweenSpawns = countdownValue;
+        while (timeBetweenSpawns > 0)
         {
-            Debug.Log("Countdown: " + currCountdownValue);
+            Debug.Log("Countdown: " + timeBetweenSpawns);
             yield return new WaitForSeconds(1.0f);
-            
-            currCountdownValue--;
-            if (currCountdownValue == 0)
+
+            timeBetweenSpawns--;
+            if (timeBetweenSpawns == 0)
             {
                 CallEnemySpawn();
             }

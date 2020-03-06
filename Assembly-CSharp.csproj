@@ -63,10 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy\Boss_SpawnEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\DamagePlayer.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnablePathfinding.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\Knockback.cs" />
+    <Compile Include="Assets\Scripts\Enemy\SetDestination.cs" />
     <Compile Include="Assets\Scripts\Joystick\FixedJoystick.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
     <Compile Include="Assets\Scripts\Map Logics\DoorLogic.cs" />

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 622c1644b47f1554aaaeb645a460f731
+guid: 74bf2b1ccfee553468c7df2b74006fb8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2096984222589244899
-    second: ow6lwja4_0
+      213: 2592859126203004549
+    second: WhiteBloodCell_P_M_0
+  - first:
+      213: -7856585815610420929
+    second: WhiteBloodCell_P_M_1
+  - first:
+      213: -4156765120215332691
+    second: WhiteBloodCell_P_M_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -48,9 +54,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -137,13 +143,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ow6lwja4_0
+      name: WhiteBloodCell_P_M_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 6
-        width: 36
-        height: 35
+        y: 0
+        width: 9
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +157,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbac5f8116cb641408dc4700b9cf1030
-      internalID: 2096984222589244899
+      spriteID: c1a992b6fb15aa4428e223f008367b1c
+      internalID: 2592859126203004549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteBloodCell_P_M_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3807d790e30ddd2438a52675ad62af03
+      internalID: -7856585815610420929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteBloodCell_P_M_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fe466802c27ee48bdd726acf14971c
+      internalID: -4156765120215332691
       vertices: []
       indices: 
       edges: []

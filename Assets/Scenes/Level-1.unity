@@ -37174,12 +37174,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138806764}
     m_Modifications:
-    - target: {fileID: 3796286925246833454, guid: 8ac0ed1ab8551444aba377fc4adcee19,
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Name
-      value: Rock_2 (55)
+      value: walllllllll
       objectReference: {fileID: 0}
-    - target: {fileID: 4346468356620408453, guid: 8ac0ed1ab8551444aba377fc4adcee19,
+    - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -82.95046
@@ -37233,6 +37233,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.118397
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.038
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ac0ed1ab8551444aba377fc4adcee19, type: 3}
@@ -37327,6 +37337,26 @@ PrefabInstance:
     - target: {fileID: 469753333547578974, guid: fb3d241861d37cf4f8307a4b5c34af57,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469753334173685403, guid: fb3d241861d37cf4f8307a4b5c34af57,
+        type: 3}
+      propertyPath: amountOfEnemies
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469753334173685403, guid: fb3d241861d37cf4f8307a4b5c34af57,
+        type: 3}
+      propertyPath: spawnDelay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469753334173685403, guid: fb3d241861d37cf4f8307a4b5c34af57,
+        type: 3}
+      propertyPath: timeBetweenSpawns
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 469753334173685403, guid: fb3d241861d37cf4f8307a4b5c34af57,
+        type: 3}
+      propertyPath: spawnTime
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37922,12 +37952,12 @@ PrefabInstance:
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 79
+      value: 0.818
       objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.18
+      value: -0.848
       objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}

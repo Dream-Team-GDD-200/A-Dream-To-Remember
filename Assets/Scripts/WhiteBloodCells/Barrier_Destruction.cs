@@ -5,7 +5,7 @@ using UnityEngine;
 public class Barrier_Destruction : MonoBehaviour
 {
   // Update is called once per frame
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Projectile"))
         {

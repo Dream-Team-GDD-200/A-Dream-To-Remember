@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4914302275601223534}
   - component: {fileID: 5295856722207467386}
-  - component: {fileID: 9198451151606907980}
   - component: {fileID: 628975736979283423}
+  - component: {fileID: 5077286423635887437}
   - component: {fileID: -5656672758584920328}
-  - component: {fileID: 7143054388390369125}
   m_Layer: 8
   m_Name: LargeWhiteBloodCell 1
   m_TagString: DeployedCell
@@ -73,8 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 934281489
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5921528206720058656, guid: cd86d790b0ea30c44a7acecb91c80212,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc7ab82801090554fb5fc0da517766ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,18 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9198451151606907980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3040613547032440394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8314a56433b94d34b9e2b67ddbfe9f2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &628975736979283423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -107,7 +93,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -123,6 +109,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &5077286423635887437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040613547032440394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8314a56433b94d34b9e2b67ddbfe9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &-5656672758584920328
 Rigidbody2D:
   serializedVersion: 4
@@ -131,11 +129,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3040613547032440394}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000000
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -143,23 +141,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!95 &7143054388390369125
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3040613547032440394}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44167926f4c278747b68a1bc1d30e973, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_Constraints: 0

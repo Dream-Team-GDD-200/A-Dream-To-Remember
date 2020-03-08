@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1269347281204155708}
   - component: {fileID: -3410818729873996157}
   - component: {fileID: 7723717414320076920}
+  - component: {fileID: 4975809641167680956}
   m_Layer: 8
   m_Name: whiteBloodCellProjectile
   m_TagString: Projectile
@@ -73,7 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 934281489
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d88ebaf002abd6b448c8c53498cb0ca3, type: 3}
+  m_Sprite: {fileID: 2592859126203004549, guid: 74bf2b1ccfee553468c7df2b74006fb8,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3, y: 0.3}
+    oldSize: {x: 0.3, y: 0.26666668}
     newSize: {x: 0.3, y: 0.3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -155,7 +157,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: addd7799cc419ed4e8ceeecf149f0ca1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -239,3 +241,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &4975809641167680956
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948458559105968854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3274be081fd0e0b438ccc5d49c9aa166, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

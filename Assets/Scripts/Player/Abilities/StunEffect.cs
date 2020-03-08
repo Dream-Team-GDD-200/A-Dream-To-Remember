@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StunEffect : MonoBehaviour
 {
+
   private void OnTriggerEnter2D(Collider2D other)
   {
     // if the enemy contacts the stun field

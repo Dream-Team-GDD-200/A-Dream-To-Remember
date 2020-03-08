@@ -4,29 +4,28 @@ using UnityEngine;
 
 public class DoorLogic : MonoBehaviour
 {
-    public GameObject Room;
-    public GameObject Player;
+    public GameObject[] Door;
 
-    // Update is called once per frame
-    void Update()
+    //makes all doors for that room appear
+    public void blockPath()
     {
-        //check to see if player is in the trigger zone and if so then call for door to appear
-        if(Player.transform.position.x > (Room.transform.position.x - (Room.transform.lossyScale.x / 4)) && Player.transform.position.x < (Room.transform.position.x + (Room.transform.lossyScale.x / 4)) && Player.transform.position.y > (Room.transform.position.y - (Room.transform.lossyScale.y / 4)) && Player.transform.position.y < (Room.transform.position.y + (Room.transform.lossyScale.y / 4)))
+        for(int i = 0; i < Door.Length; i++)
         {
-            blockPath();
+            Debug.Log("Path Blocked");
+            Door[i].GetComponent<SpriteRenderer>().enabled = true;
+            Door[i].GetComponent<BoxCollider2D>().enabled = true;
         }
+        
     }
-    //makes door appear
-    void blockPath()
+    //Makes all doors for that room disapear
+    public void openPath()
     {
-        this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-        this.gameObject.GetComponent<BoxCollider2D>().enabled = true;
-    }
-    //Makes door disapear
-    void openPath()
-    {
-        this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        for (int i = 0; i < Door.Length; i++)
+        {
+            Debug.Log("Path unBlocked");
+            Door[i].GetComponent<SpriteRenderer>().enabled = false;
+            Door[i].GetComponent<BoxCollider2D>().enabled = false;
+        }
     }
 }
 

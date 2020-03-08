@@ -25,10 +25,10 @@ public class DoctorSelect : MonoBehaviour
         doctor.GetComponent<PlayerMovement>().updateIsFemale(false);
         doctor.SetActive(true);
         this.gameObject.SetActive(false);
-        doctor.GetComponent<CapsuleCollider2D>().offset = MaleOffset;
-        doctor.GetComponent<CapsuleCollider2D>().size = MaleScale;
-        doctor.GetComponent<BoxCollider2D>().offset = MaleOffset_Box;
-        doctor.GetComponent<BoxCollider2D>().size = MaleScale_Box;
+        doctor.GetComponent<CapsuleCollider2D>().offset = MaleOffset_Box;
+        doctor.GetComponent<CapsuleCollider2D>().size = MaleScale_Box;
+        doctor.GetComponent<BoxCollider2D>().offset = MaleOffset;
+        doctor.GetComponent<BoxCollider2D>().size = MaleScale;
 
     }
 

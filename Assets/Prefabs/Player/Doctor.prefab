@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 3684063505883712860}
   - component: {fileID: 3684063505883712852}
   - component: {fileID: 3684063505883712853}
-  - component: {fileID: 3265394024554866769}
+  - component: {fileID: 4014637458857712138}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Player
@@ -383,7 +383,7 @@ MonoBehaviour:
   baseEffectLarge: {fileID: 8765428025573545858, guid: 2ba7c3a3a2090024697c5b5fc9eab347,
     type: 3}
   effectLarge: {fileID: 0}
---- !u!82 &3265394024554866769
+--- !u!82 &4014637458857712138
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

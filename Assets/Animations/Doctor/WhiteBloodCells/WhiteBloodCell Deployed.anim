@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Projectile
+  m_Name: WhiteBloodCell Deployed
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,10 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2592859126203004549, guid: 74bf2b1ccfee553468c7df2b74006fb8,
+      value: {fileID: 5921528206720058656, guid: cd86d790b0ea30c44a7acecb91c80212,
         type: 3}
     - time: 0.083333336
-      value: {fileID: -7856585815610420929, guid: 74bf2b1ccfee553468c7df2b74006fb8,
-        type: 3}
-    - time: 0.16666667
-      value: {fileID: -4156765120215332691, guid: 74bf2b1ccfee553468c7df2b74006fb8,
+      value: {fileID: 4014411698009949558, guid: cd86d790b0ea30c44a7acecb91c80212,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,15 +44,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2592859126203004549, guid: 74bf2b1ccfee553468c7df2b74006fb8, type: 3}
-    - {fileID: -7856585815610420929, guid: 74bf2b1ccfee553468c7df2b74006fb8, type: 3}
-    - {fileID: -4156765120215332691, guid: 74bf2b1ccfee553468c7df2b74006fb8, type: 3}
+    - {fileID: 5921528206720058656, guid: cd86d790b0ea30c44a7acecb91c80212, type: 3}
+    - {fileID: 4014411698009949558, guid: cd86d790b0ea30c44a7acecb91c80212, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.16666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

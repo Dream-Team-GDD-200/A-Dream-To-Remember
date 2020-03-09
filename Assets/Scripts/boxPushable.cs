@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class boxPushable : MonoBehaviour
+public class BoxPushable : MonoBehaviour
 {
     Rigidbody2D phys;
     void Start()

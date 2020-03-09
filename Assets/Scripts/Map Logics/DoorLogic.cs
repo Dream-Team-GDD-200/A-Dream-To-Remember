@@ -12,7 +12,7 @@ public class DoorLogic : MonoBehaviour
         for(int i = 0; i < Door.Length; i++)
         {
             Debug.Log("Path Blocked");
-            Door[i].GetComponent<SpriteRenderer>().enabled = true;
+            Door[i].GetComponent<DoorSpriteSwitcher>().close();
             Door[i].GetComponent<BoxCollider2D>().enabled = true;
         }
         
@@ -23,7 +23,7 @@ public class DoorLogic : MonoBehaviour
         for (int i = 0; i < Door.Length; i++)
         {
             Debug.Log("Path unBlocked");
-            Door[i].GetComponent<SpriteRenderer>().enabled = false;
+            Door[i].GetComponent<DoorSpriteSwitcher>().open();
             Door[i].GetComponent<BoxCollider2D>().enabled = false;
         }
     }

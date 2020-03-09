@@ -14,7 +14,7 @@ public class Projectile_Destruction : MonoBehaviour
         spr = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
 
         // if colliding with wall, box, deployed cell, or enemy projectile is destroyed

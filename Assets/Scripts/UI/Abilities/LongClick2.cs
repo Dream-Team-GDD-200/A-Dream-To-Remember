@@ -5,43 +5,43 @@ using UnityEngine;
 
 public class LongClick2 : MonoBehaviour
 {
-  public Vector3 buttonPos;
-  public Image skillImage;
-  //used to determine how long the player holds down the mouse button
-  private float startTime, endTime;
-  //current cooldown time
-  private float cooldownTime;
-  //the total cooldown time
-  private float cooldownMaxTime = 180;
-  //the radius of the button
-  private double buttonRad = 60;
-  //total duration of the speed boost
-  private double maxSpeedDuration = 80;
-  //current duration of the speed boost
-  private double speedDuration = 0;
+    public Vector3 buttonPos;
+    public Image skillImage;
+    //used to determine how long the player holds down the mouse button
+    private float startTime, endTime;
+    //current cooldown time
+    private float cooldownTime;
+    //the total cooldown time
+    private float cooldownMaxTime = 180;
+    //the radius of the button
+    private double buttonRad = 60;
+    //total duration of the speed boost
+    private double maxSpeedDuration = 80;
+    //current duration of the speed boost
+    private double speedDuration = 0;
 
     public AudioClip speedBoost;
 
-  //Use for initialization
-  private void Start()
-  {
+    //Use for initialization
+    private void Start()
+    {
     startTime = 0f;
     endTime = 0f;
-  }
+    }
 
-  //checks to see if the player's mouse is on top of the button (this likely could be improved)
-  private bool CheckBounds()
-  {
+    //checks to see if the player's mouse is on top of the button (this likely could be improved)
+    private bool CheckBounds()
+    {
     buttonPos = GameObject.Find("Skill2 BG").transform.position;
 
 
     if ((Input.mousePosition.x >= (buttonPos.x - buttonRad)) && (Input.mousePosition.x <= (buttonPos.x + buttonRad)) && (Input.mousePosition.y >= (buttonPos.y - buttonRad)) && (Input.mousePosition.y <= (buttonPos.y + buttonRad)) && cooldownTime == 0)
     {
-      return true;
+        return true;
     }
     else
     {
-      return false;
+        return false;
     }
 
     /*
@@ -54,65 +54,79 @@ public class LongClick2 : MonoBehaviour
         return false;
     }
     */
-  }
+    }
 
-  void Update()
-  {
+    void Update()
+    {
     //sets the fill amount for the skill button
     skillImage.fillAmount = (float)1 - (cooldownTime / cooldownMaxTime);
 
     if(speedDuration > 0)
     {
-      speedDuration = speedDuration - 1;
+        speedDuration = speedDuration - 1;
     }
 
     if(speedDuration == 0)
     {
-      GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().resetSpeed();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().resetSpeed();
     }
 
-    //keeps track of how long the mouse is being held down for if the mouse is on the button
-    if (Input.GetMouseButtonDown(0) && CheckBounds() == true)
-      startTime = Time.time;
-    if (Input.GetMouseButtonUp(0) && CheckBounds() == true)
-      endTime = Time.time;
+        //keeps track of how long the mouse is being held down for if the mouse is on the button
+        if (Input.GetMouseButtonDown(0) && CheckBounds() == true)
+        {
+            startTime = Time.time;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", true);
+        }
+        if (Input.GetMouseButtonUp(0) && CheckBounds() == true)
+        {
+            endTime = Time.time;
+        }
 
     //fires a cell if the mouse is held down for less that 1/2 of a second
     if (endTime - startTime > 0.5f && Input.mousePosition.x >= 786 && CheckBounds() == true && cooldownTime == 0)
     {
-      Debug.Log("Big Heal");
-      startTime = 0f;
-      endTime = 0f;
-      float healVal = 15;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
-      cooldownTime = cooldownMaxTime;
-      speedDuration = maxSpeedDuration;
-      float speed = 5f;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
-            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
+        Debug.Log("Big Heal");
+        startTime = 0f;
+        endTime = 0f;
+        float healVal = 15;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
+        cooldownTime = cooldownMaxTime;
+        speedDuration = maxSpeedDuration;
+        float speed = 5f;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
+        StartCoroutine(waitForAnim());
     }
     //deploys a cell if the mouse is held down for at least 1/2 of a second
     if ((endTime - startTime <= 0.5f) && (endTime - startTime > 0.001) && CheckBounds() == true && cooldownTime == 0)
     {
-      Debug.Log("Small Heal");
-      startTime = 0f;
-      endTime = 0f;
-      float healVal = 15;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
-      cooldownTime = cooldownMaxTime;
-      speedDuration = maxSpeedDuration;
-      float speed = 5f;
-      GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
-      GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
+        Debug.Log("Small Heal");
+        startTime = 0f;
+        endTime = 0f;
+        float healVal = 15;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
+        cooldownTime = cooldownMaxTime;
+        speedDuration = maxSpeedDuration;
+        float speed = 5f;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
+            StartCoroutine(waitForAnim());
         }
     //reduces the cooldown time if it is less than 0 each timestep
     if (cooldownTime > 0)
     {
-      cooldownTime -= 1;
+        cooldownTime -= 1;
     }
-  }
+    }
+
+    IEnumerator waitForAnim()
+    {
+        yield return new WaitForSeconds(GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime);
+
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", false);
+    }
 }

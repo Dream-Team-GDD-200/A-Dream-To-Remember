@@ -34,7 +34,6 @@ public class WhiteBloodCell : MonoBehaviour
   public void Shoot()
     {
         projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
-        Debug.Log(projectile.transform.position);
         Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
         projectileForce.Normalize();
         body.AddForce(projectileForce * projectileSpeed);

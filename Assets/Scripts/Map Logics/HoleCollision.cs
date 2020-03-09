@@ -9,7 +9,8 @@ public class HoleCollision : MonoBehaviour
     float lerpTime = 1.0f; // This is the number of seconds the Lerp will take
     Vector2 start; // Starting position for lerp
     Vector2 end; // destination for lerp
-    GameObject puzzleBox, Hole; 
+    GameObject puzzleBox, Hole;
+  private GameObject Box;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class HoleCollision : MonoBehaviour
             if (puzzleBox.transform.position.x == transform.position.x && puzzleBox.transform.position.y == transform.position.y)
             {
                 this.gameObject.SetActive(false);
+                Box.SetActive(false);
                 puzzleBox.gameObject.tag = "Untagged";
                 puzzleBox.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Game";
             }
@@ -40,6 +42,7 @@ public class HoleCollision : MonoBehaviour
         //Checks for collision and make sure it  isn't doctor
         if (other.gameObject.CompareTag("Box"))
         {
+            Box = other.gameObject;
             // set the object that is falling into the hole as the object colliding with hole
             puzzleBox = other.gameObject;
             // the starting position is the box's position when it collides with the hole

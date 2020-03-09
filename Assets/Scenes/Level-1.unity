@@ -9797,6 +9797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crystal_0 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc4cb9b62e67024690909e8db06d22b, type: 3}
 --- !u!1001 &593857321
@@ -13113,6 +13118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crystal_2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
@@ -19075,12 +19085,12 @@ PrefabInstance:
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.6429
+      value: -92.44485
       objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.769839
+      value: 0.18241978
       objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
@@ -19110,7 +19120,7 @@ PrefabInstance:
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 195
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}

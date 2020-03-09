@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bosses\WolfMovement.cs" />
+    <Compile Include="Assets\Scripts\BoxPushable.cs" />
     <Compile Include="Assets\Scripts\Enemy\Boss\Boss_EnablePathing.cs" />
     <Compile Include="Assets\Scripts\Enemy\Boss\Boss_SpawnEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\DamagePlayer.cs" />

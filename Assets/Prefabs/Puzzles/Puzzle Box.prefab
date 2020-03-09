@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 2654206713104855180}
   - component: {fileID: 2654206713104855181}
   - component: {fileID: 2654206713104855178}
-  - component: {fileID: 1001171063721524797}
   - component: {fileID: 2385523632160535388}
   - component: {fileID: 8423430560876428233}
   - component: {fileID: 3521824201011588575}
   - component: {fileID: 7854683874588917501}
+  - component: {fileID: 2406476360157793644}
   m_Layer: 8
   m_Name: Puzzle Box
   m_TagString: Box
@@ -135,18 +135,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1001171063721524797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2654206713104855179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c820d0635e8e4fc45a47c3c92e03eafb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2385523632160535388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -251,3 +239,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.05913925, y: 0.4153416}
   m_EdgeRadius: 0
+--- !u!114 &2406476360157793644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654206713104855179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2163125e5bc1f40bb8814c4f4e930d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

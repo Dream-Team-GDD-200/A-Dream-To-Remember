@@ -224,10 +224,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6523320028355963594}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d9a1e328eb66af428e1c1dfea368ac7, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a19a94734934a7468f7ddba36bd7374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aipath: {fileID: 0}
+  pathfindingActive: 1
+  aipath: {fileID: 6523320028355963596}
+  Player: {fileID: 0}
+  Room: {fileID: 0}
 --- !u!114 &6523320028355963592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9efd36bd35374349b3426be0e81e570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitsCanTake: 2
+  hitsCanTake: 1
 --- !u!114 &9061841532093206340
 MonoBehaviour:
   m_ObjectHideFlags: 0

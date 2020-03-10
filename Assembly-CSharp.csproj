@@ -62,10 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\KILLBOSS.cs" />
+    <Compile Include="Assets\Scripts\Bosses\BossKnockBack.cs" />
+    <Compile Include="Assets\Scripts\Bosses\DeployBox.cs" />
     <Compile Include="Assets\Scripts\Bosses\WolfMovement.cs" />
+    <Compile Include="Assets\Scripts\Bosses\WolfSpeed.cs" />
     <Compile Include="Assets\Scripts\Enemy\Boss\Boss_EnablePathing.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Boss\Boss_SpawnEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boss\BossMechanics.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Boss\BossStunEffect.cs" />
     <Compile Include="Assets\Scripts\Enemy\DamagePlayer.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnablePathfinding.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="Assets\Scripts\Player\Abilities\HealEffect.cs" />
     <Compile Include="Assets\Scripts\Player\Abilities\StunEffect.cs" />
     <Compile Include="Assets\Scripts\Player\Abilities\StunField.cs" />
+    <Compile Include="Assets\Scripts\Player\DoctorDeath.cs" />
     <Compile Include="Assets\Scripts\Player\HealthDoctor.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\UI\Abilities\Button.cs" />
@@ -102,37 +106,37 @@
     <Compile Include="Assets\Scripts\WhiteBloodCells\Projectile_Destruction.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCells\WhiteBloodCell.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -312,7 +316,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-      <HintPath>C:/Users/nydahle8784/Documents/GitHub/A-Dream-To-Remember/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>C:/Users/butenhoffj0204/Documents/GDD-200/A Dream to Remember/A-Dream-To-Remember/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

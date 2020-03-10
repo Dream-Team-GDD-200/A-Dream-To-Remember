@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3684063505496419652}
   - component: {fileID: 3684063505496419659}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: mCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 3684063505883712852}
   - component: {fileID: 3684063505883712853}
   - component: {fileID: 4014637458857712138}
+  - component: {fileID: -4087781375471024918}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Player
@@ -306,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2fea14be47afd947805fbfb9ed1deff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHitSound: {fileID: 8300000, guid: dcd9b29538c2f974284a87b47b79fdfd, type: 3}
   currentHealth: 100
   maxHealth: 100
   healthBar: {fileID: 0}
@@ -479,3 +481,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-4087781375471024918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3684063505883712930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e19d0eefaa7914aa20c50eba138b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FemaleDeathFrame1: {fileID: -9206947828749711008, guid: 440fc925c67202e438887109c1d022ad,
+    type: 3}
+  FemaleDeathFrame2: {fileID: 9046624038648134116, guid: 440fc925c67202e438887109c1d022ad,
+    type: 3}
+  FemaleDeathFrame3: {fileID: -6427494830613843001, guid: 440fc925c67202e438887109c1d022ad,
+    type: 3}
+  FemaleDeathFrame4: {fileID: 207159391643693153, guid: 440fc925c67202e438887109c1d022ad,
+    type: 3}
+  FemaleDeathFrame5: {fileID: 4049600970957055578, guid: 440fc925c67202e438887109c1d022ad,
+    type: 3}
+  mainCamera: {fileID: 3684063505496419652}
+  aStar: {fileID: 0}

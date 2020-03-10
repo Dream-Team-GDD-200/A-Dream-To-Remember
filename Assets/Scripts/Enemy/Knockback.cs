@@ -19,7 +19,7 @@ public class Knockback : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // if colliding with player
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             // add a knockback away from collision
             Vector2 knockback = transform.position - other.transform.position;
@@ -30,17 +30,18 @@ public class Knockback : MonoBehaviour
             other.gameObject.GetComponent<PlayerMovement>().movement = new Vector2(0, 0);
         }
         // if colliding with deployed white blood cell
-        if (other.tag == "DeployedCell")
+        if (other.gameObject.tag == "DeployedCell")
         {
           // add a knockback away from collision
           Vector2 knockback = transform.position - other.transform.position;
           //enemy knockback
           this.gameObject.transform.Translate(knockback * .35f);
+            this.gameObject.GetComponent<AudioSource>().Play();
           
         }
         // if hit by an projectile or deplyed cell get destroyed
         if (other.gameObject.CompareTag("Projectile") || other.gameObject.CompareTag("DeployedCell"))
-            {
+        {
                 remainingHits -= 1;
                 float h = (float)remainingHits / (float)hitsCanTake;
                 this.gameObject.GetComponentInChildren<EnemyHealth>().SetHealth(h * 100f);
@@ -50,7 +51,8 @@ public class Knockback : MonoBehaviour
                     this.gameObject.GetComponent<MemoryFragmentEnemy>().dropMemFragment();
                     Destroy(this.gameObject);
                 }
-            }
+            this.gameObject.GetComponent<AudioSource>().Play();
+        }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {

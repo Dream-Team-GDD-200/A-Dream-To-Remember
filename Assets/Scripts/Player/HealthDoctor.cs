@@ -7,14 +7,18 @@ using UnityEngine;
 public class HealthDoctor : MonoBehaviour
 {
 
+    public AudioClip playerHitSound;
+
     public float currentHealth = 100f;
     public float maxHealth = 100f;
     public HealthBar healthBar;
     public GameObject joyStick; //reference to joystick to stop movement when dead 
     public GameObject buttons; //reference to buttons to stop being able to press buttons when dead
     public GameObject player; //reference to player to stop
-    // Start is called before the first frame update
-    
+                              // Start is called before the first frame update
+
+    private bool calledDied = false;
+
     void Start()
     {
         healthBar.SetMaxHealth(maxHealth);
@@ -26,7 +30,12 @@ public class HealthDoctor : MonoBehaviour
         // If the doctors health goes below or equal to 0
         if (currentHealth <= 0)
         {
-            died();
+            if (!calledDied)
+            {
+                died();
+                calledDied = true;
+            }
+            
         }
         /* not needed anymore
         if(Input.GetKeyDown(KeyCode.F))
@@ -41,6 +50,11 @@ public class HealthDoctor : MonoBehaviour
     {
         currentHealth -= dmg;
         healthBar.SetHealth(currentHealth);
+        if (!calledDied)
+        {
+            this.gameObject.GetComponent<AudioSource>().clip = playerHitSound;
+            this.gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 
     // Used to have the player heal.  Pass in the amount to heal
@@ -59,11 +73,8 @@ public class HealthDoctor : MonoBehaviour
         buttons.SetActive(false); //wasn't working 
         //stops movement of doctor and possibly other things
         player.GetComponent<PlayerMovement>().enabled = false; //*** might not be the greatest way to stop him, replace later if better method is found
-        //*** ask joel to stop his animations here
-        
-        //want to put somekind of gameOver death here
-        //game over text or something here
-        Invoke("endGame",2); //ends game in 2 seconds
+
+        this.gameObject.GetComponent<DoctorDeath>().onDeath();
 
     }
     private void endGame()
@@ -73,5 +84,4 @@ public class HealthDoctor : MonoBehaviour
             UnityEditor.EditorApplication.isPlaying = false;
         }
     }
-     
 }

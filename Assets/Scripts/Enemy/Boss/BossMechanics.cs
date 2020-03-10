@@ -19,6 +19,7 @@ public class BossMechanics: MonoBehaviour
     public float amountOfEnemies;
     public float timeBetweenSpawns;
     public List<GameObject> spawnedEnemies;
+    public float MaxEnemies;
     //Box spawner Variables
     public int TimeBetweenBossMove;
     public int BossMaxSpeed;
@@ -28,6 +29,7 @@ public class BossMechanics: MonoBehaviour
     //Timer lengths for each spawner so the timer resets after it reaches 0
     private float resetTimer;
     private float resetTimerBox;
+    
 
     void Start()
     {
@@ -56,7 +58,7 @@ public class BossMechanics: MonoBehaviour
     //will spawn enemies only if you have the feature turned on
     public void SpawnEnemy()
     {
-        if (spawnedEnemies.Count < 5f);
+        if (spawnedEnemies.Count < 2f);
         {
             GameObject enemySpawned = Instantiate(enemy, transform.position, transform.rotation);
             spawnedEnemies.Add(enemySpawned);

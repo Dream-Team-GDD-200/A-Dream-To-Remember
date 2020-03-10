@@ -7,12 +7,13 @@ public class RuneLogic : MonoBehaviour
     public int orderThatItNeedsToBePushed;
     public bool hasBeenPushed;
     public RuneHandler RuneHandler;
-    SpriteRenderer image;
+  
+    public Sprite runePressed; //reference to basic image (the notPressedImage will be default)
+    //handler will have references to notPressed sprite as that's where it changes them back 
 
     private void Start()
     {
         hasBeenPushed = false;
-        image = GetComponent<SpriteRenderer>(); //gets reference of the spirte component of each rune
     }
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -21,7 +22,7 @@ public class RuneLogic : MonoBehaviour
         {
             RuneHandler.AddToList(this.orderThatItNeedsToBePushed);
             hasBeenPushed = true;
-            //change image of object
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = runePressed;//sets whatever gameobject that this script is attached to and changes the image to the pressed state
             Debug.Log("I booped" + orderThatItNeedsToBePushed);
         }
     }

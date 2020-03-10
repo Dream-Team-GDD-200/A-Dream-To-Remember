@@ -146,4 +146,9 @@ public class PlayerMovement : MonoBehaviour
     {
         baseSpeed = 3f;
     }
+
+    public bool getIsFemale()
+    {
+        return isFemale;
+    }
 }

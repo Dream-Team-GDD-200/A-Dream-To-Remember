@@ -36,11 +36,12 @@ public class Knockback : MonoBehaviour
           Vector2 knockback = transform.position - other.transform.position;
           //enemy knockback
           this.gameObject.transform.Translate(knockback * .35f);
+            this.gameObject.GetComponent<AudioSource>().Play();
           
         }
         // if hit by an projectile or deplyed cell get destroyed
         if (other.gameObject.CompareTag("Projectile") || other.gameObject.CompareTag("DeployedCell"))
-            {
+        {
                 remainingHits -= 1;
                 float h = (float)remainingHits / (float)hitsCanTake;
                 this.gameObject.GetComponentInChildren<EnemyHealth>().SetHealth(h * 100f);
@@ -50,7 +51,8 @@ public class Knockback : MonoBehaviour
                     this.gameObject.GetComponent<MemoryFragmentEnemy>().dropMemFragment();
                     Destroy(this.gameObject);
                 }
-            }
+            this.gameObject.GetComponent<AudioSource>().Play();
+        }
     }
     private void OnCollisionEnter2D(Collision2D other)
     {

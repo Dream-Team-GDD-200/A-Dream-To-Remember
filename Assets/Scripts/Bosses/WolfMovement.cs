@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class WolfMovement : MonoBehaviour
 {
@@ -10,10 +11,12 @@ public class WolfMovement : MonoBehaviour
     private bool isMoving = false;
 
     private Animator anim;
-
+    public Vector2 wolfMovement;
+    public WolfSpeed wolfSpeed;
     void Start()
     {
         anim = GetComponent<Animator>();
+        wolfMovement = wolfSpeed.speed;
     }
 
 
@@ -80,7 +83,16 @@ public class WolfMovement : MonoBehaviour
     void FixedUpdate()
     {
         //TODO: Set isMoving to true when moving and false when stopped
-
+        if(wolfMovement == new Vector2(0, 0))
+        {
+            isMoving = false;
+        }
+        else
+        {
+            isMoving = true;
+        }
         //TODO: Updated the movement Vector2 when the wolf is moving or stopped
+        wolfMovement = wolfSpeed.speed;
+        movement = wolfMovement;
     }
 }

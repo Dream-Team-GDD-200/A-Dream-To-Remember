@@ -19,7 +19,7 @@ public class Knockback : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // if colliding with player
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             // add a knockback away from collision
             Vector2 knockback = transform.position - other.transform.position;
@@ -30,7 +30,7 @@ public class Knockback : MonoBehaviour
             other.gameObject.GetComponent<PlayerMovement>().movement = new Vector2(0, 0);
         }
         // if colliding with deployed white blood cell
-        if (other.tag == "DeployedCell")
+        if (other.gameObject.tag == "DeployedCell")
         {
           // add a knockback away from collision
           Vector2 knockback = transform.position - other.transform.position;

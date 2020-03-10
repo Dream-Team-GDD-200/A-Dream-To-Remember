@@ -8,7 +8,20 @@ public class MemoryFragmentEnemy : MonoBehaviour
 
     public GameObject baseMemFrag;
     public GameObject memFrag;
+    private int rand;
 
+    private void Start()
+    {
+        rand = Random.Range(0, 50);
+        if (rand < 20 || rand > 40)
+        {
+            dropsFragment = true;
+        }
+        else
+        {
+            dropsFragment = false;
+        }
+    }
     public void dropMemFragment()
     {
         if (dropsFragment)

@@ -34,6 +34,7 @@ public class HoleCollision : MonoBehaviour
                 Box.SetActive(false);
                 puzzleBox.gameObject.tag = "Untagged";
                 puzzleBox.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Game";
+                Destroy(puzzleBox);
             }
         }
     }

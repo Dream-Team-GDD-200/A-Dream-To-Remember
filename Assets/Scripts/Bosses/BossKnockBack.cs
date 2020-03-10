@@ -16,7 +16,7 @@ public class BossKnockBack : MonoBehaviour
             // add a knockback away from collision
             Vector2 knockback = transform.position - other.transform.position;
             //player knockback
-            other.gameObject.transform.Translate(-knockback * .15f);
+            other.gameObject.transform.Translate(-knockback * .5f);
             other.gameObject.GetComponent<PlayerMovement>().movement = new Vector2(0, 0);
         }
     }
@@ -27,7 +27,7 @@ public class BossKnockBack : MonoBehaviour
             // add a knockback away from collision
             Vector2 knockback = transform.position - other.transform.position;
             //player knocked back
-            other.gameObject.transform.Translate(-knockback * .15f);
+            other.gameObject.transform.Translate(-knockback * .5f);
             other.gameObject.GetComponent<PlayerMovement>().movement = new Vector2(0, 0);
         }
     }

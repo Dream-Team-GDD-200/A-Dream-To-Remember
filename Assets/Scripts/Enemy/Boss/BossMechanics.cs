@@ -99,6 +99,7 @@ public class BossMechanics: MonoBehaviour
             {
                 Debug.Log("Box Being Spawned");
                 BoxSpawner.SpawnBox();
+                this.gameObject.GetComponent<AudioSource>().Play();
             }
         }
         timeBoxSpawns = resetTimerBox;

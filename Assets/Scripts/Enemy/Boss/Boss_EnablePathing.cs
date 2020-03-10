@@ -17,6 +17,7 @@ public class Boss_EnablePathing : MonoBehaviour
         if (pathfindingActive == true && Player.transform.position.x > (Room.transform.position.x - (Room.transform.lossyScale.x / 4)) && Player.transform.position.x < (Room.transform.position.x + (Room.transform.lossyScale.x / 4)) && Player.transform.position.y > (Room.transform.position.y - (Room.transform.lossyScale.y / 4)) && Player.transform.position.y < (Room.transform.position.y + (Room.transform.lossyScale.y / 4)) && !inRoom)
         {
             enablePathfinding();
+            this.gameObject.GetComponent<BossMechanics>().StartSpawner();
             inRoom = true;
         }
     }
@@ -25,14 +26,14 @@ public class Boss_EnablePathing : MonoBehaviour
     {
         this.gameObject.GetComponent<AIPath>().enabled = false;
         pathfindingActive = false;
-        this.gameObject.GetComponent<Boss_SpawnEnemy>().SpawnHord = false;
+        this.gameObject.GetComponent<BossMechanics>().SpawnHord = false;
     }
 
     public void enablePathfinding()
     {
         this.gameObject.GetComponent<AIPath>().enabled = true;
         pathfindingActive = true;
-        this.gameObject.GetComponent<Boss_SpawnEnemy>().SpawnHord = true;
-        this.gameObject.GetComponent<Boss_SpawnEnemy>().StartSpawner();
+        this.gameObject.GetComponent<BossMechanics>().SpawnHord = true;
+        
     }
 }

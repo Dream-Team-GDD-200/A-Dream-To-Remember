@@ -18,7 +18,7 @@ public class RuneLogic : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player" && hasBeenPushed == false)
+        if (other.gameObject.tag == "Player" && hasBeenPushed == false && other is BoxCollider2D) // if colliding with the player, the button can be pushed, and the collider is a BoxCollider2D
         {
             RuneHandler.AddToList(this.orderThatItNeedsToBePushed);
             hasBeenPushed = true;

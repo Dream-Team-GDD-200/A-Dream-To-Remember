@@ -20428,11 +20428,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20498,6 +20493,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -20533,11 +20533,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20603,6 +20598,31 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0041656494
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.6083878
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.020861648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.49131578
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &2456868227239931081 stripped
@@ -20618,11 +20638,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20688,6 +20703,31 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.024989128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.60006464
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.045895293
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.54138327
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &4553867425509518427 stripped
@@ -20703,11 +20743,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_0 (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 6285880758910023747, guid: cdc4cb9b62e67024690909e8db06d22b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20773,6 +20808,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9999806
       objectReference: {fileID: 0}
+    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_0 (14)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc4cb9b62e67024690909e8db06d22b, type: 3}
 --- !u!4 &4782464686403904620 stripped
@@ -20788,11 +20828,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20858,6 +20893,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (20)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -20903,11 +20943,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20973,15 +21008,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.03953737
+      value: -0.03498184
       objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.67092526
+      value: 0.5160978
       objectReference: {fileID: 0}
     - target: {fileID: 3432774436224777803, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
@@ -21008,11 +21048,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21078,6 +21113,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &3651796461337491333 stripped
@@ -21093,11 +21133,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21163,6 +21198,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &1133399545820371565 stripped
@@ -21178,11 +21218,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21248,6 +21283,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0022871792
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.534905
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &1053646285585966558 stripped
@@ -21263,11 +21313,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubble Patch (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 8226254982351598805, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21323,6 +21368,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubble Patch (2)
+      objectReference: {fileID: 0}
     - target: {fileID: -2800045295267170909, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_Offset.x
@@ -21348,11 +21398,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21418,6 +21463,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -21463,11 +21513,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (26)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21533,6 +21578,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (26)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -21568,11 +21618,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21638,25 +21683,40 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.0031486303
+      value: -0.0051621646
       objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.66811
+      value: 0.55177414
       objectReference: {fileID: 0}
     - target: {fileID: 3432774436224777803, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.009450629
+      value: -0.01776141
       objectReference: {fileID: 0}
     - target: {fileID: 3432774436224777803, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.64291155
+      value: 0.5431973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436224777803, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.02920653
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436224777803, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.6582091
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
@@ -21673,11 +21733,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_0 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 6285880758910023747, guid: cdc4cb9b62e67024690909e8db06d22b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21738,6 +21793,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.0024
       objectReference: {fileID: 0}
+    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_0 (12)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc4cb9b62e67024690909e8db06d22b, type: 3}
 --- !u!4 &8166862253649470556 stripped
@@ -21753,11 +21813,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21823,6 +21878,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9999806
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &6451804220931353162 stripped
@@ -21838,11 +21898,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21908,6 +21963,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -21943,11 +22003,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22013,6 +22068,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (12)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -22058,11 +22118,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22128,6 +22183,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.02284272
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.48502728
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &71717724026616792 stripped
@@ -22143,11 +22213,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (30)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22213,6 +22278,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (30)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -22248,11 +22318,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22318,6 +22383,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &2083670315211220848 stripped
@@ -22333,11 +22403,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22403,6 +22468,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -22438,11 +22508,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22508,6 +22573,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (17)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -22543,11 +22613,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22613,6 +22678,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.116
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (12)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &4559361460890406337 stripped
@@ -22628,11 +22698,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22698,6 +22763,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -22743,11 +22813,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22813,15 +22878,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.019371241
+      value: -0.008086652
       objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.614371
+      value: 0.5594552
       objectReference: {fileID: 0}
     - target: {fileID: 3432774436224777803, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
@@ -22848,11 +22918,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 7902868141180582404, guid: 8906051b05fb68f4d8c4ee5baff23cff,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_1 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 6629834109857817154, guid: 8906051b05fb68f4d8c4ee5baff23cff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22908,6 +22973,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7902868141180582404, guid: 8906051b05fb68f4d8c4ee5baff23cff,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_1 (7)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8906051b05fb68f4d8c4ee5baff23cff, type: 3}
 --- !u!4 &1832994965060244881 stripped
@@ -22923,11 +22993,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_0 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 6285880758910023747, guid: cdc4cb9b62e67024690909e8db06d22b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22983,6 +23048,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_0 (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc4cb9b62e67024690909e8db06d22b, type: 3}
 --- !u!4 &1317886688027526705 stripped
@@ -22998,11 +23068,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_0 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 6285880758910023747, guid: cdc4cb9b62e67024690909e8db06d22b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23058,6 +23123,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_0 (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc4cb9b62e67024690909e8db06d22b, type: 3}
 --- !u!4 &1317886688278117805 stripped
@@ -23073,11 +23143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23133,6 +23198,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &4188338873273660286 stripped
@@ -23148,11 +23218,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23213,6 +23278,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0741
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &4188338873169695427 stripped
@@ -23228,11 +23298,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (28)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23298,6 +23363,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (28)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -23343,11 +23413,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_0 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 6285880758910023747, guid: cdc4cb9b62e67024690909e8db06d22b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23413,6 +23478,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9999806
       objectReference: {fileID: 0}
+    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_0 (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc4cb9b62e67024690909e8db06d22b, type: 3}
 --- !u!4 &1045863333666144361 stripped
@@ -23428,11 +23498,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23498,6 +23563,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436224777803, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -23533,11 +23603,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23603,6 +23668,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -23638,11 +23708,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23708,6 +23773,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -23763,11 +23833,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_0 (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 6285880758910023747, guid: cdc4cb9b62e67024690909e8db06d22b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23833,6 +23898,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9999806
       objectReference: {fileID: 0}
+    - target: {fileID: 2301180498665904737, guid: cdc4cb9b62e67024690909e8db06d22b,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_0 (15)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc4cb9b62e67024690909e8db06d22b, type: 3}
 --- !u!4 &3973291563782373900 stripped
@@ -23848,11 +23918,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23918,6 +23983,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.116
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (14)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &2189420807005439203 stripped
@@ -23933,11 +24003,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24003,6 +24068,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9999806
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (14)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &2211954849427714863 stripped
@@ -24018,11 +24088,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24088,6 +24153,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (15)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24123,11 +24193,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (27)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24193,6 +24258,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (27)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24228,11 +24298,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24298,6 +24363,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24353,11 +24423,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24423,6 +24488,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24458,11 +24528,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (22)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24528,6 +24593,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (22)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24583,11 +24653,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (24)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24653,6 +24718,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (24)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24688,11 +24758,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24758,6 +24823,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24803,11 +24873,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24873,6 +24938,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (14)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -24908,11 +24978,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24978,6 +25043,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (21)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -25033,11 +25103,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25103,6 +25168,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.116
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (13)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &1065687421925284639 stripped
@@ -25118,11 +25188,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25188,6 +25253,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.02034606
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.48551646
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &6487760214244405765 stripped
@@ -25203,11 +25283,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25268,6 +25343,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.0024
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (12)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &582963377530131206 stripped
@@ -25283,11 +25363,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25353,6 +25428,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (25)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &6290288662171391076 stripped
@@ -25368,11 +25448,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (29)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25438,6 +25513,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (29)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -25483,11 +25563,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubble Patch (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 8226254982351598805, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25543,6 +25618,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubble Patch (1)
+      objectReference: {fileID: 0}
     - target: {fileID: -2800045295267170909, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_Offset.x
@@ -25568,11 +25648,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25638,6 +25713,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (16)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -25673,11 +25753,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (31)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25743,6 +25818,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9991704
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (31)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -25778,11 +25858,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25848,6 +25923,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_Offset.x
@@ -25883,11 +25963,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
-        type: 3}
-      propertyPath: m_Name
-      value: Crystal_2 (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 9182283052492154984, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25953,6 +26028,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.9999806
       objectReference: {fileID: 0}
+    - target: {fileID: 303191536350985015, guid: 65ed8b9483b0a3843bd95cb2d84eae7a,
+        type: 3}
+      propertyPath: m_Name
+      value: Crystal_2 (15)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ed8b9483b0a3843bd95cb2d84eae7a, type: 3}
 --- !u!4 &146511788600880393 stripped
@@ -25968,11 +26048,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
-        type: 3}
-      propertyPath: m_Name
-      value: Hole (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3432774436595399720, guid: a6adcae8c0f77e14aab116dea3a7cadf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26038,6 +26113,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.99918973
       objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399721, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Name
+      value: Hole (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.03654982
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432774436595399722, guid: a6adcae8c0f77e14aab116dea3a7cadf,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.47588864
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6adcae8c0f77e14aab116dea3a7cadf, type: 3}
 --- !u!4 &5831833268145625664 stripped
@@ -26053,11 +26143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5004059707914908667}
     m_Modifications:
-    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubble Patch
-      objectReference: {fileID: 0}
     - target: {fileID: 8226254982351598805, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26112,6 +26197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubble Patch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ea815235fb4d3944a07635f56a1e9a1, type: 3}

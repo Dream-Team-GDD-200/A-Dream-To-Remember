@@ -403,7 +403,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -265825911
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: 6576734793853301749, guid: 687bf058a1722cc479f3351ba1ed0f2b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -442,6 +442,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6523320028355963586}
     m_Modifications:
+    - target: {fileID: 5392385549087008571, guid: 20a3573b92b16334d89ba893612cf59a,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyHealth
+      objectReference: {fileID: 0}
     - target: {fileID: 5392385549087008568, guid: 20a3573b92b16334d89ba893612cf59a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -551,11 +556,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5392385549087008571, guid: 20a3573b92b16334d89ba893612cf59a,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyHealth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20a3573b92b16334d89ba893612cf59a, type: 3}

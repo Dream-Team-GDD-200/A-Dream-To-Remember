@@ -95,7 +95,7 @@ public class LongClick : MonoBehaviour
 
     IEnumerator waitForAnim()
     {
-        yield return new WaitForSeconds(GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime);
+        yield return new WaitForSeconds(0.417f);
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("attacking", false);
     }

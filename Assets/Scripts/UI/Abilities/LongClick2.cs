@@ -71,16 +71,16 @@ public class LongClick2 : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().resetSpeed();
     }
 
-        //keeps track of how long the mouse is being held down for if the mouse is on the button
-        if (Input.GetMouseButtonDown(0) && CheckBounds() == true)
-        {
-            startTime = Time.time;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", true);
-        }
-        if (Input.GetMouseButtonUp(0) && CheckBounds() == true)
-        {
-            endTime = Time.time;
-        }
+    //keeps track of how long the mouse is being held down for if the mouse is on the button
+    if (Input.GetMouseButtonDown(0) && CheckBounds() == true)
+    {
+        startTime = Time.time;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", true);
+    }
+    if (Input.GetMouseButtonUp(0) && CheckBounds() == true)
+    {
+        endTime = Time.time;
+    }
 
     //fires a cell if the mouse is held down for less that 1/2 of a second
     if (endTime - startTime > 0.5f && Input.mousePosition.x >= 786 && CheckBounds() == true && cooldownTime == 0)
@@ -125,7 +125,7 @@ public class LongClick2 : MonoBehaviour
 
     IEnumerator waitForAnim()
     {
-        yield return new WaitForSeconds(GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime);
+        yield return new WaitForSeconds(0.75f);
 
         GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", false);
     }

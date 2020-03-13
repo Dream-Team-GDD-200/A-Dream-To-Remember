@@ -40,7 +40,7 @@ public class DoctorDeath : MonoBehaviour
 
         anim.runtimeAnimatorController = null;
 
-        aStar.SetActive(false);
+        aStar.SetActive(false); //jere turn off all pathing
 
         mainCamera.orthographicSize = 1.3f;
 
@@ -54,7 +54,7 @@ public class DoctorDeath : MonoBehaviour
             //TODO MALE DOCTOR DYING
 
             //Last thing, go to game over
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         
     }
@@ -81,6 +81,6 @@ public class DoctorDeath : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

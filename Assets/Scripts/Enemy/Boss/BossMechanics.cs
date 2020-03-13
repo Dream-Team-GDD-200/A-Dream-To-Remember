@@ -20,6 +20,9 @@ public class BossMechanics: MonoBehaviour
     public float timeBetweenSpawns;
     public List<GameObject> spawnedEnemies;
     public float MaxEnemies;
+
+    private int numOfEnemies = 0;
+
     //Box spawner Variables
     public int TimeBetweenBossMove;
     public int BossMaxSpeed;
@@ -58,10 +61,16 @@ public class BossMechanics: MonoBehaviour
     //will spawn enemies only if you have the feature turned on
     public void SpawnEnemy()
     {
-        if (spawnedEnemies.Count < 2f);
+        
+        if ((int)numOfEnemies < (int)MaxEnemies);
         {
             GameObject enemySpawned = Instantiate(enemy, transform.position, transform.rotation);
+            //put enemy in local and master lists
             spawnedEnemies.Add(enemySpawned);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>().push(enemySpawned);
+            // put the enemy  unter the parent in heirarchy
+            enemySpawned.transform.parent = GameObject.FindGameObjectWithTag("MasterEnemies").transform;
+            numOfEnemies++;
         }
     }
     // Starts both spawners
@@ -97,7 +106,6 @@ public class BossMechanics: MonoBehaviour
             timeBoxSpawns--;
             if (timeBoxSpawns == 0)
             {
-                Debug.Log("Box Being Spawned");
                 BoxSpawner.SpawnBox();
                 this.gameObject.GetComponent<AudioSource>().Play();
             }
@@ -112,6 +120,7 @@ public class BossMechanics: MonoBehaviour
             if(enemy == null)
             {
                 spawnedEnemies.Remove(enemy);
+                numOfEnemies--;
             }
         });
     }

@@ -19,15 +19,20 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private Animator anim;
 
-    private bool isFemale = true;
+    private int isFemale = 1;
     //A* object
     public GameObject aStarPath;
+    private void Start()
+    {
+        Debug.Log(isFemale);
+    }
     void OnEnable()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
-        if (isFemale)
+        isFemale = PlayerPrefs.GetInt("isFemale");
+        Debug.Log("wehere i want to be" + isFemale);
+        if (isFemale == 1f)
         {
             anim.runtimeAnimatorController = femaleAnim;
         }
@@ -132,11 +137,6 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log(movement);
     }
 
-    public void updateIsFemale(bool val)
-    {
-        isFemale = val;
-    }
-
     public void setSpeed(float speed)
     {
         baseSpeed = speed;
@@ -147,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
         baseSpeed = 3f;
     }
 
-    public bool getIsFemale()
+    public int getIsFemale()
     {
         return isFemale;
     }

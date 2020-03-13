@@ -7,17 +7,23 @@ public class Boss_EnablePathing : MonoBehaviour
 {
     public bool pathfindingActive = true;
     public AIPath aipath;
-    public GameObject Player;
+    public GameObject Boss;
     public GameObject Room;
     bool inRoom = false;
+    public int BossDelay;
+    private int bossDelayReset;
+    private void Start()
+    {
+        bossDelayReset = BossDelay;
+    }
     // Update is called once per frame
-    void Update()
+    public void spawnBoss()
     {
         //Checks to see if the player is in the room with the enemy (will make this more industrial later)
-        if (Player.transform.position.x > (Room.transform.position.x - (Room.transform.lossyScale.x / 4)) && Player.transform.position.x < (Room.transform.position.x + (Room.transform.lossyScale.x / 4)) && Player.transform.position.y > (Room.transform.position.y - (Room.transform.lossyScale.y / 4)) && Player.transform.position.y < (Room.transform.position.y + (Room.transform.lossyScale.y / 4)) && !inRoom)
+        if (!inRoom)
         {
-            enablePathfinding();
-            this.gameObject.GetComponent<BossMechanics>().StartSpawner();
+            Boss.SetActive(true);
+            StartCoroutine(initialize());
             inRoom = true;
         }
     }
@@ -30,8 +36,22 @@ public class Boss_EnablePathing : MonoBehaviour
 
     public void enablePathfinding()
     {
-        this.gameObject.GetComponent<AIPath>().enabled = true;
-        this.gameObject.GetComponent<BossMechanics>().SpawnHord = true;
-        
+        Boss.gameObject.GetComponent<AIPath>().enabled = true;
+        Boss.gameObject.GetComponent<BossMechanics>().SpawnHord = true;
+    }
+    IEnumerator initialize()
+    {
+        //timeBetweenSpawns = countdownValue;
+        while (BossDelay > 0)
+        {
+            yield return new WaitForSeconds(1.0f);
+            BossDelay--;
+            if (BossDelay == 0)
+            {
+                enablePathfinding();
+                Boss.gameObject.GetComponent<BossMechanics>().StartSpawner();
+            }
+        }
+        BossDelay = bossDelayReset;
     }
 }

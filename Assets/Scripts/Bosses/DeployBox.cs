@@ -18,6 +18,8 @@ public class DeployBox : MonoBehaviour
             rand2 = Random.Range(0, spawnLocation.Length);
             GameObject crate = Instantiate(Box[rand], spawnLocation[rand2].position, Quaternion.identity);
             madeBoxes.Add(crate);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>().push(crate);
+            crate.transform.parent = GameObject.FindGameObjectWithTag("MasterBoxes").transform;
         }
     }
     private void Update()

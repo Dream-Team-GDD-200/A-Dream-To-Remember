@@ -17,12 +17,20 @@ public class DoctorSelect : MonoBehaviour
     {
         UI.SetActive(false);
         doctor.SetActive(false);
+        if(PlayerPrefs.GetInt("isFemale") == 1)
+        {
+            selectFemale();
+        }
+        else
+        {
+            selectMale();
+        }
     }
 
     public void selectMale()
     {
         UI.SetActive(true);
-        doctor.GetComponent<PlayerMovement>().updateIsFemale(false);
+        //doctor.GetComponent<PlayerMovement>().updateIsFemale(false);
         doctor.SetActive(true);
         this.gameObject.SetActive(false);
         doctor.GetComponent<CapsuleCollider2D>().offset = MaleOffset_Box;
@@ -35,7 +43,7 @@ public class DoctorSelect : MonoBehaviour
     public void selectFemale()
     {
         UI.SetActive(true);
-        doctor.GetComponent<PlayerMovement>().updateIsFemale(true);
+        //doctor.GetComponent<PlayerMovement>().updateIsFemale(true);
         doctor.SetActive(true);
         this.gameObject.SetActive(false);
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using Pathfinding;
 public class DoctorDeath : MonoBehaviour
 {
 
@@ -36,15 +36,19 @@ public class DoctorDeath : MonoBehaviour
 
     public void onDeath()
     {
-        bool isFemale = this.gameObject.GetComponent<PlayerMovement>().getIsFemale();
+        // pull in the bool for if the player is male or female
+        int isFemale = PlayerPrefs.GetInt("isFemale");
 
         anim.runtimeAnimatorController = null;
+        //Disable AIPath for all enemies
 
-        aStar.SetActive(false); //jere turn off all pathing
-
+        //aStar.SetActive(false);
+        GetComponent<AllThings>().disableAll();
+        GameObject.FindGameObjectWithTag("Boss").GetComponent<AIPath>().enabled = false;
+        //zoom into player
         mainCamera.orthographicSize = 1.3f;
 
-        if (isFemale)
+        if (isFemale == 1)
         {
             StartCoroutine(femaleDeath());
         }
@@ -54,7 +58,8 @@ public class DoctorDeath : MonoBehaviour
             //TODO MALE DOCTOR DYING
 
             //Last thing, go to game over
-            SceneManager.LoadScene(2);
+            GetComponent<AllThings>().destroyAll(); // destroys all enemy and box objects that were spawned
+            SceneManager.LoadScene(1);
         }
         
     }
@@ -80,7 +85,7 @@ public class DoctorDeath : MonoBehaviour
         spr.sprite = FemaleDeathFrame5;
 
         yield return new WaitForSeconds(1f);
-
-        SceneManager.LoadScene(2);
+        GetComponent<AllThings>().destroyAll();// destroys all enemy and box objects that were spawned
+        SceneManager.LoadScene(1);
     }
 }

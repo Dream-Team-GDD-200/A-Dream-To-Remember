@@ -132,12 +132,12 @@ GameObject:
   - component: {fileID: 4627514254103092859}
   - component: {fileID: 4627514254103092860}
   - component: {fileID: 4627514254103092861}
-  - component: {fileID: 4627514254103092862}
   - component: {fileID: 4627514254103092863}
   - component: {fileID: 4627514254103092736}
   - component: {fileID: 4627514254103092737}
   - component: {fileID: 4627514254103092738}
   - component: {fileID: 4627514254103092739}
+  - component: {fileID: 5114306093552179259}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -327,22 +327,6 @@ MonoBehaviour:
   BossDamage: 34
   BoxMaxCount: 3
   timeBoxSpawns: 10
---- !u!114 &4627514254103092862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4627514254103092740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49560a98e8434dd4e9f5ebf510f798a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathfindingActive: 1
-  aipath: {fileID: 4627514254103092858}
-  Player: {fileID: 0}
-  Room: {fileID: 0}
 --- !u!114 &4627514254103092863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,3 +484,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5114306093552179259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627514254103092740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59901c207cd97e84dab4aef56aabf00a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

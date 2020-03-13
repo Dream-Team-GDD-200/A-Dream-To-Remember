@@ -47,7 +47,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //Updates Pathfinding grid
         aStarPath.gameObject.GetComponent<AstarPath>().Scan();
 

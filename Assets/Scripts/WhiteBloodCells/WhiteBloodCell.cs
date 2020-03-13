@@ -86,4 +86,9 @@ public class WhiteBloodCell : MonoBehaviour
     {
       cellHealth = cellHealth - i;
     }
+
+    public Vector2 getPlayerPosition()
+    {
+      return new Vector2(fireLocation.position.x, fireLocation.position.y);
+    }
 }

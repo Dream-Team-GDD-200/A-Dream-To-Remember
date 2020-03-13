@@ -18,6 +18,7 @@ TagManager:
   - Room
   - MasterEnemies
   - MasterBoxes
+  - Ally
   layers:
   - Default
   - TransparentFX
@@ -54,6 +55,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ally
+    uniqueID: 2925881445
     locked: 0
   - name: Game
     uniqueID: 4029141385

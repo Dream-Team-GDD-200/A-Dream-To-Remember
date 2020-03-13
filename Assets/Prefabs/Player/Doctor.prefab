@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 3684063505883712860}
   - component: {fileID: 3684063505883712852}
   - component: {fileID: 3684063505883712853}
+  - component: {fileID: 627854732970042097}
   - component: {fileID: 4014637458857712138}
   - component: {fileID: -4087781375471024918}
   - component: {fileID: 8650046196237828908}
@@ -200,7 +201,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 480781361
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 8037560420614067750, guid: 2f9a28f0b007f394cab0fc383cd191f2,
     type: 3}
@@ -267,7 +268,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.025630493}
+  m_Offset: {x: 0, y: 0.016}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -278,7 +279,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.23873898}
+  m_Size: {x: 0.095, y: 0.255}
   m_EdgeRadius: 0
 --- !u!114 &3684063505883712863
 MonoBehaviour:
@@ -348,7 +349,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000022308433, y: -0.1286333}
+  m_Offset: {x: 0.00000022308433, y: -0.129}
   m_Size: {x: 0.08540367, y: 0.03273476}
   m_Direction: 1
 --- !u!114 &3684063505883712852
@@ -363,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0dc2afeda553d48802d564f3dd10f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireLocation: {fileID: 3684063505883712931}
+  fireLocation: {fileID: 3684063504861559482}
   baseShockField: {fileID: 6443718818334673780, guid: fd6b6015db1bf3f4fa6ceebe6aa30068,
     type: 3}
   shockField: {fileID: 6443718818334673780, guid: fd6b6015db1bf3f4fa6ceebe6aa30068,
@@ -387,6 +388,22 @@ MonoBehaviour:
   baseEffectLarge: {fileID: 8765428025573545858, guid: 2ba7c3a3a2090024697c5b5fc9eab347,
     type: 3}
   effectLarge: {fileID: 0}
+--- !u!114 &627854732970042097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3684063505883712930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3a63c8766f46bf4f856e60831bdf213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireLocation: {fileID: 3684063504861559482}
+  baseNurse: {fileID: 3510592589224867383, guid: 1aa623cc3d8444c4e85b706269661c4a,
+    type: 3}
+  nurse: {fileID: 3510592589224867383, guid: 1aa623cc3d8444c4e85b706269661c4a, type: 3}
 --- !u!82 &4014637458857712138
 AudioSource:
   m_ObjectHideFlags: 0
@@ -531,3 +548,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d56f900220b6049a59e59a02152c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Enemies: []
+  Boxes: []

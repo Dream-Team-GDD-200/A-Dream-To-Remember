@@ -37,7 +37,7 @@ public class DoctorDeath : MonoBehaviour
     public void onDeath()
     {
         // pull in the bool for if the player is male or female
-        bool isFemale = this.gameObject.GetComponent<PlayerMovement>().getIsFemale();
+        int isFemale = PlayerPrefs.GetInt("isFemale");
 
         anim.runtimeAnimatorController = null;
         //Disable AIPath for all enemies
@@ -48,7 +48,7 @@ public class DoctorDeath : MonoBehaviour
         //zoom into player
         mainCamera.orthographicSize = 1.3f;
 
-        if (isFemale)
+        if (isFemale == 1)
         {
             StartCoroutine(femaleDeath());
         }

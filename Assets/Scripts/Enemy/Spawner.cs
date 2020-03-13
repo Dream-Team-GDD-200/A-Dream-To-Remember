@@ -31,7 +31,11 @@ public class Spawner : MonoBehaviour
                     Vector2 position = new Vector2(transform.position.x + 1, transform.position.y);
                     // spawn enemy
                     GameObject spEnemy = Instantiate(Enemy[rand], position, Quaternion.identity);
+                    // add the object to local and master lists
                     SpawnedEnemies.Add(spEnemy);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>().push(spEnemy);
+                    // put the new instantiated object inside the heirarchy correctly
+                    spEnemy.transform.parent = GameObject.FindGameObjectWithTag("MasterEnemies").transform;
                 }
                 else if (i == 1)//left of spawner
                 {
@@ -40,7 +44,11 @@ public class Spawner : MonoBehaviour
                     // set the position to the left of spawner
                     Vector2 position = new Vector2(transform.position.x - 1, transform.position.y);
                     GameObject spEnemy = Instantiate(Enemy[rand], position, Quaternion.identity);
+                    // add the object to local and master lists
                     SpawnedEnemies.Add(spEnemy);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>().push(spEnemy);
+                    // put the new instantiated object inside the heirarchy correctly
+                    spEnemy.transform.parent = GameObject.FindGameObjectWithTag("MasterEnemies").transform;
                 }
                 else if (i == 2)//above spawner
                 {
@@ -50,7 +58,11 @@ public class Spawner : MonoBehaviour
                     Vector2 position = new Vector2(transform.position.x, transform.position.y + 1);
                     // spawn enemy
                     GameObject spEnemy = Instantiate(Enemy[rand], position, Quaternion.identity);
+                    // add the object to local and master lists
                     SpawnedEnemies.Add(spEnemy);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>().push(spEnemy);
+                    // put the new instantiated object inside the heirarchy correctly
+                    spEnemy.transform.parent = GameObject.FindGameObjectWithTag("MasterEnemies").transform;
                 }
                 else if (i == 3)//below spawner
                 {
@@ -60,7 +72,11 @@ public class Spawner : MonoBehaviour
                     Vector2 position = new Vector2(transform.position.x, transform.position.y - 1);
                     // spawn enemy
                     GameObject spEnemy = Instantiate(Enemy[rand], position, Quaternion.identity);
+                    // add the object to local and master lists
                     SpawnedEnemies.Add(spEnemy);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>().push(spEnemy);
+                    // put the new instantiated object inside the heirarchy correctly
+                    spEnemy.transform.parent = GameObject.FindGameObjectWithTag("MasterEnemies").transform;
                 }
             }
             active = true;

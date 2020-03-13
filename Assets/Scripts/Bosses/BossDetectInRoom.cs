@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-using System;
-public class DetectInRoom : MonoBehaviour
+
+public class BossDetectInRoom : MonoBehaviour
 {
     public GameObject Player; // holds player object
     public DoorLogic doors; // holds the script for door logic
@@ -19,13 +19,6 @@ public class DetectInRoom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SpawnedOnce && spawner.GetComponent<Spawner>().allEnemiesDead && !roomDone)
-        {
-            // open path after all enemies are dead
-            doors.openPath();
-            // set room to be done
-            roomDone = true;
-        }
     }
     public void activate()
     {
@@ -34,17 +27,11 @@ public class DetectInRoom : MonoBehaviour
         {
             //block player path
             doors.blockPath();
-            // Activate spawner
-            spawner.GetComponent<Spawner>().spawnEnemies();
             // set door block and room activation
             doorBlock = true;
             SpawnedOnce = true;
             //Spawn the boss
-            try
-            {
-                GetComponent<Boss_EnablePathing>().spawnBoss();
-            }
-            catch (Exception e) { print(e.Message); }
+            GetComponent<Boss_EnablePathing>().spawnBoss();
         }
     }
     //  && Player.transform.position.x > (transform.position.x - (transform.lossyScale.x / 4)) && Player.transform.position.x < (transform.position.x + (transform.lossyScale.x / 4)) && Player.transform.position.y > (transform.position.y - (transform.lossyScale.y / 4)) && Player.transform.position.y < (transform.position.y + (transform.lossyScale.y / 4))

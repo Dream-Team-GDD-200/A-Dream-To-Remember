@@ -35,7 +35,7 @@ public class HoleCollision : MonoBehaviour
                 puzzleBox.gameObject.tag = "Untagged";
                 puzzleBox.gameObject.GetComponent<SpriteRenderer>().sortingLayerName = "Game";
                 Destroy(puzzleBox);
-                Destroy(this.gameObject);
+                Destroy(gameObject);
             }
         }
     }

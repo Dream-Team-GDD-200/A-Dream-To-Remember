@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Pathfinding;
+using System;
 public class DoctorDeath : MonoBehaviour
 {
 
@@ -44,7 +45,11 @@ public class DoctorDeath : MonoBehaviour
 
         //aStar.SetActive(false);
         GetComponent<AllThings>().disableAll();
-        GameObject.FindGameObjectWithTag("Boss").GetComponent<AIPath>().enabled = false;
+        try
+        {
+            GameObject.FindGameObjectWithTag("Boss").GetComponent<AIPath>().enabled = false;
+        }catch(Exception e) { }
+        
         //zoom into player
         mainCamera.orthographicSize = 1.3f;
 
@@ -59,7 +64,7 @@ public class DoctorDeath : MonoBehaviour
 
             //Last thing, go to game over
             GetComponent<AllThings>().destroyAll(); // destroys all enemy and box objects that were spawned
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         
     }
@@ -86,6 +91,6 @@ public class DoctorDeath : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         GetComponent<AllThings>().destroyAll();// destroys all enemy and box objects that were spawned
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

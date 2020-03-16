@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector2 movement = new Vector2(0, -1);
 
-    static float baseSpeed = 3f;
+    static float baseSpeed = 2.5f;
     float runSpeed = baseSpeed;
     float deadZone = .15f;
 
@@ -22,6 +22,11 @@ public class PlayerMovement : MonoBehaviour
     private int isFemale = 1;
     //A* object
     public GameObject aStarPath;
+
+    private Vector2 MaleOffset = new Vector2(0.01450627f, -.13f);
+    private Vector2 MaleScale = new Vector2(0.1193589f, 0.03369492f);
+    private Vector2 MaleOffset_Box = new Vector2(0, .020571f);
+    private Vector2 MaleScale_Box = new Vector2(.176781f, .228620f);
     private void Start()
     {
         Debug.Log(isFemale);
@@ -39,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.runtimeAnimatorController = maleAnim;
+            GetComponent<CapsuleCollider2D>().offset = MaleOffset_Box;
+            GetComponent<CapsuleCollider2D>().size = MaleScale_Box;
+            GetComponent<BoxCollider2D>().offset = MaleOffset;
+            GetComponent<BoxCollider2D>().size = MaleScale;
         }
 
         this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
@@ -126,6 +135,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Move our character
         Vector2 movementReal = new Vector2(joystick.Horizontal, joystick.Vertical);
+        movementReal.Normalize();
         if (movementReal.x != 0f && movementReal.y != 0f)
         {
            movement = movementReal;

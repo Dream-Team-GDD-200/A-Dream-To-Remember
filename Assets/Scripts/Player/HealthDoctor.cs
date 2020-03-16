@@ -79,9 +79,9 @@ public class HealthDoctor : MonoBehaviour
     }
     private void endGame()
     {
-        if (EditorApplication.isPlaying)
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
+        //if (EditorApplication.isPlaying)
+        //{
+        //    UnityEditor.EditorApplication.isPlaying = false;
+        //}
     }
 }

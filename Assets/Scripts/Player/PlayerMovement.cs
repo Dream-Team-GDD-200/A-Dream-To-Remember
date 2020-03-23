@@ -69,13 +69,24 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
-                if(Input.GetTouch(i).position.y > (button.transform.position.y + (button.transform.lossyScale.y / 4)) && Input.GetTouch(i).position.y < (bar.transform.position.y - (bar.transform.lossyScale.y / 4)))
+                if (Input.GetTouch(i).position.y > (button.transform.position.y + (button.transform.lossyScale.y / 4)) && Input.GetTouch(i).position.y < (bar.transform.position.y - (bar.transform.lossyScale.y / 4)))
                 {
-                    Vector2 directional = Input.GetTouch(i).position;
-                    float angle = Mathf.Atan(directional.y / directional.x);
-                    directional.x = Mathf.Cos(angle);
-                    directional.y = Mathf.Sin(angle);
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot(directional);
+                    Vector2 directional = new Vector2(0, 0);
+                    if (Input.GetTouch(i).position.x < Screen.width - (Screen.width/8))
+                    {
+                        directional.x = -1;
+                    }else if(Input.GetTouch(i).position.x > Screen.width + (Screen.width / 8))
+                    {
+                        directional.x = 1;
+                    }
+                    if (Input.GetTouch(i).position.y < Screen.height - (Screen.height/8))
+                    {
+                        directional.y = -1;
+                    }
+                    else if (Input.GetTouch(i).position.x > Screen.height + (Screen.height / 8))
+                    {
+                        directional.y = 1;
+                    }
                 }
             }
         }
@@ -158,7 +169,7 @@ public class PlayerMovement : MonoBehaviour
         movementReal.Normalize();
         if (movementReal.x != 0f && movementReal.y != 0f)
         {
-           movement = movementReal;
+            movement = movementReal;
         }
 
         transform.Translate(movementReal * runSpeed * Time.deltaTime);

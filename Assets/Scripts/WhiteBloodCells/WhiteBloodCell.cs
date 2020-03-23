@@ -24,10 +24,10 @@ public class WhiteBloodCell : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
     }
   // Update is called once per frame
-  public void Shoot(Vector2 directional)
+  public void Shoot(Vector3 directional)
     {
         //make the projectileForce go in the direction of the click
-        projectileForce = directional;
+        projectileForce = directional - GameObject.FindGameObjectWithTag("Player").transform.position;
         projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
         Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
         projectileForce.Normalize();

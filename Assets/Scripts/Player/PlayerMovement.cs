@@ -71,7 +71,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 if(Input.GetTouch(i).position.y > (button.transform.position.y + (button.transform.lossyScale.y / 4)) && Input.GetTouch(i).position.y < (bar.transform.position.y - (bar.transform.lossyScale.y / 4)))
                 {
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot(Input.GetTouch(i).position);
+                    Vector2 directional = Input.GetTouch(i).position;
+                    float angle = Mathf.Atan(directional.y / directional.x);
+                    directional.x = Mathf.Cos(angle);
+                    directional.y = Mathf.Sin(angle);
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot(directional);
                 }
             }
         }

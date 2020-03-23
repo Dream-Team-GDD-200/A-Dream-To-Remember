@@ -64,10 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AllThings.cs" />
-    <Compile Include="Assets\KILLBOSS.cs" />
     <Compile Include="Assets\Scripts\Bosses\BossDetectInRoom.cs" />
     <Compile Include="Assets\Scripts\Bosses\BossKnockBack.cs" />
     <Compile Include="Assets\Scripts\Bosses\DeployBox.cs" />
+    <Compile Include="Assets\Scripts\Bosses\KILLBOSS.cs" />
     <Compile Include="Assets\Scripts\Bosses\WolfMovement.cs" />
     <Compile Include="Assets\Scripts\Bosses\WolfSpeed.cs" />
     <Compile Include="Assets\Scripts\Enemy\Boss\Boss_EnablePathing.cs" />
@@ -86,6 +86,8 @@
     <Compile Include="Assets\Scripts\Map Logics\DoorLogic.cs" />
     <Compile Include="Assets\Scripts\Map Logics\DoorSpriteSwitcher.cs" />
     <Compile Include="Assets\Scripts\Map Logics\HoleCollision.cs" />
+    <Compile Include="Assets\Scripts\Map Logics\PuzzleResetMenuHandler.cs" />
+    <Compile Include="Assets\Scripts\Map Logics\PuzzleResetScript.cs" />
     <Compile Include="Assets\Scripts\Map Logics\RuneHandler.cs" />
     <Compile Include="Assets\Scripts\Map Logics\RuneLogic.cs" />
     <Compile Include="Assets\Scripts\MemoryFrag\MemoryFragmentEnemy.cs" />

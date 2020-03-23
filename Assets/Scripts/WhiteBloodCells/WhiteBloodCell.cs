@@ -27,7 +27,7 @@ public class WhiteBloodCell : MonoBehaviour
   public void Shoot(Vector3 directional)
     {
         //make the projectileForce go in the direction of the click
-        projectileForce = directional - GameObject.FindGameObjectWithTag("Player").transform.position;
+        projectileForce = directional;
         projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
         Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
         projectileForce.Normalize();

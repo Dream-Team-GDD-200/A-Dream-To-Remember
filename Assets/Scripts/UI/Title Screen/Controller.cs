@@ -8,7 +8,7 @@ public class Controller : MonoBehaviour
     public GameObject TitleScreen;
     public void startGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
     public void playerSelect()
     {

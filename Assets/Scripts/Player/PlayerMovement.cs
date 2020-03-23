@@ -71,23 +71,28 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Input.GetTouch(i).position.y > (button.transform.position.y + (button.transform.lossyScale.y / 4)) && Input.GetTouch(i).position.y < (bar.transform.position.y - (bar.transform.lossyScale.y / 4)))
                 {
-                    Vector2 directional = new Vector2(0, 0);
-                    if (Input.GetTouch(i).position.x < Screen.width/2 - 50)
+                    GameObject joystick = GameObject.FindGameObjectWithTag("JoyStick");
+                    if (!(Input.GetTouch(i).position.x > joystick.transform.position.x - joystick.transform.lossyScale.x && Input.GetTouch(i).position.x < joystick.transform.position.x + joystick.transform.lossyScale.x && Input.GetTouch(i).position.y > joystick.transform.position.y - joystick.transform.lossyScale.y && Input.GetTouch(i).position.y < joystick.transform.position.y + joystick.transform.lossyScale.y))
                     {
-                        directional.x = -1;
-                    }else if(Input.GetTouch(i).position.x > Screen.width/2 + 50)
-                    {
-                        directional.x = 1;
+                        Vector2 directional = new Vector2(0, 0);
+                        if (Input.GetTouch(i).position.x < Screen.width / 2 - 50)
+                        {
+                            directional.x = -1;
+                        }
+                        else if (Input.GetTouch(i).position.x > Screen.width / 2 + 50)
+                        {
+                            directional.x = 1;
+                        }
+                        if (Input.GetTouch(i).position.y < Screen.height / 2 - 50)
+                        {
+                            directional.y = -1;
+                        }
+                        else if (Input.GetTouch(i).position.y > Screen.height / 2 + 50)
+                        {
+                            directional.y = 1;
+                        }
+                        GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot(directional);
                     }
-                    if (Input.GetTouch(i).position.y < Screen.height/2 - 50)
-                    {
-                        directional.y = -1;
-                    }
-                    else if (Input.GetTouch(i).position.y > Screen.height/2 + 50)
-                    {
-                        directional.y = 1;
-                    }
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot(directional);
                 }
             }
         }

@@ -23,16 +23,11 @@ public class WhiteBloodCell : MonoBehaviour
 
         playerMovement = GetComponent<PlayerMovement>();
     }
-
-    // Start is called before the first frame update
-    void Update()
-    {
-      projectileForce = playerMovement.movement;
-    }
-
   // Update is called once per frame
-  public void Shoot()
+  public void Shoot(Vector2 directional)
     {
+        //make the projectileForce go in the direction of the click
+        projectileForce = directional;
         projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
         Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
         projectileForce.Normalize();

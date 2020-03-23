@@ -111,7 +111,7 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 681, y: 494}
+  m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
   controlID: 89
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 987
-  m_MinSize: {x: 404, y: 494}
+  m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 40
+  controlID: 90
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1531
     height: 690
-  m_MinSize: {x: 404, y: 222}
-  m_MaxSize: {x: 8004, y: 4022}
+  m_MinSize: {x: 406, y: 222}
+  m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 17
+  controlID: 91
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,16 +210,16 @@ MonoBehaviour:
     y: 0
     width: 1152
     height: 690
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 204, y: 222}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
   - {fileID: 12}
   - {fileID: 16}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,20 +383,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 48acffff4cacffff8eacffffc6aeffff5cafffffaaf7ffffc0f7ffffc4f7ffffd0f7ffffd6f7ffff06f8ffff3efaffff54fbffff76fbffff
+      m_SelectedIDs: 2af9ffff
+      m_LastClickedID: -1750
+      m_ExpandedIDs: fcf8ffff2af9ffff62fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Nurse(Clone)
-        m_OriginalName: Nurse(Clone)
+        m_Name: HealthBar (1)
+        m_OriginalName: HealthBar (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -44518
+        m_UserData: -1790
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2001.2552, y: 1999.6919, z: 6522.211}
+    m_Target: {x: 0.39, y: -0.68, z: 0}
     speed: 2
-    m_Value: {x: 2001.2552, y: 1999.6919, z: 6522.211}
+    m_Value: {x: 0.39, y: -0.68, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -480,9 +480,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.721551
+    m_Target: 1.5538937
     speed: 2
-    m_Value: 9.721551
+    m_Value: 1.5538937
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -671,20 +671,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Skill Effects
+    - Assets/Scripts/Player
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Skill Effects
+  - Assets/Scripts/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Student Data\Documents\GitHub\A-Dream-To-Remember
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 26.000244}
-    m_SelectedIDs: d0360000
-    m_LastClickedID: 14032
-    m_ExpandedIDs: 00000000402f0000ae2f000042300000f2300000163500000037000004380000423800001a3c00001c3c00001e3c000000ca9a3b
+    scrollPos: {x: 0, y: 186}
+    m_SelectedIDs: 04300000
+    m_LastClickedID: 12292
+    m_ExpandedIDs: 00000000662f0000d42f000068300000183100003c350000263700002a380000683800005a8200005c8200005e82000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -712,7 +712,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000402f0000ae2f0000f2300000163500000037000004380000423800001a3c00001c3c00001e3c0000
+    m_ExpandedIDs: 00000000662f0000d42f0000183100003c350000263700002a380000683800005a8200005c8200005e820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -21,7 +21,12 @@ public class PlayerMovement : MonoBehaviour
 
     private int isFemale = 1;
     //A* object
+
+
     public GameObject aStarPath;
+    public GameObject button;
+    public GameObject bar;
+
 
     private Vector2 MaleOffset = new Vector2(0.01450627f, -.13f);
     private Vector2 MaleScale = new Vector2(0.1193589f, 0.03369492f);
@@ -57,8 +62,19 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Updates Pathfinding grid
-       // aStarPath.gameObject.GetComponent<AstarPath>().Scan();
+        // aStarPath.gameObject.GetComponent<AstarPath>().Scan();
 
+        //checking for touches
+        for (int i = 0; i < Input.touchCount; ++i)
+        {
+            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                if(Input.GetTouch(i).position.y > (button.transform.position.y + (button.transform.lossyScale.y / 4)) && Input.GetTouch(i).position.y < (bar.transform.position.y - (bar.transform.lossyScale.y / 4)))
+                {
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot(Input.GetTouch(i).position);
+                }
+            }
+        }
         //Movement
         if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone)
         {

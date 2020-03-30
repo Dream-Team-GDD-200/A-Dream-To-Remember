@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StunEffect : MonoBehaviour
 {
-
   private void OnTriggerEnter2D(Collider2D other)
   {
     // if the enemy contacts the stun field
@@ -12,7 +11,7 @@ public class StunEffect : MonoBehaviour
     {
       // disable the pathfinding script and restores it after 2 seconds
       this.GetComponent<EnablePathfinding>().disablePathfinding();
-      Invoke("restorePathfinding", 2f);
+      Invoke("restorePathfinding", GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getStunDuration());
     }
   }
 

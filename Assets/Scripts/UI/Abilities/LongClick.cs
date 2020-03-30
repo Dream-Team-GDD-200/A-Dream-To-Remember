@@ -16,8 +16,6 @@ public class LongClick : MonoBehaviour
     ////the radous of the button
     //private double buttonRad = 60;
 
-
-
     public AudioClip speedBoost;
 
 

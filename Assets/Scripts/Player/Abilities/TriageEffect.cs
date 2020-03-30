@@ -52,8 +52,6 @@ public class TriageEffect : MonoBehaviour
   public void Shoot()
   {
     projectile = Instantiate(baseProjectile, playerLocation, fireLocation.rotation);
-    Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
-    projectileForce.Normalize();
     //body.AddForce(projectileForce * projectileSpeed);
     Destroy(projectile, 0.1f);
     GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(2);

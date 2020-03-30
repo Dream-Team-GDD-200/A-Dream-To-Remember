@@ -110,16 +110,23 @@ public class LongClick : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().resetSpeed();
         GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", false);
     }
+    IEnumerator waitForAnimShock()
+    {
+        yield return new WaitForSeconds(0.833f);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("shocking", false);
+    }
     //this is function is to deploy the cell when the button is clicked
     public void deployCell()
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("attacking", true);
         GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Deploy();
         StartCoroutine(waitForAnimDeploy());
     }
     public void healPlayer()
     {
         Debug.Log("Small Heal");
-       
+
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", true);
         float healVal = 15;
         GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
         float speed = 5f;
@@ -131,7 +138,9 @@ public class LongClick : MonoBehaviour
     }
     public void shockEnemy()
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("shocking", true);
         GameObject.FindGameObjectWithTag("Player").GetComponent<StunField>().Shock();
+        StartCoroutine(waitForAnimShock());
     }
     public void spawnNurse()
     {

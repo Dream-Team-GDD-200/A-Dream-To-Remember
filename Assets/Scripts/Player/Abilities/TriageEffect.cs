@@ -25,35 +25,38 @@ public class TriageEffect : MonoBehaviour
   void Update()
   {
     playerLocation = GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().getPlayerPosition();
-    float totalForce = 5;
-    float xDistance = playerLocation.x - fireLocation.position.x;
-    float yDistance = playerLocation.y - fireLocation.position.y;
-    float angle = Mathf.Atan(yDistance / xDistance);
-    if(xDistance < 0)
+    //float totalForce = 5;
+    //float xDistance = playerLocation.x - fireLocation.position.x;
+    //float yDistance = playerLocation.y - fireLocation.position.y;
+    //float angle = Mathf.Atan(yDistance / xDistance);
+    //if(xDistance < 0)
+    //{
+    //  projectileForce = (new Vector2(Mathf.Cos(angle) * totalForce, Mathf.Sin(angle) * totalForce)) * -1;
+    //}
+    //else
+    //{
+    //  projectileForce = new Vector2(Mathf.Cos(angle) * totalForce, Mathf.Sin(angle) * totalForce);
+    //}
+    if(GameObject.FindGameObjectWithTag("Player").GetComponent<NurseSpawn>().isNurseAlive() == true)
     {
-      projectileForce = (new Vector2(Mathf.Cos(angle) * totalForce, Mathf.Sin(angle) * totalForce)) * -1;
+      shotTime = shotTime - 1;
+      if (shotTime <= 0)
+      {
+        Shoot();
+        shotTime = shotTimeMax;
+      }
     }
-    else
-    {
-      projectileForce = new Vector2(Mathf.Cos(angle) * totalForce, Mathf.Sin(angle) * totalForce);
-    }
-    shotTime = shotTime - 1;
-    if(shotTime <= 0)
-    {
-      Shoot();
-      shotTime = shotTimeMax;
-    }
-
   }
 
   // Update is called once per frame
   public void Shoot()
   {
-    projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
+    projectile = Instantiate(baseProjectile, playerLocation, fireLocation.rotation);
     Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
     projectileForce.Normalize();
-    body.AddForce(projectileForce * projectileSpeed);
-    Destroy(projectile, 5f);
+    //body.AddForce(projectileForce * projectileSpeed);
+    Destroy(projectile, 0.1f);
+    GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(2);
     //Debug.Log(projectileSpeed);
   }
 }

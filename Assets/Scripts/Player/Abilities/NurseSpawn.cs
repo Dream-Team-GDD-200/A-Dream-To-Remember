@@ -8,7 +8,7 @@ public class NurseSpawn : MonoBehaviour
   public GameObject baseNurse;
   public GameObject nurse;
   private PlayerMovement playerMovement;
-  private float health = 5;
+  private float NurseDuration = 0;
 
   void Start()
   {
@@ -21,9 +21,9 @@ public class NurseSpawn : MonoBehaviour
   // Start is called before the first frame update
   void Update()
   {
-    if (health <= 0)
+    if (NurseDuration > 0)
     {
-
+      NurseDuration = NurseDuration - 1;
     }
   }
 
@@ -53,22 +53,27 @@ public class NurseSpawn : MonoBehaviour
     {
       nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
       Destroy(nurse, 25f);
+      NurseDuration = 1500;
     }
     else
     {
       spawnLocation = new Vector3(fireLocation.position.x, fireLocation.position.y, fireLocation.position.z);
       nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
       Destroy(nurse, 25f);
+      NurseDuration = 1500;
     }
   }
 
-  public void harm(float val)
+  public bool isNurseAlive()
   {
-    health = health - val;
-  }
+    if (NurseDuration > 0)
+    {
+      return true;
+    }
 
-  public float getHealth()
-  {
-    return health;
+    else
+    {
+      return false;
+    }
   }
 }

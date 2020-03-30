@@ -447,7 +447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1157655030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +553,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
+      objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -607,16 +617,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Name
-      value: Doctor
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Name
-      value: Doctor
       objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712857, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
@@ -823,6 +823,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubble Patch
+      objectReference: {fileID: 0}
     - target: {fileID: 8226254982351598805, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -882,11 +887,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.953
-      objectReference: {fileID: 0}
-    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubble Patch
       objectReference: {fileID: 0}
     - target: {fileID: -2800045295267170909, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
@@ -1140,7 +1140,7 @@ PrefabInstance:
     - target: {fileID: 1658323786298611273, guid: 20a0b678754016544abc1d9d2440d8fb,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
         type: 3}

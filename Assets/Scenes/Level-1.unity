@@ -431,7 +431,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 540675939}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1157655034}
+        m_MethodName: closeMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &540675939
@@ -657,7 +668,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 735429088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1157655034}
+        m_MethodName: characterSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &735429088
@@ -848,7 +870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1109797760
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1027,6 +1049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90dc45bb9b5809b4a94d09b2a00296d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseOverlay: {fileID: 1109797759}
 --- !u!1 &1185458532 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7624201886938335437, guid: 9ec70037da8ca8442b963ebe2e236e82,
@@ -1544,7 +1567,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1862535696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1157655034}
+        m_MethodName: worldSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1862535696
@@ -2582,6 +2616,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 525
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477326193332776160, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477326193332776160, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477326193332776160, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477326193332776160, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1157655034}
+    - target: {fileID: 3477326193332776160, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: openMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3477326193332776160, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 239241e8d16fb424eafb306783e4b754, type: 3}

@@ -379,6 +379,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
+      objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -433,16 +443,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Name
-      value: Doctor
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Name
-      value: Doctor
       objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712857, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
@@ -649,6 +649,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
+        type: 3}
+      propertyPath: m_Name
+      value: Rubble Patch
+      objectReference: {fileID: 0}
     - target: {fileID: 8226254982351598805, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -708,11 +713,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.953
-      objectReference: {fileID: 0}
-    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubble Patch
       objectReference: {fileID: 0}
     - target: {fileID: -2800045295267170909, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
@@ -1692,6 +1692,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: JoyStick
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252606316624429339, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252606316624429339, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0000038146973
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 239241e8d16fb424eafb306783e4b754, type: 3}

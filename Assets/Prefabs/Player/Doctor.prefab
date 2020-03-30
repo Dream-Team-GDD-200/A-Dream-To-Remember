@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: -4087781375471024918}
   - component: {fileID: 8650046196237828908}
   - component: {fileID: 2600712053624971277}
+  - component: {fileID: 5864351903743131439}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Player
@@ -298,6 +299,8 @@ MonoBehaviour:
   maleAnim: {fileID: 9100000, guid: 1b54b59d037978049898223541d383f5, type: 2}
   femaleAnim: {fileID: 9100000, guid: f9c6f535d02d3564d84576882c5e7952, type: 2}
   aStarPath: {fileID: 0}
+  button: {fileID: 0}
+  bar: {fileID: 0}
 --- !u!114 &3684063505883712862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,3 +553,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemies: []
   Boxes: []
+--- !u!114 &5864351903743131439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3684063505883712930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f83d80ffe5fbc04480d82d8dadbf0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasSkill: 01000000

@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Player\Abilities\HealEffect.cs" />
     <Compile Include="Assets\Scripts\Player\Abilities\NurseDestruction.cs" />
     <Compile Include="Assets\Scripts\Player\Abilities\NurseSpawn.cs" />
+    <Compile Include="Assets\Scripts\Player\Abilities\SkillCache.cs" />
     <Compile Include="Assets\Scripts\Player\Abilities\StunEffect.cs" />
     <Compile Include="Assets\Scripts\Player\Abilities\StunField.cs" />
     <Compile Include="Assets\Scripts\Player\Abilities\TriageEffect.cs" />
@@ -115,6 +116,8 @@
     <Compile Include="Assets\Scripts\UI\DoctorSelect.cs" />
     <Compile Include="Assets\Scripts\UI\FogOfWar.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\UI\Skill Tree\SkillTree.cs" />
+    <Compile Include="Assets\Scripts\UI\Skill Tree\SkillTreeButtons.cs" />
     <Compile Include="Assets\Scripts\UI\Title Screen\Controller.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCells\Barrier.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCells\Barrier_Destruction.cs" />

@@ -13,6 +13,12 @@ public class LongClick : MonoBehaviour
     
     public AudioClip speedBoost; // audiio clip for the speed boost
 
+
+    //references to the buttons so they can send that button the respective cooldownnumber
+    public GameObject buttonDeploy;
+    public GameObject buttonHeal;
+    public GameObject buttonShock;
+    public GameObject buttonNurse;
     //delay for the attacking animation
     IEnumerator waitForAnimDeploy()
     {
@@ -121,18 +127,22 @@ public class LongClick : MonoBehaviour
             {
                 case 1:
                     CellDuration -= duration;
+                    buttonDeploy.GetComponent<NumbersCoolDownScript>().currentNumberTime( CellDuration);    //send current cooldown to textbox 
                     DeployImage.fillAmount = (float)1 - (CellDuration / DeployCellCooldown);
                     break;
                 case 2:
                     HealDuration-= duration;
+                    buttonHeal.GetComponent<NumbersCoolDownScript>().currentNumberTime(HealDuration);
                     HealImage.fillAmount = (float)1 - (HealDuration / HealCooldown);
                     break;
                 case 3:
                     ShockDuration-= duration;
+                    buttonShock.GetComponent<NumbersCoolDownScript>().currentNumberTime(ShockDuration);
                     ShockImage.fillAmount = (float)1 - (ShockDuration / ShockCooldown);
                     break;
                 case 4:
                     NurseDuration-= duration;
+                    buttonNurse.GetComponent<NumbersCoolDownScript>().currentNumberTime(NurseDuration);
                     NurseImage.fillAmount = (float)1 - (NurseDuration / NurseCooldown);
                     break;
             }

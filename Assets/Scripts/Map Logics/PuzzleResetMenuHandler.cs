@@ -6,7 +6,7 @@ public class PuzzleResetMenuHandler : MonoBehaviour
 {
     public GameObject currentResetSwitch; //this is how it keeps a reference to what switch is being used - this is important as it needs to know what prefab to reset
 
-    //rest of the handler is done via the buttons, which call the correct reset/don't reset switch based on the reference above.
+    //the rest of the handler is done via the buttons, which call the correct reset/don't reset switch based on the reference above.
 
     // Start is called before the first frame update
     void Start()

@@ -4,15 +4,28 @@ using UnityEngine;
 using Pathfinding;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.UI;
 
 public class PauseController : MonoBehaviour
 {
     public GameObject pauseOverlay;
     public GameObject UI;
     AllThings MasterList;
+    Transform deactivateButton;
+    public Button WorldSelect, MainMenu;
     private void Start()
     {
-        MasterList = GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>();
+        try
+        {
+            MasterList = GameObject.FindGameObjectWithTag("Player").GetComponent<AllThings>();
+        }catch(Exception e) { }
+        if(SceneManager.GetActiveScene().name == "Overworld")
+        {
+            WorldSelect.interactable = false;
+        }else if (SceneManager.GetActiveScene().name == "Title Screen")
+        {
+            MainMenu.interactable = false;
+        }
     }
     public void openMenu()
     {
@@ -20,9 +33,10 @@ public class PauseController : MonoBehaviour
         UI.SetActive(false);
         try
         {
+            MasterList.disableAll();
             GameObject.FindGameObjectWithTag("Boss").GetComponent<AIPath>().enabled = false;
         }catch(Exception e) { }
-        MasterList.disableAll();
+       
     }
     public void closeMenu()
     {
@@ -30,10 +44,10 @@ public class PauseController : MonoBehaviour
         pauseOverlay.SetActive(false);
         try
         {
+            MasterList.enableAll();
             GameObject.FindGameObjectWithTag("Boss").GetComponent<AIPath>().enabled = true;
         }
         catch (Exception e) { }
-        MasterList.enableAll();
     }
     public void worldSelect()
     {

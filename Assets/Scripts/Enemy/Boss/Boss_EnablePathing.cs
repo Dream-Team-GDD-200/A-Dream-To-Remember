@@ -30,8 +30,8 @@ public class Boss_EnablePathing : MonoBehaviour
 
     public void disablePathfinding()
     {
-        this.gameObject.GetComponent<AIPath>().enabled = false;
-        this.gameObject.GetComponent<BossMechanics>().SpawnHord = false;
+        Boss.gameObject.GetComponent<AIPath>().enabled = false;
+        Boss.gameObject.GetComponent<BossMechanics>().SpawnHord = false;
     }
 
     public void enablePathfinding()

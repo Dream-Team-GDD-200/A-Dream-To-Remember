@@ -625,12 +625,12 @@ PrefabInstance:
     - target: {fileID: 3684063504861559482, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3684063504861559482, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.27
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7cae10e23f75e24abf88178bed9fb4f, type: 3}
@@ -824,24 +824,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 771406640}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1926015965 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4344032008848165258, guid: 239241e8d16fb424eafb306783e4b754,
-    type: 3}
-  m_PrefabInstance: {fileID: 2635366508174221438}
-  m_PrefabAsset: {fileID: 0}
---- !u!225 &1926015970
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1926015965}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!1 &2007397737 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7352706084842077774, guid: a4351d3834a533849a8c65aed6ec84c8,
@@ -1399,15 +1381,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 4808854977053236442, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 525
-      objectReference: {fileID: 0}
     - target: {fileID: 2635366507495900076, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_TagString
       value: JoyStick
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808854977053236442, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 525
       objectReference: {fileID: 0}
     - target: {fileID: 2635366508412694672, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
@@ -2125,6 +2107,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 448336201}
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2230,16 +2217,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: UI
-      value: 
-      objectReference: {fileID: 448336201}
-    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2952643542368991468, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2259,6 +2236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c6a228d45b2fa40994aa07aea66803, type: 3}
@@ -2343,7 +2325,7 @@ PrefabInstance:
         type: 3}
       propertyPath: referenceToBlackTransition
       value: 
-      objectReference: {fileID: 1926015965}
+      objectReference: {fileID: 0}
     - target: {fileID: 3299132315393916170, guid: ef775906752c9dd4b851f208f4e8d51d,
         type: 3}
       propertyPath: currentPrefabInstance
@@ -2358,7 +2340,7 @@ PrefabInstance:
         type: 3}
       propertyPath: referenceToBlackTransition
       value: 
-      objectReference: {fileID: 1926015965}
+      objectReference: {fileID: 0}
     - target: {fileID: 149126612267979271, guid: ef775906752c9dd4b851f208f4e8d51d,
         type: 3}
       propertyPath: currentPrefabInstance
@@ -2373,7 +2355,7 @@ PrefabInstance:
         type: 3}
       propertyPath: referenceToBlackTransition
       value: 
-      objectReference: {fileID: 1926015965}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef775906752c9dd4b851f208f4e8d51d, type: 3}
 --- !u!1001 &3684063504816293340

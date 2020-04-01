@@ -16,9 +16,12 @@ public class PuzzleResetScript : MonoBehaviour
     private IEnumerator fade;
     private IEnumerator unFade;
 
-    private bool doingCoroutine = false;
+
 
     private GameObject puzzleResetTransition;
+    
+    public GameObject refToUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +42,23 @@ public class PuzzleResetScript : MonoBehaviour
         {
             hasBeenPushed = true;//makes sure multiple menus aren't open during this time
             resetButton.color = Color.green; //indicate button is currently pressed down
-            resetPuzzleMenu.SetActive(true); //menu is active now
+            
+            //have to have ui stay on for menu to show up, and loop was giving me errors, this worked though XD... make into loop later
+            //basically, this is looking at the first attached child to ui element, then the second and then so on
+        
+            //disabling joystick had a weird glitch attached where it would jam in last pushed location. For now, it will stay active as it doesn't cause any problems 
+            refToUI.gameObject.transform.GetChild(1).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(2).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(3).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(4).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(5).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(6).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(7).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(8).gameObject.SetActive(false); //sets UI as not active at first
+            refToUI.gameObject.transform.GetChild(9).gameObject.SetActive(false); //sets UI as not active at first
+           
+
+            resetPuzzleMenu.SetActive(true); //menu is active now (and is the only active piece of UI)
 
             resetPuzzleMenu.GetComponent<PuzzleResetMenuHandler>().currentResetSwitch = this.gameObject; //sets the current reset switch to the one that was just pressed
             Time.timeScale = 0f; //pauses game during this time -- this line is kinda redundant with FadeOut, but I want to make sure that time is stopped when the player is selecting an option for the reset puzzle menu
@@ -53,6 +72,18 @@ public class PuzzleResetScript : MonoBehaviour
     }
     public void DontResetPuzzle() //player pressed no on resetPuzzleMenu, returns game to normal
     {
+
+        //have to have ui stay on for menu to show up, and loop was giving me errors, this worked though XD... make into loop later
+       // puzzlereset menu, skill trees stay off
+
+   
+        refToUI.gameObject.transform.GetChild(1).gameObject.SetActive(true); 
+        refToUI.gameObject.transform.GetChild(2).gameObject.SetActive(true); 
+        refToUI.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(4).gameObject.SetActive(true); 
+        refToUI.gameObject.transform.GetChild(5).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(7).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(9).gameObject.SetActive(true); 
         resetPuzzleMenu.SetActive(false);
         Time.timeScale = 1f; //unpauses game  -- this one is still needed in this function (unlike the restpuzzle function) as neither fade functions are called here
         Invoke("AllowPlayerToPressButtonAgain", 2f);
@@ -66,6 +97,7 @@ public class PuzzleResetScript : MonoBehaviour
 
     private IEnumerator fadeInAndOut() //dont judge me, it works --unique version of it that requires it to be resued as it needs to be executed in a very specific order
     {
+        
         Time.timeScale = 0; //pause game during transition (we probably don't want them to be able to move during black screen
         CanvasGroup blackSquare = puzzleResetTransition.GetComponent<CanvasGroup>();
         while (blackSquare.alpha < 1)
@@ -88,6 +120,15 @@ public class PuzzleResetScript : MonoBehaviour
             yield return null; //wait for next frame before doing it again
         }
         yield return null; // extra assurance that it is done 
+
+    
+        refToUI.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(2).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(3).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(4).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(5).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(7).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(9).gameObject.SetActive(true);
         Time.timeScale = 1; //now that we know for sure that it is done, unpause the game
 
 

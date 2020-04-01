@@ -20,6 +20,7 @@ TagManager:
   - MasterBoxes
   - Ally
   - JoyStick
+  - Transition
   layers:
   - Default
   - TransparentFX
@@ -77,4 +78,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 528791425
+    locked: 0
+  - name: Transition
+    uniqueID: 1058434151
     locked: 0

@@ -40,8 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        isFemale = PlayerPrefs.GetInt("isFemale");
-        Debug.Log("wehere i want to be" + isFemale);
+        isFemale = PlayerPrefs.GetInt("isFemale"); // sets the int to the PlayerPrefs int of male or female
         if (isFemale == 1f)
         {
             anim.runtimeAnimatorController = femaleAnim;

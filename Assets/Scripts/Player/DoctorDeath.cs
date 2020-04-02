@@ -15,6 +15,9 @@ public class DoctorDeath : MonoBehaviour
     public Sprite FemaleDeathFrame4;
     public Sprite FemaleDeathFrame5;
 
+    public Sprite MaleDeathFrame1;
+    public Sprite MaleDeathFrame2;
+
     public Camera mainCamera;
 
     public GameObject aStar;
@@ -60,15 +63,23 @@ public class DoctorDeath : MonoBehaviour
         else
         {
 
-            //TODO MALE DOCTOR DYING
-
-            //Last thing, go to game over
-            GetComponent<AllThings>().destroyAll(); // destroys all enemy and box objects that were spawned
-            SceneManager.LoadScene(2);
+            StartCoroutine(maleDealth());
         }
         
     }
 
+    IEnumerator maleDealth()
+    {
+        spr.sprite = MaleDeathFrame1;
+
+        yield return new WaitForSeconds(1.5f);
+
+        spr.sprite = MaleDeathFrame2;
+
+        yield return new WaitForSeconds(2f);
+        GetComponent<AllThings>().destroyAll();// destroys all enemy and box objects that were spawned
+        SceneManager.LoadScene(2);
+    }
     IEnumerator femaleDeath()
     {
         spr.sprite = FemaleDeathFrame1;

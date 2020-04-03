@@ -446,12 +446,12 @@ PrefabInstance:
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.2
+      value: 80.31
       objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.55
+      value: 7.01
       objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
@@ -1582,10 +1582,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 8763159740400111910, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824463694220776478, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796305131197509931, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2635366507495900076, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_TagString
       value: JoyStick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574665033445482976, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3871358306273055191, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
@@ -1626,11 +1646,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 138.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1574665033445482976, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6273801676574572435, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
@@ -1681,11 +1696,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 33.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3824463694220776478, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3122317909478272683, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
@@ -1742,11 +1752,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 22.94
       objectReference: {fileID: 0}
-    - target: {fileID: 8796305131197509931, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7092849991678516714, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_Color.r
@@ -1801,11 +1806,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 52.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8763159740400111910, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4808854977053236442, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}

@@ -69,7 +69,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -265825911
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5406536889669468444, guid: 5d6c26a141d589848ae7f40c7cd607dc,
     type: 3}
@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 4627514254103092738}
   - component: {fileID: 4627514254103092739}
   - component: {fileID: 5114306093552179259}
+  - component: {fileID: 2655984162533817994}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -496,3 +497,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59901c207cd97e84dab4aef56aabf00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2655984162533817994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627514254103092740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f39eb520d898f47b93ad7c40b410dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doctorCamera: {fileID: 0}
+  UI: {fileID: 0}

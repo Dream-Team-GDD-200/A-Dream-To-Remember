@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class SkillCache : MonoBehaviour
 {
-  /* Set to true if the doctor has unlocked the corresponding skill. index 0 = white blood cell, 1 = speed boost, 2 = shock, 3 = nurse.*/
-  public bool[] hasSkill = { true, false, false, false};
-  /* Set to true if the doctor has unlocked the corresponding morph. index 0 = shock duration increase.*/
-  public bool[] hasMorph = { false };
+  /* Set to true if the doctor has unlocked the corresponding skill. 
+   * index 0 = white blood cell, 
+   * 1 = speed boost, 2 = shock, 
+   * 3 = nurse.*/
+  private bool[] hasSkill = { true, false, false, false};
+
+  /* Set to true if the doctor has unlocked the corresponding morph. 
+   * index 0 = shock duration increase
+   * 1 = shock radius increase
+   * 2 = nurse duration increase
+   * 3 = nurse heal increase
+   * 4 = heal skill heal increase
+   * 5 = heal skill speen increase
+   * 6 = barrier health increase
+   * 7 = barrier cooldown reduction*/
+  private bool[] hasMorph = { false, false, false, false, false, false, false, false };
+
   //duration of the stun effect
   private float stunDuration = 2f;
     // Start is called before the first frame update
     void Start()
     {
-      //DELETE THIS ONCE WE PREVENT PLAYERS FROM STARTING WITH ALL SKILLS
+      //DELETE ONCE WE PREVENT PLAYERS FROM STARTING WITH ALL SKILLS
       hasSkill[1] = true;
       hasSkill[2] = true;
       hasSkill[3] = true;
@@ -27,7 +40,7 @@ public class SkillCache : MonoBehaviour
 
     public bool getHasSkill(int index)
     {
-      if (index < 0 || index > 4)
+      if (index < 0 || index > hasSkill.Length)
       {
         return false;
       }
@@ -39,7 +52,7 @@ public class SkillCache : MonoBehaviour
     }
     public void setHasSkill(int index, bool val)
     {
-      if (index < 0 || index > 4)
+      if (index < 0 || index > hasSkill.Length)
       {
         //do nothing
       }
@@ -51,7 +64,7 @@ public class SkillCache : MonoBehaviour
     }
     public bool getHasMorph(int index)
     {
-      if (index < 0 || index > 0)
+      if (index < 0 || index > hasMorph.Length)
       {
         return false;
       }
@@ -63,7 +76,7 @@ public class SkillCache : MonoBehaviour
     }
     public void setHasMorph(int index, bool val)
     {
-      if (index < 0 || index > 0)
+      if (index < 0 || index > hasMorph.Length)
       {
         //do nothing
       }
@@ -73,6 +86,7 @@ public class SkillCache : MonoBehaviour
         hasMorph[index] = val;
       }
     }
+
     public float getStunDuration()
     {
       return stunDuration;

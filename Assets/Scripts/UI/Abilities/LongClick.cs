@@ -10,7 +10,9 @@ public class LongClick : MonoBehaviour
     float duration;
     private float CellDuration = 0f, HealDuration = 0f, ShockDuration = 0f, NurseDuration = 0f; // the current time left of each cooldown
     public Image DeployImage, HealImage, ShockImage, NurseImage; // the image reference for the fill animation
-    
+    private float healVal = 15; //amount of health restored by the heal ability
+    private float speed = 5f; //the amount of speed granted by the speed boost ability
+
     public AudioClip speedBoost; // audiio clip for the speed boost
 
 
@@ -57,9 +59,7 @@ public class LongClick : MonoBehaviour
         if (HealDuration == 0)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", true);
-            float healVal = 15;
             GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
-            float speed = 5f;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
             GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
@@ -148,4 +148,37 @@ public class LongClick : MonoBehaviour
             }
         }
     }
+
+  //manually changes the total duration of a skill's cooldown
+  public void alterCooldown(string skill, float val)
+    {
+        if (skill == "DeployedCell")
+        {
+            DeployCellCooldown = val;
+        }
+        if (skill == "Heal")
+        {
+            HealCooldown = val;
+        }
+        if (skill == "Shock")
+        {
+            ShockCooldown = val;
+        }
+        if (skill == "Nurse")
+        {
+            NurseCooldown = val;
+        }
+    }
+
+  //changes the potency of the heal ability
+  public void alterHealVal(float val)
+  {
+    healVal = val;
+  }
+
+  //changes the potency of the heal ability
+  public void alterSpeed(float val)
+  {
+    speed = val;
+  }
 }

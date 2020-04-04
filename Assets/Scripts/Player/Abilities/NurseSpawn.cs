@@ -9,6 +9,7 @@ public class NurseSpawn : MonoBehaviour
   public GameObject nurse;
   private PlayerMovement playerMovement;
   private float NurseDuration = 0;
+  private float NurseDurationMax = 25f;
 
   void Start()
   {
@@ -52,15 +53,15 @@ public class NurseSpawn : MonoBehaviour
     if (clear == true)
     {
       nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
-      Destroy(nurse, 25f);
-      NurseDuration = 1500;
+      Destroy(nurse, NurseDurationMax);
+      NurseDuration = 60 * NurseDurationMax;
     }
     else
     {
       spawnLocation = new Vector3(fireLocation.position.x, fireLocation.position.y, fireLocation.position.z);
       nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
-      Destroy(nurse, 25f);
-      NurseDuration = 1500;
+      Destroy(nurse, NurseDurationMax);
+      NurseDuration = 60 * NurseDurationMax;
     }
   }
 
@@ -75,5 +76,10 @@ public class NurseSpawn : MonoBehaviour
     {
       return false;
     }
+  }
+
+  public void alterNurseDurationMax(float val)
+  {
+    NurseDurationMax = val;
   }
 }

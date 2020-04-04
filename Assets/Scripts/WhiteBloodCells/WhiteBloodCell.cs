@@ -14,6 +14,7 @@ public class WhiteBloodCell : MonoBehaviour
     private float projectileSpeed = 150f;
     public bool validShot = true;
     private int cellHealth = 0;
+    private int cellHealthMax = 3;
 
   void Start()
     {
@@ -69,7 +70,7 @@ public class WhiteBloodCell : MonoBehaviour
           Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
         }
 
-        cellHealth = 3;
+        cellHealth = cellHealthMax;
     }
 
     public int getCellHealth()
@@ -85,5 +86,10 @@ public class WhiteBloodCell : MonoBehaviour
     public Vector2 getPlayerPosition()
     {
       return new Vector2(fireLocation.position.x, fireLocation.position.y);
+    }
+
+    public void alterCellHealthMax(int val)
+    {
+      cellHealthMax = val;
     }
 }

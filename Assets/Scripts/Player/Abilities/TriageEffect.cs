@@ -14,6 +14,7 @@ public class TriageEffect : MonoBehaviour
   private float shotTimeMax = 100;
   private float shotTime = 100;
   private Vector2 playerLocation = new Vector2(0, 0);
+  private float healVal = 2;
 
   void Start()
   {
@@ -54,7 +55,12 @@ public class TriageEffect : MonoBehaviour
     projectile = Instantiate(baseProjectile, playerLocation, fireLocation.rotation);
     //body.AddForce(projectileForce * projectileSpeed);
     Destroy(projectile, 0.1f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(2);
+    GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
     //Debug.Log(projectileSpeed);
+  }
+
+  public void alterHealVal(float val)
+  {
+    healVal = val;
   }
 }

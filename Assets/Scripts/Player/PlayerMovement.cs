@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject button;
     public GameObject bar;
 
+    private bool inCutScene = false;
 
     private Vector2 MaleOffset = new Vector2(0.01450627f, -.13f);
     private Vector2 MaleScale = new Vector2(0.1193589f, 0.03369492f);
@@ -172,7 +173,7 @@ public class PlayerMovement : MonoBehaviour
         // Move our character
         Vector2 movementReal = new Vector2(joystick.Horizontal, joystick.Vertical);
         movementReal.Normalize();
-        if (movementReal.x != 0f && movementReal.y != 0f)
+        if (movementReal.x != 0f && movementReal.y != 0f && !inCutScene)
         {
             movement = movementReal;
         }
@@ -180,6 +181,11 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(movementReal * runSpeed * Time.deltaTime);
 
         //Debug.Log(movement);
+    }
+
+    public void setincutscene(bool val)
+    {
+        inCutScene = val;
     }
 
     public void setSpeed(float speed)
@@ -196,4 +202,5 @@ public class PlayerMovement : MonoBehaviour
     {
         return isFemale;
     }
+
 }

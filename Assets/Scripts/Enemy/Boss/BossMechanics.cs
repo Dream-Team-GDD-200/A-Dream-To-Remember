@@ -32,7 +32,8 @@ public class BossMechanics: MonoBehaviour
     //Timer lengths for each spawner so the timer resets after it reaches 0
     private float resetTimer;
     private float resetTimerBox;
-    
+
+    private Animator anim;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class BossMechanics: MonoBehaviour
         BoxSpawner.MaxBoxes = BoxMaxCount;
         resetTimer = timeBetweenSpawns;
         resetTimerBox = timeBoxSpawns;
+        anim = GetComponentInChildren<Animator>();
     }
     //Will spawn enemies
     public void CallEnemySpawn()
@@ -107,11 +109,20 @@ public class BossMechanics: MonoBehaviour
             if (timeBoxSpawns == 0)
             {
                 BoxSpawner.SpawnBox();
-                this.gameObject.GetComponent<AudioSource>().Play();
+                StartCoroutine(doTheRoar());
             }
         }
         timeBoxSpawns = resetTimerBox;
         StartCoroutine(BoxSpawnCountDown());
+    }
+
+    //Does the roar and animation for the roar
+    public IEnumerator doTheRoar()
+    {
+        this.gameObject.GetComponent<AudioSource>().Play();
+        anim.SetBool("Roaring", true);
+        yield return new WaitForSeconds(0.417f);
+        anim.SetBool("Roaring", false);
     }
     private void Update()
     {

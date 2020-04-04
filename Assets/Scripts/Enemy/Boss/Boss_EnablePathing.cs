@@ -12,6 +12,7 @@ public class Boss_EnablePathing : MonoBehaviour
     bool inRoom = false;
     public int BossDelay;
     private int bossDelayReset;
+    
     private void Start()
     {
         bossDelayReset = BossDelay;
@@ -23,7 +24,8 @@ public class Boss_EnablePathing : MonoBehaviour
         if (!inRoom)
         {
             Boss.SetActive(true);
-            StartCoroutine(initialize());
+            //DO CUTSCENE AND THEN INIT
+            StartCoroutine(cutsceneStart());
             inRoom = true;
         }
     }
@@ -39,6 +41,18 @@ public class Boss_EnablePathing : MonoBehaviour
         Boss.gameObject.GetComponent<AIPath>().enabled = true;
         Boss.gameObject.GetComponent<BossMechanics>().SpawnHord = true;
     }
+
+    IEnumerator cutsceneStart()
+    {
+        // start cutscene stuff here
+        Boss.gameObject.GetComponent<Cutscene>().beginCutscene();
+
+        yield return new WaitForSeconds(8f);
+
+        // Enable the boss
+        StartCoroutine(initialize());
+    }
+
     IEnumerator initialize()
     {
         //timeBetweenSpawns = countdownValue;

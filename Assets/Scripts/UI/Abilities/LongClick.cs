@@ -10,9 +10,17 @@ public class LongClick : MonoBehaviour
     float duration;
     private float CellDuration = 0f, HealDuration = 0f, ShockDuration = 0f, NurseDuration = 0f; // the current time left of each cooldown
     public Image DeployImage, HealImage, ShockImage, NurseImage; // the image reference for the fill animation
-    
+    private float healVal = 15; //amount of health restored by the heal ability
+    private float speed = 5f; //the amount of speed granted by the speed boost ability
+
     public AudioClip speedBoost; // audiio clip for the speed boost
 
+
+    //references to the buttons so they can send that button the respective cooldownnumber
+    public GameObject buttonDeploy;
+    public GameObject buttonHeal;
+    public GameObject buttonShock;
+    public GameObject buttonNurse;
     //delay for the attacking animation
     IEnumerator waitForAnimDeploy()
     {
@@ -51,9 +59,7 @@ public class LongClick : MonoBehaviour
         if (HealDuration == 0)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", true);
-            float healVal = 15;
             GameObject.FindGameObjectWithTag("Player").GetComponent<HealthDoctor>().heal(healVal);
-            float speed = 5f;
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().setSpeed(speed);
             GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
@@ -121,21 +127,58 @@ public class LongClick : MonoBehaviour
             {
                 case 1:
                     CellDuration -= duration;
+                    buttonDeploy.GetComponent<NumbersCoolDownScript>().currentNumberTime( CellDuration);    //send current cooldown to textbox 
                     DeployImage.fillAmount = (float)1 - (CellDuration / DeployCellCooldown);
                     break;
                 case 2:
                     HealDuration-= duration;
+                    buttonHeal.GetComponent<NumbersCoolDownScript>().currentNumberTime(HealDuration);
                     HealImage.fillAmount = (float)1 - (HealDuration / HealCooldown);
                     break;
                 case 3:
                     ShockDuration-= duration;
+                    buttonShock.GetComponent<NumbersCoolDownScript>().currentNumberTime(ShockDuration);
                     ShockImage.fillAmount = (float)1 - (ShockDuration / ShockCooldown);
                     break;
                 case 4:
                     NurseDuration-= duration;
+                    buttonNurse.GetComponent<NumbersCoolDownScript>().currentNumberTime(NurseDuration);
                     NurseImage.fillAmount = (float)1 - (NurseDuration / NurseCooldown);
                     break;
             }
         }
     }
+
+  //manually changes the total duration of a skill's cooldown
+  public void alterCooldown(string skill, float val)
+    {
+        if (skill == "DeployedCell")
+        {
+            DeployCellCooldown = val;
+        }
+        if (skill == "Heal")
+        {
+            HealCooldown = val;
+        }
+        if (skill == "Shock")
+        {
+            ShockCooldown = val;
+        }
+        if (skill == "Nurse")
+        {
+            NurseCooldown = val;
+        }
+    }
+
+  //changes the potency of the heal ability
+  public void alterHealVal(float val)
+  {
+    healVal = val;
+  }
+
+  //changes the potency of the heal ability
+  public void alterSpeed(float val)
+  {
+    speed = val;
+  }
 }

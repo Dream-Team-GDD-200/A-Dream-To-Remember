@@ -52,7 +52,7 @@ public class FadeOut : MonoBehaviour
 
         
         Time.timeScale = 1; //now that we know for sure that it is done, unpause the game
-      overWriteJoel = false;
+       overWriteJoel = false;
         UI.SetActive(true);
 
 

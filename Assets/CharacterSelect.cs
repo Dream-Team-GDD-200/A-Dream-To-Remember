@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class Controller : MonoBehaviour
+public class CharacterSelect : MonoBehaviour
 {
-    public GameObject Male;
-    public GameObject Female;
-    public Button StartButton;
+    public GameObject MaleCharacter;
+    public GameObject FemaleCharacter;
+    public Button StartButton2;
     private void Start()
     {
         PlayerPrefs.SetInt("isFemale", 0);
@@ -15,25 +15,22 @@ public class Controller : MonoBehaviour
     public void startGame()
     {
         //set the 3 levels to not clear
-        PlayerPrefs.SetInt("level1clear", 0);
-        PlayerPrefs.SetInt("level2clear", 0);
-        PlayerPrefs.SetInt("level3clear", 0);
         SceneManager.LoadScene(3);
     }
     public void playerSelect()
     {
-        Male.SetActive(true);
-        Female.SetActive(true);
+        MaleCharacter.SetActive(true);
+        FemaleCharacter.SetActive(true);
     }
     public void selectMale()
     {
         PlayerPrefs.SetInt("isFemale", 0); // 0 is male
-        StartButton.interactable = true;
+        StartButton2.interactable = true;
     }
     public void selectFemale()
     {
         PlayerPrefs.SetInt("isFemale", 1); // 1 is female
-        StartButton.interactable = true;
+        StartButton2.interactable = true;
     }
     void info()
     {

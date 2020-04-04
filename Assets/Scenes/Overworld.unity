@@ -4302,6 +4302,11 @@ PrefabInstance:
       propertyPath: btnBeginLevel
       value: 
       objectReference: {fileID: 500982480}
+    - target: {fileID: 5964256593460477849, guid: 578376e56b9a36b4486278c7d210bc9b,
+        type: 3}
+      propertyPath: maleAnim
+      value: 
+      objectReference: {fileID: 9100000, guid: 2874e9ad4298f20488107d26740cd03a, type: 2}
     - target: {fileID: 4025084147596000788, guid: 578376e56b9a36b4486278c7d210bc9b,
         type: 3}
       propertyPath: m_Offset.y

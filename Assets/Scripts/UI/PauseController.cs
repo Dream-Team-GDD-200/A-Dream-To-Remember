@@ -55,6 +55,6 @@ public class PauseController : MonoBehaviour
     }
     public void characterSelect()
     {
-        SceneManager.LoadScene("Title Screen");
+        SceneManager.LoadScene("CharacterSelect");
     }
 }

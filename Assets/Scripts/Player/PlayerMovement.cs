@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 MaleScale_Box = new Vector2(.176781f, .228620f);
     private void Start()
     {
-        Debug.Log(isFemale);
+       // Debug.Log(isFemale + " gender of doctor");
     }
     void OnEnable()
     {
@@ -44,10 +44,12 @@ public class PlayerMovement : MonoBehaviour
         isFemale = PlayerPrefs.GetInt("isFemale"); // sets the int to the PlayerPrefs int of male or female
         if (isFemale == 1f)
         {
+            //Debug.Log("set Female anim");
             anim.runtimeAnimatorController = femaleAnim;
         }
         else
         {
+            //Debug.Log("set male anim");
             anim.runtimeAnimatorController = maleAnim;
             GetComponent<CapsuleCollider2D>().offset = MaleOffset_Box;
             GetComponent<CapsuleCollider2D>().size = MaleScale_Box;

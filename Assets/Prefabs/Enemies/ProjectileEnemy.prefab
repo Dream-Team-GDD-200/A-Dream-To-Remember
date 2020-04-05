@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 1491918535558874196}
   - component: {fileID: -707775333776602068}
   m_Layer: 0
-  m_Name: SpawnedEnemy
+  m_Name: ProjectileEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +36,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6523320028355963594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.3, y: 0.386, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6523320028442736082}
@@ -103,10 +103,10 @@ MonoBehaviour:
   rotationSpeed: 360
   slowdownDistance: 0.6
   pickNextWaypointDist: 0.6
-  endReachedDistance: 1
+  endReachedDistance: 3
   alwaysDrawGizmos: 1
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 1
+  whenCloseToDestination: 0
   constrainInsideGraph: 0
 --- !u!114 &6523320028355963597
 MonoBehaviour:
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 6523320028442736082}
   - component: {fileID: 6523320028442736081}
   - component: {fileID: 3995536504871757393}
-  - component: {fileID: 705915676574055624}
+  - component: {fileID: 891916121706293462}
   m_Layer: 0
   m_Name: walker Graphics
   m_TagString: Untagged
@@ -361,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6523320028442736083}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.115, y: 0.762, z: 0}
+  m_LocalPosition: {x: -0.491, y: 0.592, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6523320028355963586}
@@ -405,7 +405,7 @@ SpriteRenderer:
   m_SortingLayerID: -265825911
   m_SortingLayer: 2
   m_SortingOrder: 20
-  m_Sprite: {fileID: 6576734793853301749, guid: 687bf058a1722cc479f3351ba1ed0f2b,
+  m_Sprite: {fileID: -5377080353653507153, guid: 6f679257b34cc4a418eeef65a2869d86,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -425,9 +425,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6523320028442736083}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4709eaca0ac040745b8b108114af6533, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1eecbbe6214493b4895bdb58ed6ee41b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -436,7 +436,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &705915676574055624
+--- !u!114 &891916121706293462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -445,11 +445,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6523320028442736083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7536e8e1c64f6d40a8fb4e9218bdfb7, type: 3}
+  m_Script: {fileID: 11500000, guid: 754fc6eebd744614090d88ae352fd29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeleeMob: {fileID: 3995536504871757393}
-  MobPathing: {fileID: 6523320028355963596}
+  ProjectileMobMovement: {x: 0, y: 0}
+  ProjectileMob: {fileID: 6523320028355963596}
 --- !u!1001 &1176256537858103605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -520,12 +520,12 @@ PrefabInstance:
     - target: {fileID: 5392385549087008568, guid: 20a3573b92b16334d89ba893612cf59a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.277
+      value: 0.489
       objectReference: {fileID: 0}
     - target: {fileID: 5392385549087008568, guid: 20a3573b92b16334d89ba893612cf59a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.465
+      value: -0.602
       objectReference: {fileID: 0}
     - target: {fileID: 5392385549087008568, guid: 20a3573b92b16334d89ba893612cf59a,
         type: 3}

@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 3948458559105968841}
   - component: {fileID: 7865145483573840308}
   - component: {fileID: 1269347281204155708}
-  - component: {fileID: -3410818729873996157}
   - component: {fileID: 7723717414320076920}
   - component: {fileID: 5285874837243874573}
+  - component: {fileID: 1481586232811422012}
   m_Layer: 8
   m_Name: ProjecileEnemy_projectile
-  m_TagString: Projectile
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,18 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19500041, y: 0.19404595}
   m_EdgeRadius: 0
---- !u!114 &-3410818729873996157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3948458559105968854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d0403998ce80604e835adbf3b03f060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &7723717414320076920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -260,3 +248,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1481586232811422012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948458559105968854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7923ea797b4783488fc7641f0da4110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4627514254103092738}
   - component: {fileID: 4627514254103092739}
   - component: {fileID: 5114306093552179259}
-  - component: {fileID: 2655984162533817994}
+  - component: {fileID: 7264547662857486066}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59901c207cd97e84dab4aef56aabf00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2655984162533817994
+--- !u!114 &7264547662857486066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -511,3 +511,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doctorCamera: {fileID: 0}
   UI: {fileID: 0}
+  doctor: {fileID: 0}
+  joyStick: {fileID: 0}
+  BossIntroUI: {fileID: 0}
+  upperBar: {fileID: 0}
+  lowerBar: {fileID: 0}
+  bossText: {fileID: 0}

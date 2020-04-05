@@ -15,4 +15,12 @@ public class FogOfWar : MonoBehaviour
             this.gameObject.SetActive(false);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
 }

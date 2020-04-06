@@ -28,25 +28,25 @@ public class Projectile_controller : MonoBehaviour
         {
                 //Walking Up
                 anim.SetInteger("direction", -2);
-            Debug.Log("here 1");
+           // Debug.Log("here 1");
         }
         else if (Mathf.Abs(movement.y) > Mathf.Abs(movement.x))
         {
                 //walking down
                 anim.SetInteger("direction", -1);
-            Debug.Log("here 2");
+           // Debug.Log("here 2");
         }
         else if (movement.x > Mathf.Abs(movement.y))
         {
                 //walking right
                 anim.SetInteger("direction", -3);
-            Debug.Log("here 3");
+            //Debug.Log("here 3");
         }
         else if (Mathf.Abs(movement.x) > Mathf.Abs(movement.y))
         {
                 //walking left
                 anim.SetInteger("direction", -4);
-            Debug.Log("here 4");
+            //Debug.Log("here 4");
         }
     }
 

@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Projec_Destruction.cs" />
     <Compile Include="Assets\Projectile_controller.cs" />
     <Compile Include="Assets\Scripts\AllThings.cs" />
     <Compile Include="Assets\Scripts\Bosses\BossDetectInRoom.cs" />
@@ -80,6 +81,8 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\Enemy\Knockback.cs" />
     <Compile Include="Assets\Scripts\Enemy\MeleeController.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Projectile_controller.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ProjectileMob_shoot.cs" />
     <Compile Include="Assets\Scripts\Enemy\SetDestination.cs" />
     <Compile Include="Assets\Scripts\Enemy\Spawner.cs" />
     <Compile Include="Assets\Scripts\FadeOut.cs" />
@@ -117,6 +120,7 @@
     <Compile Include="Assets\Scripts\UI\Abilities\LongClick.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterSelect.cs" />
     <Compile Include="Assets\Scripts\UI\DoctorSelect.cs" />
+    <Compile Include="Assets\Scripts\UI\FadeOut.cs" />
     <Compile Include="Assets\Scripts\UI\FogOfWar.cs" />
     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
     <Compile Include="Assets\Scripts\UI\PauseController.cs" />

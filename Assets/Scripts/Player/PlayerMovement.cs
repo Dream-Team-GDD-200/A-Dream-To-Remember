@@ -205,4 +205,12 @@ public class PlayerMovement : MonoBehaviour
         return isFemale;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyProjectile")
+        {
+            this.gameObject.GetComponent<HealthDoctor>().takeDamage(10);
+        }
+    }
+
 }

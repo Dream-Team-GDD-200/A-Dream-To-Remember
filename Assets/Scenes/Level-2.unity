@@ -399,7 +399,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &358006704
 GameObject:
@@ -438,12 +438,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358006704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44820908, y: 5.159653, z: -694.2031}
+  m_LocalPosition: {x: 0.44820908, y: 5.159653, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 54296653}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405385939
 GameObject:
@@ -1184,6 +1184,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 714618112}
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1289,11 +1294,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: UI
-      value: 
-      objectReference: {fileID: 714618112}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c6a228d45b2fa40994aa07aea66803, type: 3}
 --- !u!1 &1198682272
@@ -72442,12 +72442,12 @@ PrefabInstance:
         type: 3}
       propertyPath: button
       value: 
-      objectReference: {fileID: 233110928}
+      objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712863, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: bar
       value: 
-      objectReference: {fileID: 80362974}
+      objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712863, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: maleAnim
@@ -72690,7 +72690,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 506319115}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80362974}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24cb113b1b1f23b4e80199a9fba0b09a, type: 3}
@@ -72721,7 +72721,7 @@ PrefabInstance:
     - target: {fileID: 7118176802362332251, guid: 725f866a450092545aadabbddfd40aa7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -51.55172
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7118176802362332251, guid: 725f866a450092545aadabbddfd40aa7,
         type: 3}

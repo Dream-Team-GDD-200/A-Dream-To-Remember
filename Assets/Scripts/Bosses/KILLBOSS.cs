@@ -10,8 +10,8 @@ public class KILLBOSS : MonoBehaviour
     public GameObject Boss;
     public GameObject Transition; //reference to transtion ui element
     // Start is called before the first frame update
+    public GameObject MemFragUI;
 
-    public GameObject UI; //this reference is used to pass the
     void Start()
     {
         
@@ -62,6 +62,7 @@ public class KILLBOSS : MonoBehaviour
             break;
 
         }
+        MemFragUI.GetComponent<MemoryFragmentsUI>().saveMemoryFragments();
         SceneManager.LoadScene("Overworld"); //return to the overworld, 
 
 

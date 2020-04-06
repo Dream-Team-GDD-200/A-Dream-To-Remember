@@ -415,16 +415,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Name
-      value: Doctor
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Name
-      value: Doctor
-      objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -479,6 +469,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684063505883712930, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
       objectReference: {fileID: 0}
     - target: {fileID: 3684063504861559482, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
@@ -640,6 +640,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.24971645
       objectReference: {fileID: 0}
+    - target: {fileID: 4014637458857712138, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4087781375471024918, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: aStar
@@ -654,11 +659,6 @@ PrefabInstance:
         type: 3}
       propertyPath: orthographic size
       value: 3.5972164
-      objectReference: {fileID: 0}
-    - target: {fileID: 4014637458857712138, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7cae10e23f75e24abf88178bed9fb4f, type: 3}
@@ -1347,6 +1347,11 @@ PrefabInstance:
       propertyPath: Transition
       value: 
       objectReference: {fileID: 775543664}
+    - target: {fileID: 1581042802378588190, guid: 46fbf3a65e4662e4291c69e5e822df0f,
+        type: 3}
+      propertyPath: MemFragUI
+      value: 
+      objectReference: {fileID: 8390230042471050698}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46fbf3a65e4662e4291c69e5e822df0f, type: 3}
 --- !u!1001 &1658323788092925120
@@ -2276,6 +2281,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.007
       objectReference: {fileID: 0}
+    - target: {fileID: 3684063505883712859, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684063505883712859, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712857, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -2365,16 +2380,6 @@ PrefabInstance:
         type: 3}
       propertyPath: orthographic size
       value: 2.496298
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712859, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712859, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
         type: 3}
@@ -46748,6 +46753,12 @@ PrefabInstance:
       objectReference: {fileID: 1157655034}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 239241e8d16fb424eafb306783e4b754, type: 3}
+--- !u!1 &8390230042471050698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8390230043152946963, guid: 239241e8d16fb424eafb306783e4b754,
+    type: 3}
+  m_PrefabInstance: {fileID: 8390230042471050697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8399087751159863131
 PrefabInstance:
   m_ObjectHideFlags: 0

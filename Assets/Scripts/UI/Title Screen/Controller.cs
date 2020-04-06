@@ -8,6 +8,7 @@ public class Controller : MonoBehaviour
     public GameObject Male;
     public GameObject Female;
     public Button StartButton;
+    public GameObject Transitionref;
     private void Start()
     {
         PlayerPrefs.SetInt("isFemale", 0);
@@ -18,7 +19,8 @@ public class Controller : MonoBehaviour
         PlayerPrefs.SetInt("level1clear", 0);
         PlayerPrefs.SetInt("level2clear", 0);
         PlayerPrefs.SetInt("level3clear", 0);
-        SceneManager.LoadScene(3);
+        StartCoroutine(Transition()); //starts couroutine for a specific order
+        
     }
     public void playerSelect()
     {
@@ -38,5 +40,10 @@ public class Controller : MonoBehaviour
     void info()
     {
 
+    }
+    IEnumerator Transition()
+    {
+        yield return StartCoroutine(Transitionref.GetComponent<FadeOut>().UndoFade()); //black square appears
+        SceneManager.LoadScene(3);
     }
 }

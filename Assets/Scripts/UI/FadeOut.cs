@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FadeOut : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class FadeOut : MonoBehaviour
     {
 
         Time.timeScale = 1; //resets time back to 1 if not already done so through transitions (previousally would be stuck on transitions when changing scenes since timescale was at 0
-
+        
         yield return new WaitForSeconds(.5f);
 
         StartCoroutine(DoFade()); //at the start of level, start fading the blacksquare
@@ -33,8 +34,11 @@ public class FadeOut : MonoBehaviour
    public IEnumerator DoFade()  //fade the black square ui element
 
     {
-      
+        
         Time.timeScale = 0;
+         //stops palyer from pressing buttons in overworld
+
+       
         UI.SetActive(false);
 
 
@@ -53,7 +57,7 @@ public class FadeOut : MonoBehaviour
 
         
         Time.timeScale = 1; //now that we know for sure that it is done, unpause the game
-       overWriteJoel = false;
+        overWriteJoel = false;
         UI.SetActive(true);
      
 
@@ -61,10 +65,15 @@ public class FadeOut : MonoBehaviour
      public IEnumerator UndoFade() //this will be called at the end of levels or during puzzle reset switch, black sc reen will appear again
     {
 
+        overWriteJoel = true;  //stops ui elements from appearing in overworld (will make less jank at later date)
 
-        UI.SetActive(false);
+
+
+
 
         Time.timeScale = 0; //pause game during transition (we probably don't want them to be able to move during black screen
+
+        UI.SetActive(false);
         CanvasGroup blackSquare = GetComponent<CanvasGroup>();
         while (blackSquare.alpha < 1)
         {

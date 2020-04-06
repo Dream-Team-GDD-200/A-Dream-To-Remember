@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     private Vector2 corner3 = new Vector2(30.5f, -7.1f);
     private Vector2 level3 = new Vector2(30.5f, 5.9f);
 
+    public GameObject Transitionref;
+
     // Used for Level 1 -> TWall (Going Right)
     private bool moving = false;
     private bool move2 = false;
@@ -355,15 +357,32 @@ public class Movement : MonoBehaviour
     {
         if (playerPosition == 1)
         {
-            SceneManager.LoadScene(1);
+            StartCoroutine(level1transition());
         } 
         else if (playerPosition == 2)
         {
-            SceneManager.LoadScene(4);
+            StartCoroutine(level2transition());
         }
         else if (playerPosition == 3)
         {
-            SceneManager.LoadScene(5);
+            StartCoroutine(level3transition());
         }
+    }
+
+    //these wait until the transition is done then it loads the level
+    IEnumerator level1transition()
+    {
+        yield return StartCoroutine(Transitionref.GetComponent<FadeOut>().UndoFade());
+        SceneManager.LoadScene(1);
+    }
+    IEnumerator level2transition()
+    {
+        yield return StartCoroutine(Transitionref.GetComponent<FadeOut>().UndoFade());
+        SceneManager.LoadScene(4);
+    }
+    IEnumerator level3transition()
+    {
+        yield return StartCoroutine(Transitionref.GetComponent<FadeOut>().UndoFade());
+        SceneManager.LoadScene(5);
     }
 }

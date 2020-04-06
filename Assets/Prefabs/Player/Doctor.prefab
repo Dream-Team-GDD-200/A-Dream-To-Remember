@@ -266,7 +266,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.016}
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {x: 0, y: -1}
   joystick: {fileID: 0}
-  maleAnim: {fileID: 9100000, guid: 2874e9ad4298f20488107d26740cd03a, type: 2}
+  maleAnim: {fileID: 0}
   femaleAnim: {fileID: 9100000, guid: f9c6f535d02d3564d84576882c5e7952, type: 2}
   aStarPath: {fileID: 0}
   button: {fileID: 0}
@@ -349,7 +349,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00000022308433, y: -0.129}
@@ -525,10 +525,8 @@ MonoBehaviour:
     type: 3}
   FemaleDeathFrame5: {fileID: 4049600970957055578, guid: 440fc925c67202e438887109c1d022ad,
     type: 3}
-  MaleDeathFrame1: {fileID: -6517947824160116908, guid: 703f1321a4d4a6d418beb794cbe35dc9,
-    type: 3}
-  MaleDeathFrame2: {fileID: 8759166611097626148, guid: 703f1321a4d4a6d418beb794cbe35dc9,
-    type: 3}
+  MaleDeathFrame1: {fileID: 0}
+  MaleDeathFrame2: {fileID: 0}
   mainCamera: {fileID: 3684063505496419652}
   aStar: {fileID: 0}
 --- !u!114 &8650046196237828908
@@ -569,5 +567,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f83d80ffe5fbc04480d82d8dadbf0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasSkill: 01000000
-  hasMorph: 00

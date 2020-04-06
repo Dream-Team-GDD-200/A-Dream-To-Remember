@@ -35,7 +35,7 @@ public class RuneHandler : MonoBehaviour
             bool openDoor = true;
             for(int i=0; i < 4; i++)
             {
-                if((i+1) != playerInput[i])
+                if((i+1) != playerInput[i])//checks player input with desired input (1,2,3,4)
                 {
                     openDoor = false;
                 }
@@ -48,7 +48,7 @@ public class RuneHandler : MonoBehaviour
                 door.GetComponent<BoxCollider2D>().enabled = false;
                     
                 timesPressed = 0; //stops function from calling anymore, 
-                Debug.Log("yay");
+               
             }
             else
             {
@@ -61,7 +61,7 @@ public class RuneHandler : MonoBehaviour
                 Invoke("ResetBools", 2f); //reset bools after 2s, then changes images 
                 timesPressed = 0; //reset counter
                 playerInput.Clear();//clears Array
-                Debug.Log("nay");
+                
             }
         }
     }

@@ -29,6 +29,7 @@ public class BossKnockBack : MonoBehaviour
             //player knocked back
             other.gameObject.transform.Translate(-knockback * .8f);
             other.gameObject.GetComponent<PlayerMovement>().movement = new Vector2(0, 0);
+         
         }
     }
 }

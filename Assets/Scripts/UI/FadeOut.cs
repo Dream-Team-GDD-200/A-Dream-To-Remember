@@ -9,14 +9,14 @@ public class FadeOut : MonoBehaviour
    private bool overWriteJoel =true;
     IEnumerator Start()
     {
-        
 
+        Time.timeScale = 1; //resets time back to 1 if not already done so through transitions (previousally would be stuck on transitions when changing scenes since timescale was at 0
 
         yield return new WaitForSeconds(.5f);
 
         StartCoroutine(DoFade()); //at the start of level, start fading the blacksquare
+      
 
-    
     }
     void LateUpdate() //had to do this to fix  joel's programm from constantly overwritting the ui in overworld
     {
@@ -32,7 +32,8 @@ public class FadeOut : MonoBehaviour
     // Update is called once per frame
    public IEnumerator DoFade()  //fade the black square ui element
 
-    { 
+    {
+      
         Time.timeScale = 0;
         UI.SetActive(false);
 
@@ -54,7 +55,7 @@ public class FadeOut : MonoBehaviour
         Time.timeScale = 1; //now that we know for sure that it is done, unpause the game
        overWriteJoel = false;
         UI.SetActive(true);
-
+     
 
     }
      public IEnumerator UndoFade() //this will be called at the end of levels or during puzzle reset switch, black sc reen will appear again

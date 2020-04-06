@@ -45,7 +45,7 @@ public class HealthDoctor : MonoBehaviour
         */
     }
 
-    // Used to have the player take damage.  Pass in the amount of damage to take
+    // Used to have the player take damage (and enemies).  Pass in the amount of damage to take
     public void takeDamage(float dmg)
     {
         currentHealth -= dmg;
@@ -84,4 +84,6 @@ public class HealthDoctor : MonoBehaviour
         //    UnityEditor.EditorApplication.isPlaying = false;
         //}
     }
+
+ 
 }

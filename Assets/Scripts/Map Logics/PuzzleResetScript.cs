@@ -40,6 +40,7 @@ public class PuzzleResetScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && hasBeenPushed == false && other is BoxCollider2D)
         {
+
             hasBeenPushed = true;//makes sure multiple menus aren't open during this time
             resetButton.color = Color.green; //indicate button is currently pressed down
             

@@ -42,17 +42,10 @@ public class Knockback : MonoBehaviour
         // if hit by an projectile or deplyed cell get destroyed
         if (other.gameObject.CompareTag("Projectile") || other.gameObject.CompareTag("DeployedCell"))
         {
-                remainingHits -= 1;
-                float h = (float)remainingHits / (float)hitsCanTake;
-                this.gameObject.GetComponentInChildren<EnemyHealth>().SetHealth(h * 100f);
-                this.gameObject.GetComponentsInChildren<RectTransform>()[1].localScale = new Vector3(h, 1f, 1f);
-                if (remainingHits <= 0)
-                {
-                    this.gameObject.GetComponent<MemoryFragmentEnemy>().dropMemFragment();
-                    Destroy(this.gameObject);
-                }
-            this.gameObject.GetComponent<AudioSource>().Play();
+            StartCoroutine(Flicker()); // flickers enemy hit and does damage to enemy
+          
         }
+        
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -66,5 +59,23 @@ public class Knockback : MonoBehaviour
             other.gameObject.transform.Translate(-knockback * .15f);
             other.gameObject.GetComponent<PlayerMovement>().movement = new Vector2(0, 0);
         }
+    }
+    IEnumerator Flicker() //flickers enemy health and
+    {
+
+        this.gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.blue;
+        yield return new WaitForSeconds(.1f);
+        this.gameObject.GetComponentInChildren<SpriteRenderer>().color = Color.white;
+
+        remainingHits -= 1;
+        float h = (float)remainingHits / (float)hitsCanTake;
+        this.gameObject.GetComponentInChildren<EnemyHealth>().SetHealth(h * 100f); //this is how enemies are damaged it seems
+        this.gameObject.GetComponentsInChildren<RectTransform>()[1].localScale = new Vector3(h, 1f, 1f);
+        if (remainingHits <= 0)
+        {
+            this.gameObject.GetComponent<MemoryFragmentEnemy>().dropMemFragment();
+            Destroy(this.gameObject);
+        }
+        this.gameObject.GetComponent<AudioSource>().Play();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightHandlerPuzzleScript : MonoBehaviour
 {
-    private bool isRunning = true;
+    private bool isRunning = false;
    
     // Update is called once per frame
     void Update()
@@ -19,7 +19,7 @@ public class LightHandlerPuzzleScript : MonoBehaviour
     }
     IEnumerator Flashing()
     {
-        yield return new WaitForSeconds(.75f); //waits .75 seconds at start of period
+        yield return new WaitForSeconds(1f); //waits .75 seconds at start of period
 
         for (int i = 0; i < this.gameObject.transform.childCount; i++) //settting all children of the header to active
         {
@@ -27,7 +27,7 @@ public class LightHandlerPuzzleScript : MonoBehaviour
             child.SetActive(true);
         }
 
-        yield return new WaitForSeconds(.75f); //waits .75 secibds
+        yield return new WaitForSeconds(1f); //waits .75 secibds
 
         for (int i = 0; i < this.gameObject.transform.childCount; i++) //settting all children of the header to not active
         {

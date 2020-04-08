@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField]public int amountOfEnemies; // holds the amount of enemies that you want to spawn
+    public int amountOfEnemies; // holds the amount of enemies that you want to spawn
     [Header("Enemy Prefabs")]
     public GameObject[] Enemy; // holds enemy types
     [Header("Enemies Spawned")]
     public List<GameObject> SpawnedEnemies;//Holds all the enemies that where spawned
     [Header("Spawn Locations")]
     public GameObject[] SpawnLocations; // spawnLocations for the enemy
-    [Header("Enemy Type (1 = first only | 2+ = first through 2+)")]
+    [Header("Enemy Type (1 = first only | 2+ = first two enemy types)")]
     public int enemyTypes;// 1 --> all enemies through melee , 2 --> all enemies melee to ranged
     [SerializeField] public int MaxEnemies;
     private bool[] usedPositions;
@@ -28,11 +28,15 @@ public class Spawner : MonoBehaviour
         {
             amountOfEnemies = MaxEnemies;
         }
+        for(int i = 0; i < usedPositions.Length; i++){
+            usedPositions[i] = false;
+        }
     }
     public void spawnEnemies()
     {
         if(amountOfEnemies > 0)
         {
+            Debug.Log(amountOfEnemies);
             for (int i = 0; i < amountOfEnemies; i++)
             {
                 //randomly spawn enemy type
@@ -40,9 +44,11 @@ public class Spawner : MonoBehaviour
                     // set the position to the right of spawner
                     int temp;
                     do{
-                        temp = Random.Range(0, MaxEnemies);
+                        temp = Random.Range(0, SpawnLocations.Length);
                     }while(usedPositions[temp] == true);
-                    Vector2 position = SpawnLocations[temp].transform.position; //TODO: change this line
+                    Debug.Log("Temp " + temp);
+                    Vector2 position = SpawnLocations[temp].transform.position;
+                    Debug.Log("Position: " + position);
                     usedPositions[temp] = true;
                     // spawn enemy
                     GameObject spEnemy = Instantiate(Enemy[rand], position, Quaternion.identity);

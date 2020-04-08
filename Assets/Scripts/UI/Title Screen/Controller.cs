@@ -12,6 +12,7 @@ public class Controller : MonoBehaviour
     private void Start()
     {
         PlayerPrefs.SetInt("isFemale", 0);
+        PlayerPrefs.SetInt("MemFrags", 0);
     }
     public void startGame()
     {

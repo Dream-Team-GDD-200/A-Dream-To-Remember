@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorLogic : MonoBehaviour
 {
     public GameObject[] Door;
+    [Header("Collider to Block Path")]
+    public BoxCollider2D[] Blocker;
 
     //makes all doors for that room appear
     public void blockPath()
@@ -12,9 +14,8 @@ public class DoorLogic : MonoBehaviour
         for(int i = 0; i < Door.Length; i++)
         {
             Door[i].GetComponent<DoorSpriteSwitcher>().close();
-            Door[i].GetComponent<BoxCollider2D>().enabled = true;
+            Blocker[i].enabled = true;
         }
-        
     }
     //Makes all doors for that room disapear
     public void openPath()
@@ -22,7 +23,7 @@ public class DoorLogic : MonoBehaviour
         for (int i = 0; i < Door.Length; i++)
         {
             Door[i].GetComponent<DoorSpriteSwitcher>().open();
-            Door[i].GetComponent<BoxCollider2D>().enabled = false;
+            Blocker[i].enabled = false;
         }
     }
 }

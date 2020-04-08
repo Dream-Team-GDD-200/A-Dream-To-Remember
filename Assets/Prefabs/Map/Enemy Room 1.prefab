@@ -241,6 +241,7 @@ MonoBehaviour:
   SpawnedEnemies: []
   SpawnLocations: []
   enemyTypes: 1
+  MaxEnemies: 0
   allEnemiesDead: 0
   active: 0
 --- !u!1 &4896916289578680138
@@ -346,7 +347,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -450944891
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -3030622882687939156, guid: 30b5f3135249b3242847d4a3210fddab,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

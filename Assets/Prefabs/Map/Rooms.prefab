@@ -342,6 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4056481686384675655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1055,6 +1056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4056481686711645973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,6 +1216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4056481686805705665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1328,6 +1331,7 @@ MonoBehaviour:
   Door:
   - {fileID: 4056481688255811759}
   - {fileID: 4056481686384675654}
+  Blocker: []
 --- !u!114 &4056481686856696322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,6 +1518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4056481686887304982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1780,6 +1785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4056481687008397015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2107,6 +2113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door:
   - {fileID: 4056481686805705679}
+  Blocker: []
 --- !u!114 &4056481687136055791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2250,6 +2257,58 @@ MonoBehaviour:
   MaxEnemies: 0
   allEnemiesDead: 0
   active: 0
+--- !u!61 &4255340892321823048
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056481687178431641}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09012264, y: -0.15995732}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.23, y: 0.4}
+    newSize: {x: 0.3, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.04975471, y: 0.08008539}
+  m_EdgeRadius: 0
+--- !u!61 &4069232196663919701
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056481687178431641}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08977443, y: 0.092537254}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.23, y: 0.4}
+    newSize: {x: 0.3, y: 0.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.05045113, y: 0.21492553}
+  m_EdgeRadius: 0
 --- !u!1 &4056481687243133097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +3006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4056481687737644257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3060,6 +3120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door:
   - {fileID: 4056481687737644271}
+  Blocker: []
 --- !u!114 &4056481687764983513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3670,6 +3731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door:
   - {fileID: 4056481686711645971}
+  Blocker: []
 --- !u!114 &4056481688022400460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3989,6 +4051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4056481688255811745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4226,6 +4289,7 @@ MonoBehaviour:
   Door:
   - {fileID: 4056481686887304980}
   - {fileID: 4056481687008397013}
+  Blocker: []
 --- !u!61 &4056481688346685181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4367,6 +4431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door:
   - {fileID: 4056481686505419325}
+  Blocker: []
 --- !u!61 &4056481688358792180
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4709,6 +4774,12 @@ PrefabInstance:
 --- !u!4 &2652598251478276422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6877348474581662241, guid: 472a8b611360ac34a977f6148a263844,
+    type: 3}
+  m_PrefabInstance: {fileID: 8916797347622347623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4056481687178431641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4896916291019419646, guid: 472a8b611360ac34a977f6148a263844,
     type: 3}
   m_PrefabInstance: {fileID: 8916797347622347623}
   m_PrefabAsset: {fileID: 0}

@@ -11,17 +11,27 @@ public class Controller : MonoBehaviour
     public GameObject Transitionref;
     private void Start()
     {
-        PlayerPrefs.SetInt("isFemale", 0);
+        if(!PlayerPrefs.HasKey("isFemale")){
+            PlayerPrefs.SetInt("isFemale", 0);
+        }else{
+            StartButton.interactable = true;
+        }
+        if(!PlayerPrefs.HasKey("LastLevel")){
+            PlayerPrefs.SetInt("LastLevel", 1);
+        }
         PlayerPrefs.SetInt("MemFrags", 0);
     }
     public void startGame()
     {
         //set the 3 levels to not clear
-        PlayerPrefs.SetInt("level1clear", 0);
-        PlayerPrefs.SetInt("level2clear", 0);
-        PlayerPrefs.SetInt("level3clear", 0);
+        if(!PlayerPrefs.HasKey("level1clear")){
+            PlayerPrefs.SetInt("level1clear", 0);
+        }else if(!PlayerPrefs.HasKey("level1clear")){
+            PlayerPrefs.SetInt("level2clear", 0);
+        }else if(!PlayerPrefs.HasKey("level1clear")){
+            PlayerPrefs.SetInt("level3clear", 0);
+        }
         StartCoroutine(Transition()); //starts couroutine for a specific order
-        
     }
     public void playerSelect()
     {

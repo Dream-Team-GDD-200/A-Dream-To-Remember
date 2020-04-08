@@ -76,6 +76,16 @@ public class Movement : MonoBehaviour
             anim.runtimeAnimatorController = maleAnim;
         }
         anim.SetInteger("direction", 1);
+        if(PlayerPrefs.GetInt("LastLevel") == 2){
+            this.transform.position = level2;
+            playerPosition = 2;
+        }else if(PlayerPrefs.GetInt("LastLevel") == 3){
+            this.transform.position = level3;
+            playerPosition = 3;
+        }else{
+            this.transform.position = level1;
+            playerPosition = 1;
+        }
     }
 
     // 1 - idle down | 2 - idle up | 3 - idle right | 4 - idle left

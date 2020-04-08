@@ -11,17 +11,6 @@ public class KILLBOSS : MonoBehaviour
     public GameObject Transition; //reference to transtion ui element
     // Start is called before the first frame update
     public GameObject MemFragUI;
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player" && hasBeenPushed == false && other is BoxCollider2D)

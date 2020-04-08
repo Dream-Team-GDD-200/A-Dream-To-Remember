@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Pathfinding;
 public class PlayerMovement : MonoBehaviour
 {
@@ -35,7 +36,15 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 MaleScale_Box = new Vector2(.176781f, .228620f);
     private void Start()
     {
+        Scene ActiveScene = SceneManager.GetActiveScene();
        // Debug.Log(isFemale + " gender of doctor");
+       if(ActiveScene.name == "Level-1"){
+           PlayerPrefs.SetInt("LastLevel", 1);
+       }else if(ActiveScene.name == "Level-2"){
+           PlayerPrefs.SetInt("LastLevel", 2);
+       }else if(ActiveScene.name == "Level-3"){
+           PlayerPrefs.SetInt("LastLevel", 3);
+       }
     }
     void OnEnable()
     {

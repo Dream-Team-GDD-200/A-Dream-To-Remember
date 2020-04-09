@@ -59,6 +59,9 @@ public class Spawner : MonoBehaviour
                     spEnemy.transform.parent = GameObject.FindGameObjectWithTag("MasterEnemies").transform;
             }
             active = true;
+            for(int i = 0; i < MaxEnemies; i++){
+                SpawnLocations[i].SetActive(false);
+            }
         }
     }
     private void Update()

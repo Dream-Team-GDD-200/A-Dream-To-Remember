@@ -138,6 +138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 503282311867388504, guid: 8b609d06ae3167045bf6a8b2ec28f2a9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 503282311867388501, guid: 8b609d06ae3167045bf6a8b2ec28f2a9,
         type: 3}
       propertyPath: m_LocalPosition.x

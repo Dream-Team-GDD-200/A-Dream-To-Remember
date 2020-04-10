@@ -9,11 +9,17 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 movement = new Vector2(0, -1);
 
     static float baseSpeed = 2.5f;
+    [Header("Projectile")]
+    public float projectileSpeed;
+    public int shootCooldown;
+
+    private int shootDuration;
+
     float runSpeed = baseSpeed;
     float deadZone = .15f;
 
-    public Joystick joystick;
-
+    
+    [Header("Animators For Player")]
     public RuntimeAnimatorController maleAnim;
     public RuntimeAnimatorController femaleAnim;
 
@@ -21,13 +27,19 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
 
     private int isFemale = 1;
+    [Header("UI element for deadzone")]
+    public GameObject[] UIElements;
     //A* object
-
-
+    [Header("Other Links")]
+    public Joystick joystick;
     public GameObject aStarPath;
     public GameObject button;
     public GameObject bar;
-
+    private GameObject SkillTreeButton;
+    public GameObject PauseMenu;
+    public GameObject SkillTreeMenu;
+    public GameObject ResetMenu;
+    private Scene ActiveScene;
     private bool inCutScene = false;
 
     private Vector2 MaleOffset = new Vector2(0.01450627f, -.13f);
@@ -36,7 +48,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 MaleScale_Box = new Vector2(.176781f, .228620f);
     private void Start()
     {
-        Scene ActiveScene = SceneManager.GetActiveScene();
+        SkillTreeButton = GameObject.Find("SkillTreeButton");
+        ActiveScene = SceneManager.GetActiveScene();
        // Debug.Log(isFemale + " gender of doctor");
        if(ActiveScene.name == "Level-1"){
            PlayerPrefs.SetInt("LastLevel", 1);
@@ -68,7 +81,13 @@ public class PlayerMovement : MonoBehaviour
 
         this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
-
+    //checks to see if the screen touch is within a certain UI element
+    public bool CheckWithin(GameObject UI_Element, int index){
+        if((Input.GetTouch(index).position.x > UI_Element.transform.position.x - UI_Element.GetComponent<RectTransform>().sizeDelta.x/2 && Input.GetTouch(index).position.x < UI_Element.transform.position.x + UI_Element.GetComponent<RectTransform>().sizeDelta.x/2 && Input.GetTouch(index).position.y > UI_Element.transform.position.y - UI_Element.GetComponent<RectTransform>().sizeDelta.y/2 && Input.GetTouch(index).position.y < UI_Element.transform.position.y + UI_Element.GetComponent<RectTransform>().sizeDelta.y/2)){
+            return true;
+        }
+        return false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -76,37 +95,35 @@ public class PlayerMovement : MonoBehaviour
         // aStarPath.gameObject.GetComponent<AstarPath>().Scan();
 
         //checking for touches
-        for (int i = 0; i < Input.touchCount; ++i)
-        {
-            if (Input.GetTouch(i).phase == TouchPhase.Began)
+        if (Input.touchCount > 0){
+            for (int i = 0; i < Input.touchCount; ++i)
             {
-                if (Input.GetTouch(i).position.y > (button.transform.position.y + (button.transform.lossyScale.y / 4)) && Input.GetTouch(i).position.y < (bar.transform.position.y - (bar.transform.lossyScale.y / 4)))
+                if (Input.GetTouch(i).phase == TouchPhase.Began && !PauseMenu.active && !SkillTreeMenu.active && !ResetMenu.active && shootDuration == 0)
                 {
+                    bool notUIElement = false;
                     GameObject joystick = GameObject.FindGameObjectWithTag("JoyStick");
-                    if (!(Input.GetTouch(i).position.x > joystick.transform.position.x - joystick.transform.lossyScale.x && Input.GetTouch(i).position.x < joystick.transform.position.x + joystick.transform.lossyScale.x && Input.GetTouch(i).position.y > joystick.transform.position.y - joystick.transform.lossyScale.y && Input.GetTouch(i).position.y < joystick.transform.position.y + joystick.transform.lossyScale.y))
-                    {
-                        Vector2 directional = new Vector2(0, 0);
-                        if (Input.GetTouch(i).position.x < Screen.width / 2 - 50)
-                        {
-                            directional.x = -1;
+                    foreach(GameObject element in UIElements){
+                        notUIElement = CheckWithin(element, i);
+                        if(notUIElement){
+                            break;
                         }
-                        else if (Input.GetTouch(i).position.x > Screen.width / 2 + 50)
-                        {
-                            directional.x = 1;
-                        }
-                        if (Input.GetTouch(i).position.y < Screen.height / 2 - 50)
-                        {
-                            directional.y = -1;
-                        }
-                        else if (Input.GetTouch(i).position.y > Screen.height / 2 + 50)
-                        {
-                            directional.y = 1;
-                        }
-                        GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().Shoot(directional);
                     }
+                    if(!notUIElement){
+                        //This line changes the touch position on the screen in pixel location to a relative world position
+                        Vector3 WorldPosition = Camera.main.ScreenToWorldPoint(Input.GetTouch(i).position);
+                        //Pass world position and speed of projectile into the shoot function in white blood cell
+                        GetComponent<WhiteBloodCell>().Shoot(WorldPosition, projectileSpeed);
+                        shootDuration = shootCooldown;
+                        StartCoroutine(ShootCooldown());
+                    }
+                    
+                    
+                
                 }
             }
         }
+    
+        
         //Movement
         if (joystick.Horizontal <= deadZone && joystick.Horizontal >= -deadZone && joystick.Vertical <= deadZone && joystick.Vertical >= -deadZone)
         {
@@ -222,4 +239,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    IEnumerator ShootCooldown(){
+        while(shootDuration > 0){
+        yield return new WaitForSeconds(shootCooldown);
+        shootDuration--;
+        }
+    }
 }

@@ -3399,8 +3399,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 8390230043147816474}
-  - {fileID: 8390230043481959823}
   - {fileID: 8390230043463273345}
+  - {fileID: 8390230043481959823}
   - {fileID: 8390230042964884477}
   - {fileID: 8390230041822136440}
   - {fileID: 8390230042903239051}
@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8390230043071224264}
+      - m_Target: {fileID: 0}
         m_MethodName: spawnNurse
         m_Mode: 1
         m_Arguments:
@@ -6414,7 +6414,6 @@ GameObject:
   - component: {fileID: 8390230043071224267}
   - component: {fileID: 8390230043071224268}
   - component: {fileID: 8390230043071224269}
-  - component: {fileID: 8390230043071224264}
   - component: {fileID: 8390230043071224266}
   m_Layer: 5
   m_Name: Skill1 BG
@@ -6481,32 +6480,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8390230043071224264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8390230043071224265}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa8794434f898014dad14cda7f1883c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DeployCellCooldown: 3
-  HealCooldown: 3
-  ShockCooldown: 3
-  NurseCooldown: 3
-  delay: 8
-  DeployImage: {fileID: 5828403547458473291}
-  HealImage: {fileID: 5828403547458473288}
-  ShockImage: {fileID: 5828403547458473289}
-  NurseImage: {fileID: 5828403547458473398}
-  speedBoost: {fileID: 8300000, guid: 2041f7f8f62a4b9408f6a3bea32b2d1c, type: 3}
-  buttonDeploy: {fileID: 8390230042649940274}
-  buttonHeal: {fileID: 8390230043313109063}
-  buttonShock: {fileID: 8390230042198973972}
-  buttonNurse: {fileID: 8390230042937760769}
 --- !u!114 &8390230043071224266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6550,7 +6523,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8390230043071224264}
+      - m_Target: {fileID: 0}
         m_MethodName: deployCell
         m_Mode: 1
         m_Arguments:
@@ -7425,7 +7398,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8390230043071224264}
+      - m_Target: {fileID: 0}
         m_MethodName: healPlayer
         m_Mode: 1
         m_Arguments:
@@ -8450,7 +8423,7 @@ RectTransform:
   - {fileID: 8390230041658777231}
   - {fileID: 8390230043152946962}
   m_Father: {fileID: 8390230042381466755}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8554,7 +8527,7 @@ RectTransform:
   m_Children:
   - {fileID: 8390230043071224267}
   m_Father: {fileID: 8390230042381466755}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -8989,7 +8962,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8390230043071224264}
+      - m_Target: {fileID: 0}
         m_MethodName: shockEnemy
         m_Mode: 1
         m_Arguments:

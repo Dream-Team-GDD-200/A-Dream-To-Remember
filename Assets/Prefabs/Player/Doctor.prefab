@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 4162774916889209384}
   - component: {fileID: 1716905041614469899}
   - component: {fileID: 9149611975834374464}
+  - component: {fileID: 1935368305512946703}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Player
@@ -295,12 +296,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {x: 0, y: -1}
-  joystick: {fileID: 0}
+  projectileSpeed: 4
+  shootCooldown: 1
   maleAnim: {fileID: 9100000, guid: 2874e9ad4298f20488107d26740cd03a, type: 2}
   femaleAnim: {fileID: 9100000, guid: f9c6f535d02d3564d84576882c5e7952, type: 2}
+  UIElements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  joystick: {fileID: 0}
   aStarPath: {fileID: 0}
   button: {fileID: 0}
   bar: {fileID: 0}
+  PauseMenu: {fileID: 0}
+  SkillTreeMenu: {fileID: 0}
+  ResetMenu: {fileID: 0}
 --- !u!114 &5713149535226113612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,3 +584,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f83d80ffe5fbc04480d82d8dadbf0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1935368305512946703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686764965859516307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa8794434f898014dad14cda7f1883c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeployCellCooldown: 3
+  HealCooldown: 3
+  ShockCooldown: 3
+  NurseCooldown: 3
+  delay: 8
+  DeployImage: {fileID: 0}
+  HealImage: {fileID: 0}
+  ShockImage: {fileID: 0}
+  NurseImage: {fileID: 0}
+  speedBoost: {fileID: 8300000, guid: 2041f7f8f62a4b9408f6a3bea32b2d1c, type: 3}
+  buttonDeploy: {fileID: 0}
+  buttonHeal: {fileID: 0}
+  buttonShock: {fileID: 0}
+  buttonNurse: {fileID: 0}

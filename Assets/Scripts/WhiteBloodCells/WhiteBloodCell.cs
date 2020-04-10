@@ -10,7 +10,7 @@ public class WhiteBloodCell : MonoBehaviour
     public GameObject baseBarrier;
     public GameObject barrier;
     private PlayerMovement playerMovement;
-    private Vector2 projectileForce;
+    private Vector2 projectileVelocity;
     private float projectileSpeed = 150f;
     public bool validShot = true;
     private int cellHealth = 0;
@@ -25,15 +25,14 @@ public class WhiteBloodCell : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
     }
   // Update is called once per frame
-  public void Shoot(Vector3 directional)
+  public void Shoot(Vector3 WorldPosition, float projectileSpeed)
     {
         //make the projectileForce go in the direction of the click
-        projectileForce = directional;
+        projectileVelocity = (WorldPosition - this.gameObject.transform.position).normalized * projectileSpeed;
         projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
-        Rigidbody2D body = projectile.GetComponent<Rigidbody2D>();
-        projectileForce.Normalize();
-        body.AddForce(projectileForce * projectileSpeed);
-        //Debug.Log(projectileSpeed);
+        projectile.GetComponent<Rigidbody2D>().velocity = projectileVelocity;
+        projectile.transform.parent = GameObject.FindGameObjectWithTag("Projectile_Parent").transform;
+        Debug.Log(projectileVelocity);
     }
 
     public void Deploy()

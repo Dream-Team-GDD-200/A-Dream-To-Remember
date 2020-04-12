@@ -5,6 +5,7 @@ using UnityEngine;
 public class LightHandlerPuzzleScript : MonoBehaviour
 {
     private bool isRunning = false;
+    public float flashDuration = 0; //the time it stays active  and the time it stays inactive (full cycle is 2 * flashDuration)
    
     // Update is called once per frame
     void Update()
@@ -17,17 +18,11 @@ public class LightHandlerPuzzleScript : MonoBehaviour
         }
 
     }
-    IEnumerator Flashing()
+    IEnumerator Flashing() //lights will start out active in scene, they will contiunue to be active in the scene for flashDuration seconds, they will then turn off for flashDuration seconds
     {
-        yield return new WaitForSeconds(1.5f); //waits .75 seconds at start of period
+      
+       yield return new WaitForSeconds(flashDuration); //waits flashDuration (active period)
 
-        for (int i = 0; i < this.gameObject.transform.childCount; i++) //settting all children of the header to active
-        {
-            var child = this.gameObject.transform.GetChild(i).gameObject;
-            child.SetActive(true);
-        }
-
-        yield return new WaitForSeconds(1.5f); //waits .75 secibds
 
         for (int i = 0; i < this.gameObject.transform.childCount; i++) //settting all children of the header to not active
         {
@@ -35,6 +30,16 @@ public class LightHandlerPuzzleScript : MonoBehaviour
             child.SetActive(false);
         }
 
+
+        yield return new WaitForSeconds(flashDuration); //waits flashDuration (cooldown period)
+
+        for (int i = 0; i < this.gameObject.transform.childCount; i++) //settting all children of the header to active
+        {
+            var child = this.gameObject.transform.GetChild(i).gameObject;
+            child.SetActive(true);
+        }
+
+      
         isRunning = false; //Flashing() ends, so set isRunning to false
     }
 }

@@ -11,9 +11,9 @@ public class PlayerMovement : MonoBehaviour
     static float baseSpeed = 2.5f;
     [Header("Projectile")]
     public float projectileSpeed;
-    public int shootCooldown;
+    public float shootCooldown;
 
-    private int shootDuration;
+    private float shootDuration;
 
     float runSpeed = baseSpeed;
     float deadZone = .15f;
@@ -81,12 +81,32 @@ public class PlayerMovement : MonoBehaviour
 
         this.gameObject.GetComponent<SpriteRenderer>().enabled = true;
     }
-    //checks to see if the screen touch is within a certain UI element
-    public bool CheckWithin(GameObject UI_Element, int index){
-        if((Input.GetTouch(index).position.x > UI_Element.transform.position.x - UI_Element.GetComponent<RectTransform>().sizeDelta.x/2 && Input.GetTouch(index).position.x < UI_Element.transform.position.x + UI_Element.GetComponent<RectTransform>().sizeDelta.x/2 && Input.GetTouch(index).position.y > UI_Element.transform.position.y - UI_Element.GetComponent<RectTransform>().sizeDelta.y/2 && Input.GetTouch(index).position.y < UI_Element.transform.position.y + UI_Element.GetComponent<RectTransform>().sizeDelta.y/2)){
+    //checks to see if the screen touch or mouse click is within a certain UI element
+    public bool CheckWithin(GameObject UI_Element, Vector3 clickPosition){
+        if((clickPosition.x > UI_Element.transform.position.x - UI_Element.GetComponent<RectTransform>().sizeDelta.x/2 && clickPosition.x < UI_Element.transform.position.x + UI_Element.GetComponent<RectTransform>().sizeDelta.x/2 && clickPosition.y > UI_Element.transform.position.y - UI_Element.GetComponent<RectTransform>().sizeDelta.y/2 && clickPosition.y < UI_Element.transform.position.y + UI_Element.GetComponent<RectTransform>().sizeDelta.y/2)){
             return true;
         }
         return false;
+    }
+    
+    //Shoot projectile from the position of mouse or touch
+    public void shootFromClick(Vector3 positionClick){
+        bool notUIElement = false;
+        GameObject joystick = GameObject.FindGameObjectWithTag("JoyStick");
+        foreach(GameObject element in UIElements){
+            notUIElement = CheckWithin(element, positionClick);
+            if(notUIElement){
+                break;
+            }
+            }
+            if(!notUIElement){
+                //This line changes the touch position on the screen in pixel location to a relative world position
+                Vector3 WorldPosition = Camera.main.ScreenToWorldPoint(positionClick);
+                //Pass world position and speed of projectile into the shoot function in white blood cell
+                GetComponent<WhiteBloodCell>().Shoot(WorldPosition, projectileSpeed);
+                shootDuration = shootCooldown;
+                StartCoroutine(ShootCooldown());
+            }
     }
     // Update is called once per frame
     void Update()
@@ -100,26 +120,14 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Input.GetTouch(i).phase == TouchPhase.Began && !PauseMenu.active && !SkillTreeMenu.active && !ResetMenu.active && shootDuration == 0)
                 {
-                    bool notUIElement = false;
-                    GameObject joystick = GameObject.FindGameObjectWithTag("JoyStick");
-                    foreach(GameObject element in UIElements){
-                        notUIElement = CheckWithin(element, i);
-                        if(notUIElement){
-                            break;
-                        }
-                    }
-                    if(!notUIElement){
-                        //This line changes the touch position on the screen in pixel location to a relative world position
-                        Vector3 WorldPosition = Camera.main.ScreenToWorldPoint(Input.GetTouch(i).position);
-                        //Pass world position and speed of projectile into the shoot function in white blood cell
-                        GetComponent<WhiteBloodCell>().Shoot(WorldPosition, projectileSpeed);
-                        shootDuration = shootCooldown;
-                        StartCoroutine(ShootCooldown());
-                    }
-                    
-                    
-                
+                    Vector3 positionClick = Input.GetTouch(i).position;
+                    shootFromClick(positionClick);
                 }
+            }
+        }else if(Input.GetMouseButtonDown(0)){
+            if(!PauseMenu.active && !SkillTreeMenu.active && !ResetMenu.active && shootDuration == 0){
+                    Vector3 positionMouse = Input.mousePosition;
+                    shootFromClick(positionMouse);
             }
         }
     
@@ -242,7 +250,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator ShootCooldown(){
         while(shootDuration > 0){
         yield return new WaitForSeconds(shootCooldown);
-        shootDuration--;
+        shootDuration -= shootCooldown;
         }
     }
 }

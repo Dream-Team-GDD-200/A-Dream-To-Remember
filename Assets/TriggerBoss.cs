@@ -6,6 +6,8 @@ public class TriggerBoss : MonoBehaviour
 {
     public GameObject bossRef; //reference to the boss
     public GameObject bossPuzzleRef; //reference to the boss puzzle
+    public GameObject lastSegmentPuzzleRef;//reference to the last segment of the boss puzzle
+
     private bool bossTriggered = false; //no reee
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,6 +23,7 @@ public class TriggerBoss : MonoBehaviour
             //potentially for ux polish lerp over to switch and give a red flashing arrow 
             bossRef.SetActive(true);
             bossPuzzleRef.SetActive(true);
+            lastSegmentPuzzleRef.SetActive(true);
             bossTriggered = true; //REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
         }
     }

@@ -9,17 +9,36 @@ public class Controller : MonoBehaviour
     public GameObject Female;
     public Button StartButton;
     public GameObject Transitionref;
+    public GameObject UICanvas;
+
+    private bool doTransition = false;
+
+    public Camera cam;
+
+    private float camSize = 5f;
+
+    private float timeStartedLerping;
+
+    private Vector3 camMoveTo = new Vector3(0, 2.05f, -1);
+    private Vector3 docCamPos;
+
     private void Start()
     {
+        //sets the resolution to the same as what we want so it work on all builds
+        if(SystemInfo.deviceType == DeviceType.Desktop){
+            Screen.SetResolution(1200, 800, false, 60);
+        }else if(SystemInfo.deviceType == DeviceType.Handheld){
+            Screen.SetResolution(1200,800, true, 30);
+        }
+       
         if(!PlayerPrefs.HasKey("isFemale")){
             PlayerPrefs.SetInt("isFemale", 0);
-        }else{
-            StartButton.interactable = true;
         }
         if(!PlayerPrefs.HasKey("LastLevel")){
             PlayerPrefs.SetInt("LastLevel", 1);
         }
         PlayerPrefs.SetInt("MemFrags", 0);
+        docCamPos = new Vector3(cam.transform.position.x, cam.transform.position.y, -1);
     }
     public void startGame()
     {
@@ -31,7 +50,10 @@ public class Controller : MonoBehaviour
         }else if(!PlayerPrefs.HasKey("level1clear")){
             PlayerPrefs.SetInt("level3clear", 0);
         }
-        StartCoroutine(Transition()); //starts couroutine for a specific order
+        UICanvas.GetComponent<Canvas>().enabled = false;
+        timeStartedLerping = Time.time;
+        doTransition = true;
+        StartCoroutine(switchScene());
     }
     public void playerSelect()
     {
@@ -48,13 +70,37 @@ public class Controller : MonoBehaviour
         PlayerPrefs.SetInt("isFemale", 1); // 1 is female
         StartButton.interactable = true;
     }
-    void info()
+    void Update()
     {
-
+        if (doTransition)
+        {
+            cam.transform.position = Lerp(docCamPos, camMoveTo, timeStartedLerping, 1f);
+            cam.orthographicSize = shrink(camSize, .1f, timeStartedLerping, 1f);
+        }
     }
-    IEnumerator Transition()
+
+    private Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime = 1)
     {
-        yield return StartCoroutine(Transitionref.GetComponent<FadeOut>().UndoFade()); //black square appears
+        float timeSinceStarted = Time.time - timeStartedLerping;
+        float percentageComplete = timeSinceStarted / lerpTime;
+        var result = Vector3.Lerp(start, end, percentageComplete);
+        return result;
+    }
+
+    private float shrink(float initSize, float endSize, float timeStartedLerping, float lerpTime = 1)
+    {
+        float timeSinceStarted = Time.time - timeStartedLerping;
+        float percentageComplete = 1 - timeSinceStarted / lerpTime;
+        float difference = initSize - endSize;
+        float result = difference * percentageComplete + endSize;
+        Debug.Log("percent: " + percentageComplete + " difference: " + difference + " result: " + result);
+        return result;
+    }
+
+    IEnumerator switchScene()
+    {
+        yield return new WaitForSeconds(1f);
+        doTransition = false;
         SceneManager.LoadScene(3);
     }
 }

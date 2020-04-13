@@ -297,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {x: 0, y: -1}
   projectileSpeed: 4
-  shootCooldown: 1
+  shootCooldown: 0.5
   maleAnim: {fileID: 9100000, guid: 2874e9ad4298f20488107d26740cd03a, type: 2}
   femaleAnim: {fileID: 9100000, guid: f9c6f535d02d3564d84576882c5e7952, type: 2}
   UIElements:

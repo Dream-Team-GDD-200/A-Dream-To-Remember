@@ -29,6 +29,8 @@ public class Cutscene : MonoBehaviour
 
     private float lerpT = 1f;
 
+    private float camSize = 5f;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -30,6 +30,11 @@ public class SkillTreeButtons : MonoBehaviour
   //morphEight
   public GameObject morphEightWindow;
   public Image morphEightButton;
+  //images for the skills
+  public Image cellSkill;
+  public Image healSkill;
+  public Image shockSkill;
+  public Image nurseSkill;
 
   // Start is called before the first frame update
   void Start()
@@ -166,21 +171,25 @@ public class SkillTreeButtons : MonoBehaviour
     {
       morphOneButton.color = Color.red;
       morphTwoButton.color = Color.red;
+      shockSkill.color = Color.red;
     }
     if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(3) == false)
     {
       morphThreeButton.color = Color.red;
       morphFourButton.color = Color.red;
+      nurseSkill.color = Color.red;
     }
     if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(1) == false)
     {
       morphFiveButton.color = Color.red;
       morphSixButton.color = Color.red;
+      healSkill.color = Color.red;
     }
     if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(0) == false)
     {
       morphSevenButton.color = Color.red;
       morphEightButton.color = Color.red;
+      cellSkill.color = Color.red;
     }
   }
 
@@ -307,7 +316,7 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphTwoBuy()
   {
     morphTwoWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("UI").GetComponent<LongClick>().alterCooldown("Shock", 2f);
+    GameObject.FindGameObjectWithTag("Player").GetComponent<LongClick>().alterCooldown("Shock", 2f);
     GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(1, true);
     Debug.Log("Radius Increased");
   }
@@ -331,7 +340,7 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphFiveBuy()
   {
     morphFiveWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("UI").GetComponent<LongClick>().alterHealVal(20f);
+    GameObject.FindGameObjectWithTag("Player").GetComponent<LongClick>().alterHealVal(20f);
     GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(4, true);
     Debug.Log("Heal Increased");
   }
@@ -339,7 +348,7 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphSixBuy()
   {
     morphSixWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("UI").GetComponent<LongClick>().alterHealVal(10f);
+    GameObject.FindGameObjectWithTag("Player").GetComponent<LongClick>().alterHealVal(10f);
     GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(5, true);
     Debug.Log("Potency Increased");
   }
@@ -355,7 +364,7 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphEightBuy()
   {
     morphEightWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("UI").GetComponent<LongClick>().alterCooldown("DeployedCell", 2f);
+    GameObject.FindGameObjectWithTag("Player").GetComponent<LongClick>().alterCooldown("DeployedCell", 2f);
     GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(7, true);
     Debug.Log("Potency Increased");
   }

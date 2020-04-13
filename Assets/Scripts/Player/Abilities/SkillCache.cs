@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class SkillCache : MonoBehaviour
@@ -8,7 +9,7 @@ public class SkillCache : MonoBehaviour
    * index 0 = white blood cell, 
    * 1 = speed boost, 2 = shock, 
    * 3 = nurse.*/
-  private bool[] hasSkill = { true, false, false, false};
+  private bool[] hasSkill = { true, true, false, false};
 
   /* Set to true if the doctor has unlocked the corresponding morph. 
    * index 0 = shock duration increase
@@ -26,10 +27,8 @@ public class SkillCache : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //DELETE ONCE WE PREVENT PLAYERS FROM STARTING WITH ALL SKILLS
-      hasSkill[1] = true;
-      hasSkill[2] = true;
-      hasSkill[3] = true;
+
+
     }
 
     // Update is called once per frame

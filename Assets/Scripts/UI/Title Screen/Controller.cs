@@ -11,6 +11,13 @@ public class Controller : MonoBehaviour
     public GameObject Transitionref;
     private void Start()
     {
+        //sets the resolution to the same as what we want so it work on all builds
+        if(SystemInfo.deviceType == DeviceType.Desktop){
+            Screen.SetResolution(1200, 800, false, 60);
+        }else if(SystemInfo.deviceType == DeviceType.Handheld){
+            Screen.SetResolution(1200,800, true, 30);
+        }
+       
         if(!PlayerPrefs.HasKey("isFemale")){
             PlayerPrefs.SetInt("isFemale", 0);
         }else{

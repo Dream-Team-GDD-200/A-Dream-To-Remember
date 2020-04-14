@@ -24,8 +24,23 @@ public class TriggerBoss : MonoBehaviour
             bossRef.SetActive(true);
             bossPuzzleRef.SetActive(true);
             lastSegmentPuzzleRef.SetActive(true);
-            bossTriggered = true; //REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+            //Do cutscene and active boss when finished
+            bossRef.GetComponent<MoveLevelTwoBossRight>().enabled = false;
+            StartCoroutine(doCutscene());
         }
+    }
+
+    IEnumerator doCutscene()
+    {
+        // start cutscene stuff here
+        bossRef.gameObject.GetComponent<Cutscene>().beginCutscene();
+
+        yield return new WaitForSeconds(8f);
+
+        // Enable the boss
+        bossRef.GetComponent<MoveLevelTwoBossRight>().enabled = true;
+        bossTriggered = true; //REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
     }
 
 }

@@ -21,6 +21,27 @@ public class LongClick : MonoBehaviour
     public GameObject buttonHeal;
     public GameObject buttonShock;
     public GameObject buttonNurse;
+
+    public void onEnable()
+    {
+        if(CellDuration != 0)
+        {
+            StartCoroutine(CoolDown(CellDuration, 1));
+        }
+        if(HealDuration != 0)
+        {
+            StartCoroutine(CoolDown(HealDuration, 2));
+        }
+        if(ShockDuration != 0)
+        {
+            StartCoroutine(CoolDown(ShockDuration, 3));
+        }
+        if(NurseDuration != 0)
+        {
+            StartCoroutine(CoolDown(NurseDuration, 4));
+        }
+    }
+
     //delay for the attacking animation
     IEnumerator waitForAnimDeploy()
     {

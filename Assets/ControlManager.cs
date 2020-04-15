@@ -8,12 +8,11 @@ public class ControlManager : MonoBehaviour
     [Header("Joystick")]
     public GameObject Joystick;
     [Header("Scripts")]
-    private LongClick Skills;
+    public LongClick Skills;
     
     // Start is called before the first frame update
     void Start()
     {
-        Skills = GetComponent<LongClick>();
         if(PlayerPrefs.GetInt("Controls") == 1){
             Joystick.SetActive(false);
         }else if (PlayerPrefs.GetInt("Controls") == 0){

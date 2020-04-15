@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 5964256593460477849}
   - component: {fileID: 4025084147596000788}
   - component: {fileID: 3601736359698874663}
+  - component: {fileID: 1074756316542142485}
   m_Layer: 0
   m_Name: OverworldDoctor
   m_TagString: Player
@@ -305,5 +306,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd13e123d2b3764fad9db5a5e6e2160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkillTreeMenu: {fileID: 0}
+  Controls: {fileID: 0}
   PauseMenu: {fileID: 0}
   SkillTree: {fileID: 0}
+--- !u!114 &1074756316542142485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7054088341148916227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f83d80ffe5fbc04480d82d8dadbf0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -8,11 +8,18 @@ using UnityEngine.UI;
 
 public class PauseController : MonoBehaviour
 {
+    [Header("UI and Overlays")]
     public GameObject pauseOverlay;
     public GameObject UI;
+    public GameObject ControlsOverlay;
+    [Header("Scripts and Transforms")]
     AllThings MasterList;
     Transform deactivateButton;
+    [Header("Buttons")]
     public Button WorldSelect, MainMenu;
+    public Button Controls;
+    [Header("Other")]
+    public bool isactive;
     private void Start()
     {
         try
@@ -25,6 +32,10 @@ public class PauseController : MonoBehaviour
         }else if (SceneManager.GetActiveScene().name == "Title Screen")
         {
             MainMenu.interactable = false;
+        }
+        if(PlayerPrefs.GetInt("Controls") == 0)
+        {
+            Controls.gameObject.SetActive(false);
         }
     }
     public void openMenu()
@@ -56,5 +67,18 @@ public class PauseController : MonoBehaviour
     public void characterSelect()
     {
         SceneManager.LoadScene("CharacterSelect");
+    }
+    public void openControls()
+    {
+        if (ControlsOverlay.activeSelf)
+        {
+            ControlsOverlay.SetActive(false);
+            isactive = false;
+        }
+        else
+        {
+            ControlsOverlay.SetActive(true);
+            isactive = true;
+        }
     }
 }

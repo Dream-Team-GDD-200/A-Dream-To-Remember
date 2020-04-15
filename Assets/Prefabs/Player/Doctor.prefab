@@ -144,6 +144,8 @@ GameObject:
   - component: {fileID: 1716905041614469899}
   - component: {fileID: 9149611975834374464}
   - component: {fileID: 1935368305512946703}
+  - component: {fileID: 5137415486842192846}
+  - component: {fileID: 7300335081885149470}
   m_Layer: 0
   m_Name: Doctor
   m_TagString: Player
@@ -610,3 +612,30 @@ MonoBehaviour:
   buttonHeal: {fileID: 0}
   buttonShock: {fileID: 0}
   buttonNurse: {fileID: 0}
+--- !u!114 &5137415486842192846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686764965859516307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3078301c95aeaaf4cba3cec80c5d0fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Joystick: {fileID: 0}
+--- !u!114 &7300335081885149470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686764965859516307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd13e123d2b3764fad9db5a5e6e2160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseMenu: {fileID: 0}
+  SkillTree: {fileID: 0}

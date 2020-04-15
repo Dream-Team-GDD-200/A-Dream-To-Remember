@@ -5,14 +5,17 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Controller : MonoBehaviour
 {
+    [Header("GameObjects")]
     public GameObject Male;
     public GameObject Female;
+    public Button ControlButton;
     public Button StartButton;
     public GameObject Transitionref;
     public GameObject UICanvas;
+    public GameObject Controls;
 
     private bool doTransition = false;
-
+    [Header("Camera")]
     public Camera cam;
 
     private float camSize = 5f;
@@ -27,8 +30,11 @@ public class Controller : MonoBehaviour
         //sets the resolution to the same as what we want so it work on all builds
         if(SystemInfo.deviceType == DeviceType.Desktop){
             Screen.SetResolution(1200, 800, false, 60);
+            PlayerPrefs.SetInt("Controls", 1); // 1 is the controls for pc
         }else if(SystemInfo.deviceType == DeviceType.Handheld){
             Screen.SetResolution(1200,800, true, 30);
+            PlayerPrefs.SetInt("Controls", 0); // 0 is the controls for mobile'
+            ControlButton.enabled = false;
         }
        
         if(!PlayerPrefs.HasKey("isFemale")){
@@ -102,5 +108,17 @@ public class Controller : MonoBehaviour
         yield return new WaitForSeconds(1f);
         doTransition = false;
         SceneManager.LoadScene(3);
+    }
+
+    public void openControls()
+    {
+        if (Controls.activeSelf)
+        {
+            Controls.SetActive(false);
+        }
+        else
+        {
+            Controls.SetActive(true);
+        }
     }
 }

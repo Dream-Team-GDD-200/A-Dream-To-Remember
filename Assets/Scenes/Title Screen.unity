@@ -138,6 +138,18 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1298768813741389108}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1698516354 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2616533116457318063, guid: 81dbcd6e7e1882844bae82ace3cae283,
+    type: 3}
+  m_PrefabInstance: {fileID: 3559354861697636369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1785660978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -272,6 +284,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b609d06ae3167045bf6a8b2ec28f2a9, type: 3}
+--- !u!114 &1955134966 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+    type: 3}
+  m_PrefabInstance: {fileID: 3559354861697636369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abada519ff126b49930e7ab44aa8e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2057897357
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +394,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
+        type: 3}
+      propertyPath: m_Depth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
+        type: 3}
+      propertyPath: near clip plane
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
+        type: 3}
+      propertyPath: far clip plane
+      value: 1002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1298768813092850752, guid: 52c7ad8a3b55b614298a06f535a852c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -425,31 +474,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
-        type: 3}
-      propertyPath: m_Depth
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
-        type: 3}
-      propertyPath: near clip plane
-      value: -20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
-        type: 3}
-      propertyPath: m_ClearFlags
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
-        type: 3}
-      propertyPath: far clip plane
-      value: 1002
-      objectReference: {fileID: 0}
-    - target: {fileID: 1298768813092850759, guid: 52c7ad8a3b55b614298a06f535a852c7,
-        type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52c7ad8a3b55b614298a06f535a852c7, type: 3}
 --- !u!1001 &3559354861697636369
@@ -459,6 +483,81 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7436399063196428340, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1955134966}
+    - target: {fileID: 7436399063196428340, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: openControls
+      objectReference: {fileID: 0}
+    - target: {fileID: 4163172790898409135, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4163172790898409135, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552025205518724924, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099781609032346291, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099781609032346291, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_Text
+      value: Controls
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099781609032346291, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099781609032346291, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7099781609032346291, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616533116457318063, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1955134966}
+    - target: {fileID: 2616533116457318063, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: openControls
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540619879939771612, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -351.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540619879939771612, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -501
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920385821548069535, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_Name
+      value: ControlButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3559354860261802674, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_Name
@@ -544,13 +643,34 @@ PrefabInstance:
       propertyPath: UICanvas
       value: 
       objectReference: {fileID: 882159548}
+    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: Controls
+      value: 
+      objectReference: {fileID: 3559354861697636370}
+    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: ControlButton
+      value: 
+      objectReference: {fileID: 1698516354}
     - target: {fileID: 3559354861371588156, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3559354861371588154, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81dbcd6e7e1882844bae82ace3cae283, type: 3}
+--- !u!1 &3559354861697636370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5552025205518724924, guid: 81dbcd6e7e1882844bae82ace3cae283,
+    type: 3}
+  m_PrefabInstance: {fileID: 3559354861697636369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8368317650683478172
 PrefabInstance:
   m_ObjectHideFlags: 0

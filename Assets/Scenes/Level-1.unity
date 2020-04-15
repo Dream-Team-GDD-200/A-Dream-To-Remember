@@ -120,21 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-=======
---- !u!1 &4218899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687618086843, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &46478990 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687660343590, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 --- !u!4 &47034680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7954143999422131676, guid: bb1132479d999c945b18d7c8a2cc05cd,
@@ -209,42 +194,6 @@ Transform:
   m_Father: {fileID: 326784380}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &233311168 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4627514254103092740, guid: fb3d241861d37cf4f8307a4b5c34af57,
-    type: 3}
-  m_PrefabInstance: {fileID: 4627514254075104831}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39701631}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.18167505, y: -0.0029329956}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7206808, y: 0.030033045}
-  m_EdgeRadius: 0
---- !u!1 &46478990 stripped
-=======
---- !u!1 &213417909 stripped
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687421483037, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &233311168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4627514254103092740, guid: fb3d241861d37cf4f8307a4b5c34af57,
@@ -299,15 +248,9 @@ Transform:
   m_Father: {fileID: 199089562}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &343781001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5518512381603675589, guid: 100b3b3e4d541654fac44d7507c5221a,
-=======
 --- !u!1 &308734431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3377656494544697108, guid: 100b3b3e4d541654fac44d7507c5221a,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
     type: 3}
   m_PrefabInstance: {fileID: 4056481687613867944}
   m_PrefabAsset: {fileID: 0}
@@ -317,47 +260,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
---- !u!1 &448336201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8390230042381466752, guid: 239241e8d16fb424eafb306783e4b754,
-    type: 3}
-  m_PrefabInstance: {fileID: 8390230042471050697}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75255445}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -265825911
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -4869409570326436500, guid: 2dc95cd21a831ae4b8f605c19969f8ec,
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326784380}
@@ -388,13 +290,6 @@ Transform:
   m_Father: {fileID: 4056481687613867947}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &337702025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687817349921, guid: 100b3b3e4d541654fac44d7507c5221a,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &343781001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5518512381603675589, guid: 100b3b3e4d541654fac44d7507c5221a,
@@ -406,12 +301,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
     type: 3}
   m_PrefabInstance: {fileID: 2952643541264175980}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &419551599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687764983495, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &448336201 stripped
 GameObject:
@@ -441,21 +330,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 480552651}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 996.6236, y: 387.6932, z: -352.8992}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2094501665}
-  - {fileID: 1615314959}
-  - {fileID: 1261610749}
-  - {fileID: 1507184357}
-  - {fileID: 284241309}
-  - {fileID: 486444522}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-=======
   m_GameObject: {fileID: 454331405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.1247, y: 0.042, z: 0}
@@ -463,7 +337,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 866344760}
   m_RootOrder: 1
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &480552651
 GameObject:
@@ -487,8 +360,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
   m_GameObject: {fileID: 480552651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 996.6236, y: 387.6932, z: -352.8992}
@@ -500,7 +371,6 @@ Transform:
   - {fileID: 1507184357}
   - {fileID: 284241309}
   - {fileID: 486444522}
-  - {fileID: 859024669}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -510,19 +380,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5686764965937668054}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &484999238 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-    type: 3}
-  m_PrefabInstance: {fileID: 5686764965937668054}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484999237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa8794434f898014dad14cda7f1883c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 --- !u!4 &484999249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5686764965859516295, guid: c7cae10e23f75e24abf88178bed9fb4f,
@@ -531,21 +388,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &486444522 stripped
 Transform:
-<<<<<<< HEAD
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-=======
   m_CorrespondingSourceObject: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
     type: 3}
   m_PrefabInstance: {fileID: 3684063504816293340}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &497713804 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687707616548, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &514359929
 GameObject:
@@ -643,101 +488,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 771406640}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
---- !u!4 &699981312 stripped
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178322086}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.304348, y: 0.23870277, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children: []
-  m_Father: {fileID: 1197911787}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &178322088
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178322086}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -265825911
-  m_SortingLayer: 2
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 1042186151847257984, guid: 2dc95cd21a831ae4b8f605c19969f8ec,
-    type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.2, y: 0.25}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &184619322
-=======
---- !u!1 &673484950 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481688018917182, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &678017634 stripped
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481688022400458, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 184619323}
-  - component: {fileID: 184619324}
-  m_Layer: 8
-  m_Name: Rock_3 (1)
-  m_TagString: Decoration
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &184619323
-Transform:
-=======
 --- !u!4 &699981312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7099739361516876266, guid: bb1132479d999c945b18d7c8a2cc05cd,
@@ -746,23 +496,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &715649141
 GameObject:
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 184619322}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19295311, y: 0.067632675, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children: []
-  m_Father: {fileID: 593870650}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &184619324
-SpriteRenderer:
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 715649142}
@@ -775,58 +512,10 @@ SpriteRenderer:
   m_IsActive: 1
 --- !u!4 &715649142
 Transform:
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 184619322}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -265825911
-  m_SortingLayer: 2
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -4869409570326436500, guid: 2dc95cd21a831ae4b8f605c19969f8ec,
-    type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.3, y: 0.19}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &192630236
-=======
   m_GameObject: {fileID: 715649141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.2812, y: -0.8426, z: 0}
@@ -836,7 +525,6 @@ Transform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &718998876
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -984,15 +672,6 @@ Transform:
   m_Father: {fileID: 199089562}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
---- !u!1 &833378283 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481688446193731, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 --- !u!1 &835942964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,20 +702,6 @@ Transform:
   m_Father: {fileID: 199089562}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &863412851 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7663261223860071811, guid: 7abf6a04ce3c6214c9f9f66c46f1ccc1,
-    type: 3}
-  m_PrefabInstance: {fileID: 7663261223072485360}
-=======
---- !u!4 &859024669 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1658323788092925120}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &863412851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7663261223860071811, guid: 7abf6a04ce3c6214c9f9f66c46f1ccc1,
@@ -1244,15 +909,6 @@ Transform:
   m_Father: {fileID: 326784380}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
---- !u!1 &1004398928 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481688346685176, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 --- !u!1 &1031361086 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4056481686711645971, guid: 100b3b3e4d541654fac44d7507c5221a,
@@ -1341,15 +997,6 @@ Transform:
   m_Father: {fileID: 866344760}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
---- !u!1 &1053441955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481688263342091, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 --- !u!1 &1073184800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,15 +1027,6 @@ Transform:
   m_Father: {fileID: 866344760}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
---- !u!1 &1112481296 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481686577551800, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 --- !u!1 &1113679285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,30 +1153,6 @@ Transform:
   m_Father: {fileID: 866344760}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!4 &1261610749 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 22688982467301941, guid: d3df776df1c725245b28f383b5c70b90,
-    type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.17, y: 0.25}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &269957165
-=======
---- !u!1 &1259001840 stripped
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481686455636056, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1261610749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 22688982467301941, guid: d3df776df1c725245b28f383b5c70b90,
@@ -1563,15 +1177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24cb113b1b1f23b4e80199a9fba0b09a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
---- !u!1 &1316072442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481686377704530, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
 --- !u!1 &1316324983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8371984460811433997, guid: 100b3b3e4d541654fac44d7507c5221a,
@@ -1666,18 +1271,6 @@ Transform:
   m_Father: {fileID: 2048939250}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!1 &1401858222 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687178431641, guid: 100b3b3e4d541654fac44d7507c5221a,
-=======
---- !u!1 &1390577064 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481686856696320, guid: 100b3b3e4d541654fac44d7507c5221a,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1401858222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4056481687178431641, guid: 100b3b3e4d541654fac44d7507c5221a,
@@ -1745,14 +1338,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2741407250790897943}
     m_Modifications:
-<<<<<<< HEAD
     - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_Name
       value: Rubble Patch
       objectReference: {fileID: 0}
-=======
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
     - target: {fileID: 8226254982351598805, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1813,14 +1403,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.953
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
-    - target: {fileID: 612565596839417213, guid: 3ea815235fb4d3944a07635f56a1e9a1,
-        type: 3}
-      propertyPath: m_Name
-      value: Rubble Patch
-      objectReference: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
     - target: {fileID: -2800045295267170909, guid: 3ea815235fb4d3944a07635f56a1e9a1,
         type: 3}
       propertyPath: m_Offset.y
@@ -1878,7 +1460,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8399087751094294052, guid: f20e088c9ddf4cd499ab6df1f861cd26,
     type: 3}
   m_PrefabInstance: {fileID: 8399087751159863131}
-<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1642969708 stripped
 GameObject:
@@ -1904,63 +1485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa8794434f898014dad14cda7f1883c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1708990046
-=======
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1630505749 stripped
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687095577789, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1642969708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3978241708012872966, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 289920479}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1929493, y: -0.30633545, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children: []
-  m_Father: {fileID: 1461005907}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1760486354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8390230043147816475, guid: 239241e8d16fb424eafb306783e4b754,
-    type: 3}
-  m_PrefabInstance: {fileID: 8390230042471050697}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1760486356 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8390230043147816477, guid: 239241e8d16fb424eafb306783e4b754,
-    type: 3}
-  m_PrefabInstance: {fileID: 8390230042471050697}
-=======
---- !u!1 &1669674565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687136055789, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1683895296 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8390230043071224265, guid: 239241e8d16fb424eafb306783e4b754,
-    type: 3}
-<<<<<<< HEAD
-  m_PrefabInstance: {fileID: 2741407250790897942}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1844059948 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7663261224505233628, guid: 7abf6a04ce3c6214c9f9f66c46f1ccc1,
-=======
-  m_PrefabInstance: {fileID: 8390230042471050697}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1708990046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,12 +1515,6 @@ Transform:
   m_Father: {fileID: 2048939250}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1733006526 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481687063859990, guid: 100b3b3e4d541654fac44d7507c5221a,
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1760486354 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8390230043147816475, guid: 239241e8d16fb424eafb306783e4b754,
@@ -2020,45 +1538,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2741407251234063555, guid: 8f6542e7307bcde4493ff01161e4f150,
     type: 3}
   m_PrefabInstance: {fileID: 2741407250790897942}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1811224919 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1658323786396895156, guid: 20a0b678754016544abc1d9d2440d8fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1658323788092925120}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1811224923
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811224919}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
-    newSize: {x: 0.5, y: 0.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
-  m_EdgeRadius: 0
---- !u!1 &1838076162 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4056481686900496042, guid: 100b3b3e4d541654fac44d7507c5221a,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-    type: 3}
-  m_PrefabInstance: {fileID: 4056481687613867944}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1844059948 stripped
 GameObject:
@@ -2425,39 +1904,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 1581042802378588190, guid: 46fbf3a65e4662e4291c69e5e822df0f,
-        type: 3}
-      propertyPath: Boss
-      value: 
-      objectReference: {fileID: 233311168}
-    - target: {fileID: 1581042802378588190, guid: 46fbf3a65e4662e4291c69e5e822df0f,
-        type: 3}
-      propertyPath: Transition
-      value: 
-      objectReference: {fileID: 775543664}
-    - target: {fileID: 1581042802378588190, guid: 46fbf3a65e4662e4291c69e5e822df0f,
-        type: 3}
-      propertyPath: MemFragUI
-      value: 
-      objectReference: {fileID: 8390230042471050698}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 46fbf3a65e4662e4291c69e5e822df0f, type: 3}
---- !u!4 &1581042802985440897 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1581042802378588193, guid: 46fbf3a65e4662e4291c69e5e822df0f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1581042802985440896}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1872983878173730227
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 480552652}
-    m_Modifications:
-    - target: {fileID: 661559034825270739, guid: 1ef48307cfc8c4644b2a383cdca72b35,
-=======
     - target: {fileID: 503282311867388501, guid: 8b609d06ae3167045bf6a8b2ec28f2a9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2636,396 +2082,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1581042802985440896}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1658323788092925120
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 480552652}
-    m_Modifications:
-    - target: {fileID: 1658323786298611273, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Name
-      value: FOW
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611273, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -988.0192
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -381.80807
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 352.8992
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786298611274, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787675333580, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 213417909}
-    - target: {fileID: 1658323787675333580, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787458455530, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 678017634}
-    - target: {fileID: 1658323787458455530, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787302511909, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1004398928}
-    - target: {fileID: 1658323787302511909, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787806343605, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1669674565}
-    - target: {fileID: 1658323787806343605, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787518564889, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 419551599}
-    - target: {fileID: 1658323787518564889, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787445753289, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1390577064}
-    - target: {fileID: 1658323787445753289, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787222241445, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1316072442}
-    - target: {fileID: 1658323787222241445, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323786767900296, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323786767900296, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 673484950}
-    - target: {fileID: 1658323786706318264, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 4218899}
-    - target: {fileID: 1658323786706318264, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323786778105205, guid: 20a0b678754016544abc1d9d2440d8fb,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1259001840}
-    - target: {fileID: 1658323786778105205, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787111146521, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1630505749}
-    - target: {fileID: 1658323787111146521, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787188282226, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1112481296}
-    - target: {fileID: 1658323787188282226, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323786969902653, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 497713804}
-    - target: {fileID: 1658323786969902653, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787318382384, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1733006526}
-    - target: {fileID: 1658323787318382384, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787188387590, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 337702025}
-    - target: {fileID: 1658323787188387590, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787346903783, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1053441955}
-    - target: {fileID: 1658323787346903783, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323788119517842, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 1838076162}
-    - target: {fileID: 1658323788119517842, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323786573298481, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 833378283}
-    - target: {fileID: 1658323786573298481, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323788026154101, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 46478990}
-    - target: {fileID: 1658323788026154101, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323786396895158, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Room
-      value: 
-      objectReference: {fileID: 882551894}
-    - target: {fileID: 1658323786396895158, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 484999237}
-    - target: {fileID: 1658323787302511908, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -15.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787302511908, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 28.605724
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787222241446, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787222241446, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786396895159, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786573298482, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786706318265, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786767900297, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786778105206, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323786969902654, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787111146522, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787188282227, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787188387591, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787302511910, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787318382385, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787346903784, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787445753290, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787458455531, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787518564890, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787675333581, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323787806343606, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323788026154102, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    - target: {fileID: 1658323788119517843, guid: 20a0b678754016544abc1d9d2440d8fb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0.89411765
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 20a0b678754016544abc1d9d2440d8fb, type: 3}
 --- !u!1001 &1872983878173730227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3132,11 +2188,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 21.543497
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
-=======
     - target: {fileID: 2741407251234063552, guid: 8f6542e7307bcde4493ff01161e4f150,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 13.208074
@@ -3161,11 +2213,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
-=======
     - target: {fileID: 2741407251234063552, guid: 8f6542e7307bcde4493ff01161e4f150,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -3267,67 +2315,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
-<<<<<<< HEAD
-      propertyPath: refToUI
-      value: 
-      objectReference: {fileID: 448336201}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ef775906752c9dd4b851f208f4e8d51d, type: 3}
---- !u!4 &3299132315313828930 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1339220243063339999, guid: ef775906752c9dd4b851f208f4e8d51d,
-    type: 3}
-  m_PrefabInstance: {fileID: 3299132315313828929}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3684063504816293340
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 480552652}
-    m_Modifications:
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -993.26996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -387.92072
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 297.25684
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
-=======
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -3382,9 +2373,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 3684063504861559482, guid: c7cae10e23f75e24abf88178bed9fb4f,
-=======
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_SizeDelta.y
@@ -3420,8 +2408,7 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
+    - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3446,7 +2433,7 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 7.01
       objectReference: {fileID: 0}
-    - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
+    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3601,12 +2588,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 149126612267979271, guid: ef775906752c9dd4b851f208f4e8d51d,
         type: 3}
-<<<<<<< HEAD
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5119225993500767280, guid: 9ded25f48b91e58489c73d87015170bb,
-=======
       propertyPath: refToUI
       value: 
       objectReference: {fileID: 448336201}
@@ -3625,8 +2606,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 480552652}
     m_Modifications:
+    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -993.26996
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -387.92072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 297.25684
+      objectReference: {fileID: 0}
     - target: {fileID: 3684063505883712931, guid: c7cae10e23f75e24abf88178bed9fb4f,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.66
@@ -3680,41 +2695,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -993.26996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -387.92072
-      objectReference: {fileID: 0}
-    - target: {fileID: 4800849362465055917, guid: 9255dd18c41e2c04997d0a5af782ab19,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 297.25684
       objectReference: {fileID: 0}
     - target: {fileID: 3684063504861559482, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
@@ -3878,7 +2858,7 @@ PrefabInstance:
     - target: {fileID: 4056481687953200559, guid: 100b3b3e4d541654fac44d7507c5221a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4056481687953200559, guid: 100b3b3e4d541654fac44d7507c5221a,
         type: 3}
@@ -48290,7 +47270,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< HEAD
     - target: {fileID: 0}
       propertyPath: buttonNurse
       value: 
@@ -48323,43 +47302,6 @@ PrefabInstance:
       propertyPath: DeployImage
       value: 
       objectReference: {fileID: 8390230042471050705}
-=======
-    - target: {fileID: 7300335081885149470, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: PauseMenu
-      value: 
-      objectReference: {fileID: 1157655034}
-    - target: {fileID: 7300335081885149470, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: SkillTree
-      value: 
-      objectReference: {fileID: 8390230042471050713}
-    - target: {fileID: 7300335081885149470, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: SkillTreeMenu
-      value: 
-      objectReference: {fileID: 1139817987}
-    - target: {fileID: 7300335081885149470, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: Controls
-      value: 
-      objectReference: {fileID: 2952643541264175983}
-    - target: {fileID: 5137415486842192846, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: Joystick
-      value: 
-      objectReference: {fileID: 1760486354}
-    - target: {fileID: 5137415486842192846, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: SkillTree
-      value: 
-      objectReference: {fileID: 8390230042471050713}
-    - target: {fileID: 5137415486842192846, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: PauseMenu
-      value: 
-      objectReference: {fileID: 1157655034}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
     - target: {fileID: 5686764965859516307, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_Name
@@ -48368,20 +47310,12 @@ PrefabInstance:
     - target: {fileID: 5686764965859516295, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< HEAD
       value: 92.9
-=======
-      value: 0.4
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
       objectReference: {fileID: 0}
     - target: {fileID: 5686764965859516295, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
       value: 7.3
-=======
-      value: -0.94
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
       objectReference: {fileID: 0}
     - target: {fileID: 5686764965859516295, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
@@ -48428,7 +47362,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 5686764964948361161, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_Depth
@@ -48480,66 +47413,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1683895301}
     - target: {fileID: 1813481641264496362, guid: c7cae10e23f75e24abf88178bed9fb4f,
-=======
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-        type: 3}
-      propertyPath: buttonNurse
-      value: 
-      objectReference: {fileID: 8390230042471050712}
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: buttonShock
-      value: 
-      objectReference: {fileID: 8390230042471050711}
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: buttonHeal
-      value: 
-      objectReference: {fileID: 8390230042471050710}
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: buttonDeploy
-      value: 
-      objectReference: {fileID: 8390230042471050709}
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: NurseImage
-      value: 
-      objectReference: {fileID: 8390230042471050708}
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: ShockImage
-      value: 
-      objectReference: {fileID: 8390230042471050707}
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-<<<<<<< HEAD
-      propertyPath: aStar
-      value: 
-      objectReference: {fileID: 1185458532}
-    - target: {fileID: 1295326226920754694, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: UI
-      value: 
-      objectReference: {fileID: 448336201}
-    - target: {fileID: 6778284938044054063, guid: c7cae10e23f75e24abf88178bed9fb4f,
-=======
-      propertyPath: HealImage
-      value: 
-      objectReference: {fileID: 8390230042471050706}
-    - target: {fileID: 1935368305512946703, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: DeployImage
-      value: 
-      objectReference: {fileID: 8390230042471050705}
-    - target: {fileID: 1813481641264496362, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: UIElements.Array.size
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1813481641264496362, guid: c7cae10e23f75e24abf88178bed9fb4f,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
         type: 3}
       propertyPath: joystick
       value: 
@@ -48634,16 +47512,11 @@ PrefabInstance:
       propertyPath: aStar
       value: 
       objectReference: {fileID: 1185458532}
-    - target: {fileID: 5686764964948361161, guid: c7cae10e23f75e24abf88178bed9fb4f,
+    - target: {fileID: 1295326226920754694, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
-      propertyPath: m_Depth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5686764964948361161, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 448336201}
     - target: {fileID: 6778284938044054063, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -49271,7 +48144,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
+    - target: {fileID: 7920133495529585571, guid: f211a14326f44694a8ad8d57417f6755,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7920133495529585571, guid: f211a14326f44694a8ad8d57417f6755,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7920133495529585570, guid: f211a14326f44694a8ad8d57417f6755,
         type: 3}
       propertyPath: m_Volume
@@ -49362,38 +48244,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 2041f7f8f62a4b9408f6a3bea32b2d1c, type: 3}
     - target: {fileID: 8390230042381466755, guid: 239241e8d16fb424eafb306783e4b754,
-=======
-    - target: {fileID: 7920133495529585571, guid: f211a14326f44694a8ad8d57417f6755,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7920133495529585571, guid: f211a14326f44694a8ad8d57417f6755,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7920133495529585570, guid: f211a14326f44694a8ad8d57417f6755,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.28
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f211a14326f44694a8ad8d57417f6755, type: 3}
---- !u!1001 &8390230042471050697
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 718998877}
-    m_Modifications:
-    - target: {fileID: 8390230042381466752, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_Name
-      value: UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 8390230042381466755, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -49470,17 +48320,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8390230042381466755, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
-<<<<<<< HEAD
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1683895301}
-    - target: {fileID: 8390230042414433318, guid: 239241e8d16fb424eafb306783e4b754,
-=======
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8390230042381466755, guid: 239241e8d16fb424eafb306783e4b754,
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -49514,55 +48357,37 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 484999238}
+      objectReference: {fileID: 1683895301}
     - target: {fileID: 8390230042414433318, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
-<<<<<<< HEAD
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1683895301}
-=======
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: spawnNurse
       objectReference: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
     - target: {fileID: 8390230043071224266, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 484999238}
-    - target: {fileID: 8390230043071224266, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-<<<<<<< HEAD
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1683895301}
-=======
+    - target: {fileID: 8390230043071224266, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: deployCell
       objectReference: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
     - target: {fileID: 8390230043202117563, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 484999238}
-    - target: {fileID: 8390230043202117563, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-<<<<<<< HEAD
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1683895301}
-=======
+    - target: {fileID: 8390230043202117563, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: healPlayer
       objectReference: {fileID: 0}
->>>>>>> parent of 76e91e0... Changed boss puzzle, edited coliders of bx puzzles, slighlty modfiifed hard puzzle, added health ui,  added banners to level 1
     - target: {fileID: 8390230043615614074, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 484999238}
+      objectReference: {fileID: 1683895301}
     - target: {fileID: 8390230043615614074, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

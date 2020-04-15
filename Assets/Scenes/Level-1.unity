@@ -2288,11 +2288,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: UI
@@ -2437,6 +2432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c6a228d45b2fa40994aa07aea66803, type: 3}
@@ -47270,11 +47270,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5686764965859516307, guid: c7cae10e23f75e24abf88178bed9fb4f,
-        type: 3}
-      propertyPath: m_Name
-      value: Doctor
-      objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: buttonNurse
       value: 
@@ -47307,15 +47302,20 @@ PrefabInstance:
       propertyPath: DeployImage
       value: 
       objectReference: {fileID: 8390230042471050705}
+    - target: {fileID: 5686764965859516307, guid: c7cae10e23f75e24abf88178bed9fb4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Doctor
+      objectReference: {fileID: 0}
     - target: {fileID: 5686764965859516295, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.54
+      value: 92.9
       objectReference: {fileID: 0}
     - target: {fileID: 5686764965859516295, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.99
+      value: 7.3
       objectReference: {fileID: 0}
     - target: {fileID: 5686764965859516295, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
@@ -47955,6 +47955,11 @@ PrefabInstance:
       propertyPath: showSearchTree
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7624201886938335436, guid: 9ec70037da8ca8442b963ebe2e236e82,
+        type: 3}
+      propertyPath: showNavGraphs
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec70037da8ca8442b963ebe2e236e82, type: 3}
 --- !u!1001 &7663261223072485360
@@ -48163,6 +48168,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 718998877}
     m_Modifications:
+    - target: {fileID: 8390230042381466752, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
     - target: {fileID: 3478685709526737997, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: DeployCellCooldown
@@ -48233,11 +48243,6 @@ PrefabInstance:
       propertyPath: speedBoost
       value: 
       objectReference: {fileID: 8300000, guid: 2041f7f8f62a4b9408f6a3bea32b2d1c, type: 3}
-    - target: {fileID: 8390230042381466752, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_Name
-      value: UI
-      objectReference: {fileID: 0}
     - target: {fileID: 8390230042381466755, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_LocalPosition.x

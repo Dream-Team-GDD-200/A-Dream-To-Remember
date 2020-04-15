@@ -119,6 +119,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Projec_Destruction.cs" />
     <Compile Include="Assets\Scripts\ResetPlayerLocation.cs" />
+    <Compile Include="Assets\Scripts\Story\PreStory.cs" />
     <Compile Include="Assets\Scripts\TriggerBoss.cs" />
     <Compile Include="Assets\Scripts\UI\Abilities\Button.cs" />
     <Compile Include="Assets\Scripts\UI\Abilities\LongClick.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Assets\Scripts\WhiteBloodCells\WhiteBloodCell.cs" />
     <Compile Include="Assets\TitleInputs.cs" />
     <Compile Include="Assets\UIcontrols.cs" />
+    <Compile Include="Assets\UIEnable.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/kandy/Documents/GitHub/A-Dream-To-Remember/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

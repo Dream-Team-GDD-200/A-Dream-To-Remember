@@ -143,7 +143,6 @@ GameObject:
   - component: {fileID: 4162774916889209384}
   - component: {fileID: 1716905041614469899}
   - component: {fileID: 9149611975834374464}
-  - component: {fileID: 1935368305512946703}
   - component: {fileID: 5137415486842192846}
   - component: {fileID: 7300335081885149470}
   m_Layer: 0
@@ -548,6 +547,7 @@ MonoBehaviour:
     type: 3}
   mainCamera: {fileID: 5686764964948361161}
   aStar: {fileID: 0}
+  UI: {fileID: 0}
 --- !u!114 &4162774916889209384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,32 +586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f83d80ffe5fbc04480d82d8dadbf0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1935368305512946703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5686764965859516307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa8794434f898014dad14cda7f1883c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DeployCellCooldown: 3
-  HealCooldown: 3
-  ShockCooldown: 3
-  NurseCooldown: 3
-  delay: 8
-  DeployImage: {fileID: 0}
-  HealImage: {fileID: 0}
-  ShockImage: {fileID: 0}
-  NurseImage: {fileID: 0}
-  speedBoost: {fileID: 8300000, guid: 2041f7f8f62a4b9408f6a3bea32b2d1c, type: 3}
-  buttonDeploy: {fileID: 0}
-  buttonHeal: {fileID: 0}
-  buttonShock: {fileID: 0}
-  buttonNurse: {fileID: 0}
 --- !u!114 &5137415486842192846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,6 +599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Joystick: {fileID: 0}
+  Skills: {fileID: 0}
 --- !u!114 &7300335081885149470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -637,5 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd13e123d2b3764fad9db5a5e6e2160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkillTreeMenu: {fileID: 0}
+  Controls: {fileID: 0}
   PauseMenu: {fileID: 0}
   SkillTree: {fileID: 0}

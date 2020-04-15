@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Policy;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -25,8 +26,13 @@ public class Controller : MonoBehaviour
     private Vector3 camMoveTo = new Vector3(0, 2.05f, -1);
     private Vector3 docCamPos;
 
+    public GameObject preGameUI;
+    public GameObject resetProgressUI;
+
     private void Start()
     {
+        resetProgressUI.SetActive(false);
+
         //sets the resolution to the same as what we want so it work on all builds
         if(SystemInfo.deviceType == DeviceType.Desktop){
             Screen.SetResolution(1200, 800, false, 60);
@@ -43,7 +49,14 @@ public class Controller : MonoBehaviour
         if(!PlayerPrefs.HasKey("LastLevel")){
             PlayerPrefs.SetInt("LastLevel", 1);
         }
-        PlayerPrefs.SetInt("MemFrags", 0);
+        if(!PlayerPrefs.HasKey("FirstStory"))
+        {
+            PlayerPrefs.SetInt("FirstStory", 0);
+        }
+        if (!PlayerPrefs.HasKey("MemFrags"))
+        {
+            PlayerPrefs.SetInt("MemFrags", 0);
+        }
         docCamPos = new Vector3(cam.transform.position.x, cam.transform.position.y, -1);
     }
     public void startGame()
@@ -107,7 +120,14 @@ public class Controller : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         doTransition = false;
-        SceneManager.LoadScene(3);
+        if (PlayerPrefs.GetInt("FirstStory") == 0)
+        {
+            PlayerPrefs.SetInt("FirstStory", 1);
+            SceneManager.LoadScene(7);
+        } else
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 
     public void openControls()
@@ -120,5 +140,46 @@ public class Controller : MonoBehaviour
         {
             Controls.SetActive(true);
         }
+    }
+
+    public void resetBtn()
+    {
+        resetProgressUI.SetActive(true);
+        preGameUI.SetActive(false);
+    }
+
+    public void resetProgress()
+    {
+        PlayerPrefs.DeleteAll();
+
+        PlayerPrefs.SetInt("isFemale", 0);
+
+        PlayerPrefs.SetInt("LastLevel", 1);
+
+        PlayerPrefs.SetInt("FirstStory", 0);
+
+        PlayerPrefs.SetInt("MemFrags", 0);
+
+        if (SystemInfo.deviceType == DeviceType.Desktop)
+        {
+            Screen.SetResolution(1200, 800, false, 60);
+            PlayerPrefs.SetInt("Controls", 1); // 1 is the controls for pc
+        }
+        else if (SystemInfo.deviceType == DeviceType.Handheld)
+        {
+            Screen.SetResolution(1200, 800, true, 30);
+            PlayerPrefs.SetInt("Controls", 0); // 0 is the controls for mobile'
+            ControlButton.enabled = false;
+        }
+
+        resetProgressUI.SetActive(false);
+        preGameUI.SetActive(true);
+        StartButton.interactable = false;
+    }
+
+    public void noBtn()
+    {
+        resetProgressUI.SetActive(false);
+        preGameUI.SetActive(true);
     }
 }

@@ -13,13 +13,13 @@ public class MemoryFragmentsUI : MonoBehaviour
         //TODO: Load in fragment count from other levels
         fragmentCount = PlayerPrefs.GetInt("MemFrags", 0);
         updateMemoryFragmentUI();
+        updateCount();
     }
 
     public void addMemoryFragment()
     {
         fragmentCount++;
         updateMemoryFragmentUI();
-        saveMemoryFragments();
     }
 
     public void removeMemoryFragment(int num)
@@ -31,10 +31,17 @@ public class MemoryFragmentsUI : MonoBehaviour
     private void updateMemoryFragmentUI()
     {
         this.gameObject.GetComponentInChildren<Text>().text = fragmentCount.ToString();
+        saveMemoryFragments();
     }
 
     public void saveMemoryFragments()
     {
         PlayerPrefs.SetInt("MemFrags", fragmentCount);
+    }
+
+    public void updateCount()
+    {
+        fragmentCount = PlayerPrefs.GetInt("MemFrags");
+        updateMemoryFragmentUI();
     }
 }

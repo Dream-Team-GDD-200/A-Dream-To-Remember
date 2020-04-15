@@ -8,20 +8,20 @@ public class DoctorDeath : MonoBehaviour
 {
 
     private bool isFemale = false;
-
+    [Header("Female Frames")]
     public Sprite FemaleDeathFrame1;
     public Sprite FemaleDeathFrame2;
     public Sprite FemaleDeathFrame3;
     public Sprite FemaleDeathFrame4;
     public Sprite FemaleDeathFrame5;
-
+    [Header("Male Frames")]
     public Sprite MaleDeathFrame1;
     public Sprite MaleDeathFrame2;
-
+    [Header("Other Objects")]
     public Camera mainCamera;
 
     public GameObject aStar;
-
+    public GameObject UI;
     private Animator anim;
     private SpriteRenderer spr;
 
@@ -70,6 +70,7 @@ public class DoctorDeath : MonoBehaviour
 
     IEnumerator maleDealth()
     {
+        UI.SetActive(false);
         spr.sprite = MaleDeathFrame1;
 
         yield return new WaitForSeconds(1.5f);
@@ -82,6 +83,7 @@ public class DoctorDeath : MonoBehaviour
     }
     IEnumerator femaleDeath()
     {
+        UI.SetActive(false);
         spr.sprite = FemaleDeathFrame1;
 
         yield return new WaitForSeconds(0.5f);

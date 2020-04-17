@@ -41,13 +41,13 @@ public class KILLBOSS : MonoBehaviour
             case "Level-1": //if scene is on level 1
             PlayerPrefs.SetInt("level1clear", 1); //raises a flag that tells us the level one is done
             GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasSkill(2,true); //gives the player the shock skill
-            GameObject.FindGameObjectWithTag("Player").GetComponent<LongClick>().grantSkill(2);
+            GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().grantSkill(2);
             break;
 
             case "Level-2": //if scene is on level 2
             PlayerPrefs.SetInt("level2clear", 1); //raises a flag that tells us the level 2 is done
             GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasSkill(3, true); //gives the player the nurse skill
-            GameObject.FindGameObjectWithTag("Player").GetComponent<LongClick>().grantSkill(3);
+            GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().grantSkill(3);
             break;
 
             case "Level-3": //if scene is on level 2

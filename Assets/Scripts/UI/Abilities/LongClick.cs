@@ -27,18 +27,22 @@ public class LongClick : MonoBehaviour
       if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(0) == false)
       {
         GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<Button>().interactable = false;
+        GameObject.FindGameObjectWithTag("DeploySkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 0f);
       }
       if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(1) == false)
       {
         GameObject.FindGameObjectWithTag("HealSkill").GetComponent<Button>().interactable = false;
+        GameObject.FindGameObjectWithTag("HealSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 0f);
       }
       if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(2) == false)
       {
         GameObject.FindGameObjectWithTag("ShockSkill").GetComponent<Button>().interactable = false;
+        GameObject.FindGameObjectWithTag("ShockSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 0f);
       }
       if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(3) == false)
       {
         GameObject.FindGameObjectWithTag("NurseSkill").GetComponent<Button>().interactable = false;
+        GameObject.FindGameObjectWithTag("NurseSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 0f);
       }
   }
 

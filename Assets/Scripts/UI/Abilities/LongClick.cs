@@ -226,4 +226,29 @@ public class LongClick : MonoBehaviour
   {
     speed = val;
   }
+
+  //activates a skill
+  public void grantSkill(int skill)
+  {
+    if (skill == 0)
+    {
+      GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<Button>().interactable = true;
+      GameObject.FindGameObjectWithTag("DeploySkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+    }
+    if (skill == 1)
+    {
+      GameObject.FindGameObjectWithTag("HealSkill").GetComponent<Button>().interactable = true;
+      GameObject.FindGameObjectWithTag("HealSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+    }
+    if (skill == 2)
+    {
+      GameObject.FindGameObjectWithTag("ShockSkill").GetComponent<Button>().interactable = true;
+      GameObject.FindGameObjectWithTag("ShockSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+    }
+    if (skill == 3)
+    {
+      GameObject.FindGameObjectWithTag("NurseSkill").GetComponent<Button>().interactable = true;
+      GameObject.FindGameObjectWithTag("NurseSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+    }
+  }
 }

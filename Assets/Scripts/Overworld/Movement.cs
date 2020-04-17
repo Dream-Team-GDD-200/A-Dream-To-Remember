@@ -17,6 +17,8 @@ public class Movement : MonoBehaviour
     public GameObject Transitionref;
 
     public DialogueTrigger PreLevel1Dialogue;
+    public DialogueTrigger PreLevel2Dialogue;
+    public DialogueTrigger PreLevel3Dialogue;
 
     // Used for Level 1 -> TWall (Going Right)
     private bool moving = false;
@@ -385,11 +387,11 @@ public class Movement : MonoBehaviour
         } 
         else if (playerPosition == 2)
         {
-            StartCoroutine(level2transition());
+            PreLevel2Dialogue.TriggerDialogue();
         }
         else if (playerPosition == 3)
         {
-            StartCoroutine(level3transition());
+            PreLevel3Dialogue.TriggerDialogue();
         }
     }
 

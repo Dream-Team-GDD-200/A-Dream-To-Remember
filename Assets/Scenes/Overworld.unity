@@ -1614,6 +1614,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 1.61}
   m_EdgeRadius: 0
+--- !u!1 &198984073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 198984074}
+  - component: {fileID: 198984075}
+  m_Layer: 0
+  m_Name: PreLevel-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &198984074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198984073}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399922000}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &198984075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198984073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea56df7afd68b4c932af31f119f9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Doctor
+    - Nurse
+    - Nurse
+    - Doctor
+    - Doctor
+    sentences:
+    - So this is Patient 0?
+    - Yes, Patient 0.
+    - We haven't been able to identify them though, so there isn't much I can tell
+      you about them.
+    - Guess we are going in blind.
+    - Let's end this once and for all.
 --- !u!224 &264475987 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7458025304408419496, guid: ce0da141b3f2d424ea740488dbd146a1,
@@ -4404,6 +4461,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1892296646}
+  - {fileID: 1525304946}
+  - {fileID: 198984074}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4533,6 +4592,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518664983}
   m_CullTransparentMesh: 0
+--- !u!1 &1525304945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525304946}
+  - component: {fileID: 1525304947}
+  m_Layer: 0
+  m_Name: PreLevel-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1525304946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525304945}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399922000}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1525304947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525304945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea56df7afd68b4c932af31f119f9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Doctor
+    - Nurse
+    - Doctor
+    - Nurse
+    - Doctor
+    - Doctor
+    sentences:
+    - Alright nurse, who do we have here?
+    - This is Brendan, a college student who spent some time in the klink.
+    - The klink?
+    - Prison.
+    - Ah, I see.
+    - Well, let's see what I can do to help him.
 --- !u!1 &1550023766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5620,6 +5737,16 @@ PrefabInstance:
       propertyPath: beginButton
       value: 
       objectReference: {fileID: 500982482}
+    - target: {fileID: 5964256593460477849, guid: 578376e56b9a36b4486278c7d210bc9b,
+        type: 3}
+      propertyPath: PreLevel2Dialogue
+      value: 
+      objectReference: {fileID: 1525304947}
+    - target: {fileID: 5964256593460477849, guid: 578376e56b9a36b4486278c7d210bc9b,
+        type: 3}
+      propertyPath: PreLevel3Dialogue
+      value: 
+      objectReference: {fileID: 198984075}
     - target: {fileID: 3601736359698874663, guid: 578376e56b9a36b4486278c7d210bc9b,
         type: 3}
       propertyPath: PauseMenu

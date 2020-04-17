@@ -7,7 +7,8 @@ public class SkillCache : MonoBehaviour
 {
   /* Set to true if the doctor has unlocked the corresponding skill. 
    * index 0 = white blood cell, 
-   * 1 = speed boost, 2 = shock, 
+   * 1 = speed boost, 
+   * 2 = shock, 
    * 3 = nurse.*/
   private bool[] hasSkill = { true, true, false, false};
 
@@ -27,8 +28,7 @@ public class SkillCache : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
+      
     }
 
     // Update is called once per frame

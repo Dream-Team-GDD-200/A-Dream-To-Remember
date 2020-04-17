@@ -22,7 +22,27 @@ public class LongClick : MonoBehaviour
     public GameObject buttonShock;
     public GameObject buttonNurse;
 
-    public void onEnable()
+  void Start()
+  {   //disables skills that the player does not have
+      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(0) == false)
+      {
+        GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<Button>().interactable = false;
+      }
+      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(1) == false)
+      {
+        GameObject.FindGameObjectWithTag("HealSkill").GetComponent<Button>().interactable = false;
+      }
+      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(2) == false)
+      {
+        GameObject.FindGameObjectWithTag("ShockSkill").GetComponent<Button>().interactable = false;
+      }
+      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(3) == false)
+      {
+        GameObject.FindGameObjectWithTag("NurseSkill").GetComponent<Button>().interactable = false;
+      }
+  }
+
+  public void onEnable()
     {
         if(CellDuration != 0)
         {

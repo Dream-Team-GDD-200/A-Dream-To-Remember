@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Movement : MonoBehaviour
     private Vector2 level3 = new Vector2(30.5f, 5.9f);
 
     public GameObject Transitionref;
+
+    public DialogueTrigger PreLevel1Dialogue;
 
     // Used for Level 1 -> TWall (Going Right)
     private bool moving = false;
@@ -46,6 +49,8 @@ public class Movement : MonoBehaviour
     //2 - Level 2
     //3 - Level 3
     private int playerPosition = 1;
+
+    private bool inDialogue = false;
 
     //todo: don't allow player to move to next area without beating level
     //todo: music for the overworld (different areas, different music) change doctor from source to listener
@@ -100,7 +105,10 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            UI.SetActive(true);
+            if (!inDialogue)
+            {
+                UI.SetActive(true);
+            }
         }
 
         if (moving)
@@ -246,36 +254,39 @@ public class Movement : MonoBehaviour
             }
         }
 
-        switch(playerPosition)
+        if (!inDialogue)
         {
-            case 1:
-                btnRight.SetActive(true);
-                btnLeft.SetActive(false);
-                btnUp.SetActive(false);
-                btnDown.SetActive(false);
-                btnBeginLevel.SetActive(true);
-                break;
-            case 2:
-                btnRight.SetActive(false);
-                btnLeft.SetActive(false);
-                btnUp.SetActive(false);
-                btnDown.SetActive(true);
-                btnBeginLevel.SetActive(true);
-                break;
-            case 3:
-                btnRight.SetActive(false);
-                btnLeft.SetActive(false);
-                btnUp.SetActive(false);
-                btnDown.SetActive(true);
-                btnBeginLevel.SetActive(true);
-                break;
-            case 4:
-                btnRight.SetActive(true);
-                btnLeft.SetActive(true);
-                btnUp.SetActive(true);
-                btnDown.SetActive(false);
-                btnBeginLevel.SetActive(false);
-                break;
+            switch (playerPosition)
+            {
+                case 1:
+                    btnRight.SetActive(true);
+                    btnLeft.SetActive(false);
+                    btnUp.SetActive(false);
+                    btnDown.SetActive(false);
+                    btnBeginLevel.SetActive(true);
+                    break;
+                case 2:
+                    btnRight.SetActive(false);
+                    btnLeft.SetActive(false);
+                    btnUp.SetActive(false);
+                    btnDown.SetActive(true);
+                    btnBeginLevel.SetActive(true);
+                    break;
+                case 3:
+                    btnRight.SetActive(false);
+                    btnLeft.SetActive(false);
+                    btnUp.SetActive(false);
+                    btnDown.SetActive(true);
+                    btnBeginLevel.SetActive(true);
+                    break;
+                case 4:
+                    btnRight.SetActive(true);
+                    btnLeft.SetActive(true);
+                    btnUp.SetActive(true);
+                    btnDown.SetActive(false);
+                    btnBeginLevel.SetActive(false);
+                    break;
+            }
         }
     }
 
@@ -365,9 +376,12 @@ public class Movement : MonoBehaviour
 
     public void BeginLevel()
     {
+        inDialogue = true;
+        UI.SetActive(false);
+
         if (playerPosition == 1)
         {
-            StartCoroutine(level1transition());
+            PreLevel1Dialogue.TriggerDialogue();
         } 
         else if (playerPosition == 2)
         {
@@ -394,5 +408,21 @@ public class Movement : MonoBehaviour
     {
         yield return StartCoroutine(Transitionref.GetComponent<FadeOut>().UndoFade());
         SceneManager.LoadScene(5);
+    }
+
+    public void DialogueTransitionLevel()
+    {
+        if (playerPosition == 1)
+        {
+            StartCoroutine(level1transition());
+        }
+        else if (playerPosition == 2)
+        {
+            StartCoroutine(level2transition());
+        }
+        else if (playerPosition == 3)
+        {
+            StartCoroutine(level3transition());
+        }
     }
 }

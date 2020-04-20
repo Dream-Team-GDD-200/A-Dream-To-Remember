@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class KILLBOSS : MonoBehaviour
 {
+    [Header("Linked Items")]
     public Sprite left;
     bool hasBeenPushed = false;
     public GameObject Boss;
     public GameObject Transition; //reference to transtion ui element
+    public LongClick LongClick;
     // Start is called before the first frame update
     public GameObject MemFragUI;
     public void OnTriggerEnter2D(Collider2D other)
@@ -41,14 +43,14 @@ public class KILLBOSS : MonoBehaviour
             case "Level-1": //if scene is on level 1
             PlayerPrefs.SetInt("level1clear", 1); //raises a flag that tells us the level one is done
             GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasSkill(2,true); //gives the player the shock skill
-            //GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().grantSkill(2);
+            LongClick.grantSkill(2);
             PlayerPrefs.SetInt("PostStory1Told", 0);
             break;
 
             case "Level-2": //if scene is on level 2
             PlayerPrefs.SetInt("level2clear", 1); //raises a flag that tells us the level 2 is done
             GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasSkill(3, true); //gives the player the nurse skill
-            //GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().grantSkill(3);
+            LongClick.grantSkill(3);
             PlayerPrefs.SetInt("PostStory2Told", 0);
             break;
 

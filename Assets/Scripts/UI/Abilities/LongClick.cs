@@ -5,17 +5,31 @@ using UnityEngine;
 
 public class LongClick : MonoBehaviour
 {
-    public float DeployCellCooldown, HealCooldown, ShockCooldown, NurseCooldown; // The time for each skill cooldown
+    [Header("cooldown in seconds")]
+    public float DeployCellCooldown;
+    public float HealCooldown;
+    public float ShockCooldown;
+    public float NurseCooldown; // The time for each skill cooldown
+    [Header("ticks per second")]
     public float delay; // duration is how long it waits until it fills the next section of the cooldown... Delay is how many times a second the fill is updated
     float duration;
     private float CellDuration = 0f, HealDuration = 0f, ShockDuration = 0f, NurseDuration = 0f; // the current time left of each cooldown
-    public Image DeployImage, HealImage, ShockImage, NurseImage; // the image reference for the fill animation
+    [Header("Button Images")]
+    public Image DeployImage;
+    public Image HealImage;
+    public Image ShockImage;
+    public Image NurseImage; // the image reference for the fill animation
+    [Header("Buttons")]
+    public Button DeployButton;
+    public Button HealButton;
+    public Button ShockButton;
+    public Button NurseButton;
     private float healVal = 15; //amount of health restored by the heal ability
     private float speed = 5f; //the amount of speed granted by the speed boost ability
-
+    [Header("Speed Sound")]
     public AudioClip speedBoost; // audiio clip for the speed boost
 
-
+    [Header("Reference To Text object")]
     //references to the buttons so they can send that button the respective cooldownnumber
     public GameObject buttonDeploy;
     public GameObject buttonHeal;
@@ -232,23 +246,23 @@ public class LongClick : MonoBehaviour
   {
     if (skill == 0)
     {
-      GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<Button>().interactable = true;
-      GameObject.FindGameObjectWithTag("DeploySkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+      DeployButton.interactable = true;
+      DeployImage.color = new Color(255, 255, 255, 1f);
     }
     if (skill == 1)
     {
-      GameObject.FindGameObjectWithTag("HealSkill").GetComponent<Button>().interactable = true;
-      GameObject.FindGameObjectWithTag("HealSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+      HealButton.interactable = true;
+      HealImage.color = new Color(255, 255, 255, 1f);
     }
     if (skill == 2)
     {
-      GameObject.FindGameObjectWithTag("ShockSkill").GetComponent<Button>().interactable = true;
-      GameObject.FindGameObjectWithTag("ShockSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+      ShockButton.interactable = true;
+      ShockImage.color = new Color(255, 255, 255, 1f);
     }
     if (skill == 3)
     {
-      GameObject.FindGameObjectWithTag("NurseSkill").GetComponent<Button>().interactable = true;
-      GameObject.FindGameObjectWithTag("NurseSkillImage").GetComponent<Image>().color = new Color(255, 255, 255, 1f);
+      NurseButton.interactable = true;
+      NurseImage.color = new Color(255, 255, 255, 1f);
     }
   }
 }

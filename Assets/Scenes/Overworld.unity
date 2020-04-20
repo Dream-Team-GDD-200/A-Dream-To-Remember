@@ -1671,6 +1671,8 @@ MonoBehaviour:
       you about them.
     - Guess we are going in blind.
     - Let's end this once and for all.
+    isPreStory: 1
+    isPostStory: 0
 --- !u!224 &264475987 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7458025304408419496, guid: ce0da141b3f2d424ea740488dbd146a1,
@@ -3807,6 +3809,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1175158063}
   m_CullTransparentMesh: 0
+--- !u!1 &1209157970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209157971}
+  - component: {fileID: 1209157972}
+  m_Layer: 0
+  m_Name: PostLevel-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1209157971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209157970}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399922000}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1209157972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209157970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea56df7afd68b4c932af31f119f9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Doctor
+    - Nurse
+    - Doctor
+    - Doctor
+    - Nurse
+    - Nurse
+    - Nurse
+    sentences:
+    - Another one saved Nurse!
+    - Amazing Doctor! Congratulations!  Do you think we are close to a vaccine?!
+    - Yes, very close.  I have also noticed that the virus becomes more powerful the
+      longer it has infected someone.
+    - But they are are more useful to finding a cure.
+    - Funny you should say that.  Our last patient is said to be the first reported
+      case of the virus.
+    - So make sure you are prepared to handle it.  Thay are isolated in the east wing.
+    - I will meet you there when you are ready.
+    isPreStory: 0
+    isPostStory: 1
 --- !u!1 &1223789613
 GameObject:
   m_ObjectHideFlags: 0
@@ -4365,6 +4431,8 @@ MonoBehaviour:
     - I hope so too...
     - I will meet you in the next patient's room.  They are in the north wing of the
       hospital.
+    isPreStory: 0
+    isPostStory: 1
 --- !u!1001 &1395116003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4503,6 +4571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1399922000}
+  - component: {fileID: 1399922001}
   m_Layer: 0
   m_Name: Dialogues
   m_TagString: Untagged
@@ -4525,9 +4594,27 @@ Transform:
   - {fileID: 1525304946}
   - {fileID: 198984074}
   - {fileID: 1346828276}
+  - {fileID: 1209157971}
+  - {fileID: 1816608900}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399922001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399921999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2bb959b65a1ae46ab013ed0151abc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postLevel1: {fileID: 1346828277}
+  postLevel2: {fileID: 1209157972}
+  postLevel3: {fileID: 1816608901}
+  UI: {fileID: 1599122615}
 --- !u!1 &1427948618 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5667702303959490657, guid: e116e568219aeeb4abc53ee9d6ee6e76,
@@ -4712,6 +4799,8 @@ MonoBehaviour:
     - Prison.
     - Ah, I see.
     - Well, let's see what I can do to help him.
+    isPreStory: 1
+    isPostStory: 0
 --- !u!1 &1550023766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,6 +5168,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814281832}
   m_CullTransparentMesh: 0
+--- !u!1 &1816608899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816608900}
+  - component: {fileID: 1816608901}
+  m_Layer: 0
+  m_Name: PostLevel-3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816608900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816608899}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399922000}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816608901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816608899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea56df7afd68b4c932af31f119f9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Nurse
+    - Doctor
+    - Doctor
+    - Nurse
+    sentences:
+    - You did it Doctor! Congratulations!!!!
+    - Yes, it's finally over.  We have reached a cure for this virus.
+    - Now get that vaccine distributed all over the world to save everyone!
+    - On my way now!
+    isPreStory: 0
+    isPostStory: 1
 --- !u!1 &1834525752
 GameObject:
   m_ObjectHideFlags: 0
@@ -5237,6 +5382,8 @@ MonoBehaviour:
     - No recorded allergies and no other medical records except it says he was attacked
       by a dog when he was a toddler.
     - Well, let us hope that saving this child will lead us to a cure for this plague.
+    isPreStory: 1
+    isPostStory: 0
 --- !u!4 &1892296646
 Transform:
   m_ObjectHideFlags: 0

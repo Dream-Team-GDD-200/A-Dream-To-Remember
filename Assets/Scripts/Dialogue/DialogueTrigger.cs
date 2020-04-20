@@ -14,9 +14,13 @@ public class DialogueTrigger : MonoBehaviour
 
     public void DialogueDone()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 3 && dialogue.isPreStory)
         {
             FindObjectOfType<Movement>().DialogueTransitionLevel();
+        } 
+        else if (SceneManager.GetActiveScene().buildIndex == 3 && dialogue.isPostStory)
+        {
+            FindObjectOfType<Movement>().setInDialogue(false);
         }
     }
 }

@@ -110,6 +110,9 @@ public class Movement : MonoBehaviour
             if (!inDialogue)
             {
                 UI.SetActive(true);
+            } else
+            {
+                UI.SetActive(false);
             }
         }
 
@@ -426,5 +429,10 @@ public class Movement : MonoBehaviour
         {
             StartCoroutine(level3transition());
         }
+    }
+
+    public void setInDialogue(bool newVal) 
+    {
+        inDialogue = newVal;
     }
 }

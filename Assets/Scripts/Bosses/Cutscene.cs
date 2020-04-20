@@ -35,7 +35,7 @@ public class Cutscene : MonoBehaviour
     void Start()
     {
         BossIntroUI.GetComponent<Canvas>().enabled = false;
-        bossPos = new Vector3(this.gameObject.transform.position.x + 1f, this.gameObject.transform.position.y, -1);
+        bossPos = new Vector3(this.gameObject.transform.position.x + 1.5f, this.gameObject.transform.position.y, -1);
     }
 
     // Update is called once per frame

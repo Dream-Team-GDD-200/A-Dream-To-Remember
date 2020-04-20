@@ -22,5 +22,9 @@ public class DialogueTrigger : MonoBehaviour
         {
             FindObjectOfType<Movement>().setInDialogue(false);
         }
+        else if (SceneManager.GetActiveScene().buildIndex == 3 && dialogue.isOverworldClearTrigger)
+        {
+            FindObjectOfType<Movement>().setInDialogue(false);
+        }
     }
 }

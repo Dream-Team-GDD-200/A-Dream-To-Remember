@@ -12,5 +12,6 @@ public class Dialogue
 
     public bool isPreStory;
     public bool isPostStory;
+    public bool isOverworldClearTrigger;
 
 }

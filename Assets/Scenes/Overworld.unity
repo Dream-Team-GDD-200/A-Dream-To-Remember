@@ -1664,6 +1664,7 @@ MonoBehaviour:
     - Let's end this once and for all.
     isPreStory: 1
     isPostStory: 0
+    isOverworldClearTrigger: 0
 --- !u!224 &264475987 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7458025304408419496, guid: ce0da141b3f2d424ea740488dbd146a1,
@@ -2989,6 +2990,59 @@ Transform:
   m_Father: {fileID: 518863872}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &891276907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891276908}
+  - component: {fileID: 891276909}
+  m_Layer: 0
+  m_Name: CantProceed-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891276908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891276907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399922000}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &891276909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891276907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea56df7afd68b4c932af31f119f9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Nurse
+    - Doctor
+    sentences:
+    - Doctor, you can't leave now.  We need you to help little Zachary.
+    - Oh, right. My bad, I can't leave right now.
+    isPreStory: 0
+    isPostStory: 0
+    isOverworldClearTrigger: 1
 --- !u!1 &899870980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,6 +3761,7 @@ MonoBehaviour:
     - I will meet you there when you are ready.
     isPreStory: 0
     isPostStory: 1
+    isOverworldClearTrigger: 0
 --- !u!1 &1223789613
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,6 +4322,7 @@ MonoBehaviour:
       hospital.
     isPreStory: 0
     isPostStory: 1
+    isOverworldClearTrigger: 0
 --- !u!1001 &1395116003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4430,6 +4486,8 @@ Transform:
   - {fileID: 1346828276}
   - {fileID: 1209157971}
   - {fileID: 1816608900}
+  - {fileID: 891276908}
+  - {fileID: 2095344094}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4553,6 +4611,7 @@ MonoBehaviour:
     - Well, let's see what I can do to help him.
     isPreStory: 1
     isPostStory: 0
+    isOverworldClearTrigger: 0
 --- !u!1 &1550023766
 GameObject:
   m_ObjectHideFlags: 0
@@ -4976,6 +5035,7 @@ MonoBehaviour:
     - On my way now!
     isPreStory: 0
     isPostStory: 1
+    isOverworldClearTrigger: 0
 --- !u!1 &1834525752
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,6 +5115,7 @@ MonoBehaviour:
     - Well, let us hope that saving this child will lead us to a cure for this plague.
     isPreStory: 1
     isPostStory: 0
+    isOverworldClearTrigger: 0
 --- !u!4 &1892296646
 Transform:
   m_ObjectHideFlags: 0
@@ -5236,6 +5297,61 @@ Transform:
   m_Father: {fileID: 398821419}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2095344093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2095344094}
+  - component: {fileID: 2095344095}
+  m_Layer: 0
+  m_Name: CantProceed-2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2095344094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095344093}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399922000}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2095344095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095344093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ea56df7afd68b4c932af31f119f9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Nurse
+    - Nurse
+    - Doctor
+    sentences:
+    - Doctor, you can't go into the east wing, it is quarantined right now.
+    - Besides, you have another patient waiting for you in the north wing.
+    - Oh, right. My bad, I can't go over there right now.
+    isPreStory: 0
+    isPostStory: 0
+    isOverworldClearTrigger: 1
 --- !u!114 &2104000058 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5964256593460477849, guid: 578376e56b9a36b4486278c7d210bc9b,
@@ -5628,6 +5744,16 @@ PrefabInstance:
       propertyPath: PreLevel3Dialogue
       value: 
       objectReference: {fileID: 198984075}
+    - target: {fileID: 5964256593460477849, guid: 578376e56b9a36b4486278c7d210bc9b,
+        type: 3}
+      propertyPath: blockage1
+      value: 
+      objectReference: {fileID: 891276909}
+    - target: {fileID: 5964256593460477849, guid: 578376e56b9a36b4486278c7d210bc9b,
+        type: 3}
+      propertyPath: blockage2
+      value: 
+      objectReference: {fileID: 2095344095}
     - target: {fileID: 3601736359698874663, guid: 578376e56b9a36b4486278c7d210bc9b,
         type: 3}
       propertyPath: PauseMenu

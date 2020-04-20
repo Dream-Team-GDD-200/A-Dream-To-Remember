@@ -20,6 +20,9 @@ public class Movement : MonoBehaviour
     public DialogueTrigger PreLevel2Dialogue;
     public DialogueTrigger PreLevel3Dialogue;
 
+    public DialogueTrigger blockage1;
+    public DialogueTrigger blockage2;
+
     // Used for Level 1 -> TWall (Going Right)
     private bool moving = false;
     private bool move2 = false;
@@ -309,11 +312,27 @@ public class Movement : MonoBehaviour
 
         if (playerPosition == 1)
         {
-            level1toTWall();
+            if (PlayerPrefs.GetInt("level1clear") == 1) { //Level 1 Cleared, allow them to go to level 2 area
+                level1toTWall();
+            } 
+            else //Else display dialogue saying they can't go there yet
+            {
+                inDialogue = true;
+                blockage1.TriggerDialogue();
+            }
         }
         else if (playerPosition == 4)
         {
-            tWalltoLevel3();
+            
+            if (PlayerPrefs.GetInt("level2clear") == 1)
+            { //Level 2 Cleared, allow them to go to level 3 area
+                tWalltoLevel3();
+            }
+            else //Else display dialogue saying they can't go there yet
+            {
+                inDialogue = true;
+                blockage2.TriggerDialogue();
+            }
         }
     }
 

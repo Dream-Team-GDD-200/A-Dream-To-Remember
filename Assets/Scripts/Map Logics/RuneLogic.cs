@@ -24,6 +24,7 @@ public class RuneLogic : MonoBehaviour
             hasBeenPushed = true;
             this.gameObject.GetComponent<SpriteRenderer>().sprite = runePressed;//sets whatever gameobject that this script is attached to and changes the image to the pressed state
             Debug.Log("I booped" + orderThatItNeedsToBePushed);
+            this.gameObject.GetComponent<AudioSource>().Play();
         }
     }
 }

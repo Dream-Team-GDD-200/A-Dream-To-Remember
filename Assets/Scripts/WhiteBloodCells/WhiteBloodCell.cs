@@ -37,37 +37,42 @@ public class WhiteBloodCell : MonoBehaviour
 
     public void Deploy()
     {
-        if (cellHealth > 0)
-        {
-          Destroy(barrier.gameObject);
-        }
-        bool clear = true;
-        int dVal = 4;
-        float X = fireLocation.position.x + playerMovement.movement.x;
-        float Y = fireLocation.position.y + playerMovement.movement.y;
-        Vector3 deployLocation = new Vector3(X, Y, fireLocation.position.z);
-        while(dVal > 0)
-        {
-          Vector2 rayPos = new Vector2(deployLocation.x / dVal, deployLocation.y / dVal);
-          RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
-          if(hit)
-          {
-            clear = false;
-          }
-          dVal = dVal - 1;
-        }
+        /*THIS CAN BE USED TO PLACE THE CELL IN A RANDOM POSITION IF NO OBJECTS ARE IN THE WAY*/
 
-        if(clear == true)
-        {
-          barrier = Instantiate(baseBarrier, deployLocation, fireLocation.rotation);
-          Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
-        }
+        //if (cellHealth > 0)
+        //{
+        //  Destroy(barrier.gameObject);
+        //}
+        //bool clear = true;
+        //int dVal = 4;
+        //float X = fireLocation.position.x + playerMovement.movement.x;
+        //float Y = fireLocation.position.y + playerMovement.movement.y;
+        //Vector3 deployLocation = new Vector3(X, Y, fireLocation.position.z);
+        //while(dVal > 0)
+        //{
+        //  Vector2 rayPos = new Vector2(deployLocation.x / dVal, deployLocation.y / dVal);
+        //  RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
+        //  if(hit)
+        //  {
+        //    clear = false;
+        //  }
+        //  dVal = dVal - 1;
+        //}
 
-        else
-        {
-          barrier = Instantiate(baseBarrier, fireLocation.position, fireLocation.rotation);
-          Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
-        }
+        //if(clear == true)
+        //{
+        //  barrier = Instantiate(baseBarrier, deployLocation, fireLocation.rotation);
+        //  Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
+        //}
+
+        //else
+        //{
+        //  barrier = Instantiate(baseBarrier, fireLocation.position, fireLocation.rotation);
+        //  Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
+        //}
+
+        barrier = Instantiate(baseBarrier, fireLocation.position, fireLocation.rotation);
+        Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
 
         cellHealth = cellHealthMax;
     }

@@ -31,38 +31,44 @@ public class NurseSpawn : MonoBehaviour
   // Update is called once per frame
   public void Spawn()
   {
-    bool clear = false;
-    int count = 5;
-    Vector3 spawnLocation = new Vector3(fireLocation.position.x + Random.Range(-1, 1), fireLocation.position.y + Random.Range(-1, 1), fireLocation.position.z);
-    while (clear == false && count > 0)
-    {
-      Vector2 rayPos = new Vector2(spawnLocation.x , spawnLocation.y );
-      RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
-      if (hit)
-      {
-        clear = false;
-      }
-      else
-      {
-        clear = true;
-      }
-      count = count - 1;
-      spawnLocation = new Vector3(fireLocation.position.x + Random.Range(-1, 1), fireLocation.position.y + Random.Range(-1, 1), fireLocation.position.z);
-    }
+    /*THIS CAN BE USED TO PLACE THE NURSE IN A RANDOM POSITION IF NO OBJECTS ARE IN THE WAY*/
 
-    if (clear == true)
-    {
-      nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
-      Destroy(nurse, NurseDurationMax);
-      NurseDuration = 60 * NurseDurationMax;
-    }
-    else
-    {
-      spawnLocation = new Vector3(fireLocation.position.x, fireLocation.position.y, fireLocation.position.z);
-      nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
-      Destroy(nurse, NurseDurationMax);
-      NurseDuration = 60 * NurseDurationMax;
-    }
+    //bool clear = false;
+    //int count = 5;
+    //Vector3 spawnLocation = new Vector3(fireLocation.position.x + Random.Range(-1, 1), fireLocation.position.y + Random.Range(-1, 1), fireLocation.position.z);
+    //while (clear == false && count > 0)
+    //{
+    //  Vector2 rayPos = new Vector2(spawnLocation.x , spawnLocation.y );
+    //  RaycastHit2D hit = Physics2D.Raycast(rayPos, Vector2.zero, 0f);
+    //  if (hit)
+    //  {
+    //    clear = false;
+    //  }
+    //  else
+    //  {
+    //    clear = true;
+    //  }
+    //  count = count - 1;
+    //  spawnLocation = new Vector3(fireLocation.position.x + Random.Range(-1, 1), fireLocation.position.y + Random.Range(-1, 1), fireLocation.position.z);
+    //}
+
+    //if (clear == true)
+    //{
+    //  nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
+    //  Destroy(nurse, NurseDurationMax);
+    //  NurseDuration = 60 * NurseDurationMax;
+    //}
+    //else
+    //{
+    //  spawnLocation = new Vector3(fireLocation.position.x, fireLocation.position.y, fireLocation.position.z);
+    //  nurse = Instantiate(baseNurse, new Vector3(spawnLocation.x, spawnLocation.y, spawnLocation.z), fireLocation.rotation);
+    //  Destroy(nurse, NurseDurationMax);
+    //  NurseDuration = 60 * NurseDurationMax;
+    //}
+
+    nurse = Instantiate(baseNurse, new Vector3(fireLocation.position.x, fireLocation.position.y, fireLocation.position.z), fireLocation.rotation);
+    Destroy(nurse, NurseDurationMax);
+    NurseDuration = 60 * NurseDurationMax;
   }
 
   public bool isNurseAlive()

@@ -8,14 +8,15 @@ public class OverworldFog : MonoBehaviour
 
     void Start()
     {
-        spr = GetComponent<SpriteRenderer>();
+        spr = this.gameObject.GetComponent<SpriteRenderer>();
+        spr.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            spr.enabled = false;
+            spr.enabled = true;
         }
     }
 
@@ -23,7 +24,7 @@ public class OverworldFog : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            spr.enabled = true;
+            spr.enabled = false;
         }
     }
 }

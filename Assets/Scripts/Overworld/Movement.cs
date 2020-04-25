@@ -7,12 +7,15 @@ using UnityEngine.UI;
 public class Movement : MonoBehaviour
 {
     private Vector2 level1 = new Vector2(-3.5f, -0.1f);
-    private Vector2 corner1 = new Vector2(6.5f, -0.1f);
-    private Vector2 corner2 = new Vector2(6.5f, -7.1f);
-    private Vector2 tWall = new Vector2(13.5f, -7.1f);
-    private Vector2 level2 = new Vector2(13.5f, -2.1f);
-    private Vector2 corner3 = new Vector2(30.5f, -7.1f);
-    private Vector2 level3 = new Vector2(30.5f, 5.9f);
+    private Vector2 corner1 = new Vector2(5.45f, -0.1f);
+    private Vector2 corner2 = new Vector2(5.45f, -10.54f);
+    private Vector2 tWall = new Vector2(21.32f, -10.54f);
+    private Vector2 level2 = new Vector2(21.27f, -0.52f);
+    private Vector2 corner3 = new Vector2(42.21f, -10.54f);
+    private Vector2 level3 = new Vector2(42.06f, 1.19f);
+
+    public GameObject incLevels;
+    public GameObject cmpLevels;
 
     public GameObject Transitionref;
 
@@ -86,6 +89,7 @@ public class Movement : MonoBehaviour
             anim.runtimeAnimatorController = maleAnim;
         }
         anim.SetInteger("direction", 1);
+        
         if(PlayerPrefs.GetInt("LastLevel") == 2){
             this.transform.position = level2;
             playerPosition = 2;
@@ -107,9 +111,13 @@ public class Movement : MonoBehaviour
         if (moving || move2 || move3 || move4 || move5 || move6 || move7 || move8 || move9 || move10 || move11 || move12)
         {
             UI.SetActive(false);
+            incLevels.SetActive(false);
+            cmpLevels.SetActive(false);
         }
         else
         {
+            incLevels.SetActive(true);
+            cmpLevels.SetActive(true);
             if (!inDialogue)
             {
                 UI.SetActive(true);

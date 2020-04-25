@@ -259,8 +259,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6b4f45a9ebb7f4a815aa105c21393f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  incLevels: {fileID: 0}
+  cmpLevels: {fileID: 0}
   Transitionref: {fileID: 0}
   PreLevel1Dialogue: {fileID: 0}
+  PreLevel2Dialogue: {fileID: 0}
+  PreLevel3Dialogue: {fileID: 0}
+  blockage1: {fileID: 0}
+  blockage2: {fileID: 0}
   maleAnim: {fileID: 9100000, guid: 2874e9ad4298f20488107d26740cd03a, type: 2}
   femaleAnim: {fileID: 9100000, guid: f9c6f535d02d3564d84576882c5e7952, type: 2}
   UI: {fileID: 0}

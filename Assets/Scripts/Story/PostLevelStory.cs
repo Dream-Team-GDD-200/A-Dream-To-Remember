@@ -28,6 +28,7 @@ public class PostLevelStory : MonoBehaviour
         {
             postLevel3.TriggerDialogue();
             PlayerPrefs.SetInt("PostStory3Told", 1);
+            PlayerPrefs.SetInt("GoToWinScreen", 1);
             FindObjectOfType<Movement>().setInDialogue(true);
         }
     }

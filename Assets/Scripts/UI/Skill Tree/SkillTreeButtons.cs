@@ -196,7 +196,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphOneOpen()
   {
     closeAll(1);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphOneWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(0) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(2) == true)
     {
       morphOneWindow.SetActive(true);
@@ -210,7 +209,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphTwoOpen()
   {
     closeAll(2);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphTwoWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(1) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(2) == true)
     {
       morphTwoWindow.SetActive(true);
@@ -224,7 +222,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphThreeOpen()
   {
     closeAll(3);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphThreeWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(2) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(3) == true)
     {
       morphThreeWindow.SetActive(true);
@@ -238,7 +235,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphFourOpen()
   {
     closeAll(4);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphFourWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(3) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(3) == true)
     {
       morphFourWindow.SetActive(true);
@@ -252,7 +248,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphFiveOpen()
   {
     closeAll(5);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphFiveWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(4) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(1) == true)
     {
       morphFiveWindow.SetActive(true);
@@ -266,7 +261,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphSixOpen()
   {
     closeAll(6);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphSixWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(5) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(1) == true)
     {
       morphSixWindow.SetActive(true);
@@ -280,7 +274,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphSevenOpen()
   {
     closeAll(7);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphSevenWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(6) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(0) == true)
     {
       morphSevenWindow.SetActive(true);
@@ -294,7 +287,6 @@ public class SkillTreeButtons : MonoBehaviour
   public void MorphEightOpen()
   {
     closeAll(8);
-    //opens the window if the player has not purchased the morph but has unlocked the shock skill
     if (morphEightWindow.activeSelf == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasMorph(7) == false && GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(0) == true)
     {
       morphEightWindow.SetActive(true);
@@ -307,65 +299,97 @@ public class SkillTreeButtons : MonoBehaviour
 
   public void MorphOneBuy()
   {
-    morphOneWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setStunDuration(3f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(0, true);
-    Debug.Log("Duration Increased");
+    if(GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphOneWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setStunDuration(3f);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(0, true);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Duration Increased");
+    }
   }
 
   public void MorphTwoBuy()
   {
-    morphTwoWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterCooldown("Shock", 2f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(1, true);
-    Debug.Log("Radius Increased");
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphTwoWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterCooldown("Shock", 2f);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(1, true);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Radius Increased");
+    }
   }
 
   public void MorphThreeBuy()
   {
-    morphThreeWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<NurseSpawn>().alterNurseDurationMax(30f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(2, true);
-    Debug.Log("Duration Increased");
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphThreeWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<NurseSpawn>().alterNurseDurationMax(30f);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(2, true);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Duration Increased");
+    }
   }
 
   public void MorphFourBuy()
   {
-    morphFourWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("Ally").GetComponent<TriageEffect>().alterHealVal(3f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(3, true);
-    Debug.Log("Potency Increased");
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphFourWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("Ally").GetComponent<TriageEffect>().alterHealVal(3f);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(3, true);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Potency Increased");
+    }
   }
 
   public void MorphFiveBuy()
   {
-    morphFiveWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterHealVal(20f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(4, true);
-    Debug.Log("Heal Increased");
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphFiveWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterHealVal(20f);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(4, true);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Heal Increased");
+    }
   }
 
   public void MorphSixBuy()
   {
-    morphSixWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterHealVal(10f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(5, true);
-    Debug.Log("Potency Increased");
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphSixWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterHealVal(10f);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(5, true);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Potency Increased");
+    }
   }
 
   public void MorphSevenBuy()
   {
-    morphSevenWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(6, true);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().alterCellHealthMax(5);
-    Debug.Log("Potency Increased");
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphSevenWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(6, true);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().alterCellHealthMax(5);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Potency Increased");
+    }
   }
 
   public void MorphEightBuy()
   {
-    morphEightWindow.SetActive(false);
-    GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterCooldown("DeployedCell", 2f);
-    GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(7, true);
-    Debug.Log("Potency Increased");
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    {
+      morphEightWindow.SetActive(false);
+      GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterCooldown("DeployedCell", 2f);
+      GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(7, true);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      Debug.Log("Potency Increased");
+    }
   }
 }

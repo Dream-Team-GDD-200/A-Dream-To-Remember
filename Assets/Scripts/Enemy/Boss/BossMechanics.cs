@@ -25,7 +25,7 @@ public class BossMechanics: MonoBehaviour
 
     //Box spawner Variables
     public int TimeBetweenBossMove;
-    public int BossMaxSpeed;
+    public float BossMaxSpeed;
     public int BossDamage;
     public int BoxMaxCount;
     public float timeBoxSpawns;

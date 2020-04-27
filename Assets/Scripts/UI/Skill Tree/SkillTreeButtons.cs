@@ -36,6 +36,9 @@ public class SkillTreeButtons : MonoBehaviour
   public Image shockSkill;
   public Image nurseSkill;
 
+  //cost to purchase a skill upgrade
+  private int upgradeCost = 3;
+
   // Start is called before the first frame update
   void Start()
     {
@@ -299,96 +302,96 @@ public class SkillTreeButtons : MonoBehaviour
 
   public void MorphOneBuy()
   {
-    if(GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if(GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphOneWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setStunDuration(3f);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(0, true);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Duration Increased");
     }
   }
 
   public void MorphTwoBuy()
   {
-    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphTwoWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterCooldown("Shock", 2f);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(1, true);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Radius Increased");
     }
   }
 
   public void MorphThreeBuy()
   {
-    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphThreeWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("Player").GetComponent<NurseSpawn>().alterNurseDurationMax(30f);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(2, true);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Duration Increased");
     }
   }
 
   public void MorphFourBuy()
   {
-    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphFourWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("Ally").GetComponent<TriageEffect>().alterHealVal(3f);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(3, true);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Potency Increased");
     }
   }
 
   public void MorphFiveBuy()
   {
-    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphFiveWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterHealVal(20f);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(4, true);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Heal Increased");
     }
   }
 
   public void MorphSixBuy()
   {
-    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphSixWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterHealVal(10f);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(5, true);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Potency Increased");
     }
   }
 
   public void MorphSevenBuy()
   {
-    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphSevenWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(6, true);
       GameObject.FindGameObjectWithTag("Player").GetComponent<WhiteBloodCell>().alterCellHealthMax(5);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Potency Increased");
     }
   }
 
   public void MorphEightBuy()
   {
-    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= 3)
+    if (GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().getCount() >= upgradeCost)
     {
       morphEightWindow.SetActive(false);
       GameObject.FindGameObjectWithTag("DeploySkill").GetComponent<LongClick>().alterCooldown("DeployedCell", 2f);
       GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().setHasMorph(7, true);
-      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(3);
+      GameObject.FindGameObjectWithTag("MemFrag").GetComponent<MemoryFragmentsUI>().removeMemoryFragment(upgradeCost);
       Debug.Log("Potency Increased");
     }
   }

@@ -9,27 +9,35 @@ public class SkillTreeButtons : MonoBehaviour
   //morphOne increases the duration of the shock ability by one second
   public GameObject morphOneWindow;
   public Image morphOneButton;
+  public Text morphOneCostText;
   //morphTwo increases the radius of the shock ability by 50%
   public GameObject morphTwoWindow;
   public Image morphTwoButton;
+  public Text morphTwoCostText;
   //morphThree increases the duration of the nurse abulity by 5 seconds
   public GameObject morphThreeWindow;
   public Image morphThreeButton;
+  public Text morphThreeCostText;
   //morphFour increases the healing potency of the nurse ability by 2
   public GameObject morphFourWindow;
   public Image morphFourButton;
+  public Text morphFourCostText;
   //morphFive
   public GameObject morphFiveWindow;
   public Image morphFiveButton;
+  public Text morphFiveCostText;
   //morphSix
   public GameObject morphSixWindow;
   public Image morphSixButton;
+  public Text morphSixCostText;
   //morphSeven
   public GameObject morphSevenWindow;
   public Image morphSevenButton;
+  public Text morphSevenCostText;
   //morphEight
   public GameObject morphEightWindow;
   public Image morphEightButton;
+  public Text morphEightCostText;
   //images for the skills
   public Image cellSkill;
   public Image healSkill;
@@ -37,13 +45,21 @@ public class SkillTreeButtons : MonoBehaviour
   public Image nurseSkill;
 
   //cost to purchase a skill upgrade
-  private int upgradeCost = 3;
+  private int upgradeCost = 1;
 
   // Start is called before the first frame update
   void Start()
     {
       closeAll();
-    }
+      morphOneCostText.text = upgradeCost.ToString();
+      morphTwoCostText.text = upgradeCost.ToString();
+      morphThreeCostText.text = upgradeCost.ToString();
+      morphFourCostText.text = upgradeCost.ToString();
+      morphFiveCostText.text = upgradeCost.ToString();
+      morphSixCostText.text = upgradeCost.ToString();
+      morphSevenCostText.text = upgradeCost.ToString();
+      morphEightCostText.text = upgradeCost.ToString();
+  }
 
   private void closeAll(int exception = 0)
   {

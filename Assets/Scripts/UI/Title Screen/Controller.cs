@@ -35,10 +35,10 @@ public class Controller : MonoBehaviour
 
         //sets the resolution to the same as what we want so it work on all builds
         if(SystemInfo.deviceType == DeviceType.Desktop){
-            Screen.SetResolution(1200, 800, false, 60);
+            Screen.SetResolution(1280, 800, false, 60);
             PlayerPrefs.SetInt("Controls", 1); // 1 is the controls for pc
         }else if(SystemInfo.deviceType == DeviceType.Handheld){
-            Screen.SetResolution(1200,800, true, 30);
+            Screen.SetResolution(1280,800, true, 30);
             PlayerPrefs.SetInt("Controls", 0); // 0 is the controls for mobile'
             ControlButton.enabled = false;
         }

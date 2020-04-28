@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,13 +20,31 @@ public class Projectile_Destruction : MonoBehaviour
     {
 
         // if colliding with wall, box, deployed cell, or enemy projectile is destroyed
-        if (other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("DeployedCell") || other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Boss"))
+        if (other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Box") || other.gameObject.CompareTag("DeployedCell") || other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("UnDmgBoss"))
         {
             audioS.Play();
 
             spr.enabled = false;
             collr.enabled = false;
             StartCoroutine(waitForSound());
+        }
+
+        if (other.gameObject.CompareTag("Boss"))
+        {
+            audioS.Play();
+
+            spr.enabled = false;
+            collr.enabled = false;
+            StartCoroutine(waitForSound());
+
+            try
+            {
+                FindObjectOfType<FinalBossHealth>().DealDamage(2f);
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
         }
     }
 

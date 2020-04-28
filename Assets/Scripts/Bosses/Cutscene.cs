@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Cutscene : MonoBehaviour
@@ -144,6 +145,10 @@ public class Cutscene : MonoBehaviour
         doctor.GetComponent<PlayerMovement>().setincutscene(false);
         doctor.GetComponent<PlayerMovement>().enabled = true;
         
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            FindObjectOfType<FinalBossHandler>().startBossFight();
+        }
     }
 
     private Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime = 1)

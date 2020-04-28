@@ -89,9 +89,11 @@ public class PlayerMovement : MonoBehaviour
     //checks to see if the screen touch or mouse click is within a certain UI element
     public bool CheckWithin(GameObject UI_Element, Vector3 clickPosition)
     {
-        if ((clickPosition.x > UI_Element.transform.position.x - UI_Element.GetComponent<RectTransform>().sizeDelta.x / 2 && clickPosition.x < UI_Element.transform.position.x + UI_Element.GetComponent<RectTransform>().sizeDelta.x / 2 && clickPosition.y > UI_Element.transform.position.y - UI_Element.GetComponent<RectTransform>().sizeDelta.y / 2 && clickPosition.y < UI_Element.transform.position.y + UI_Element.GetComponent<RectTransform>().sizeDelta.y / 2))
-        {
-            return true;
+        if (UI_Element.activeSelf) {
+            if ((clickPosition.x > UI_Element.transform.position.x - UI_Element.GetComponent<RectTransform>().sizeDelta.x / 2 && clickPosition.x < UI_Element.transform.position.x + UI_Element.GetComponent<RectTransform>().sizeDelta.x / 2 && clickPosition.y > UI_Element.transform.position.y - UI_Element.GetComponent<RectTransform>().sizeDelta.y / 2 && clickPosition.y < UI_Element.transform.position.y + UI_Element.GetComponent<RectTransform>().sizeDelta.y / 2))
+            {
+                return true;
+            }
         }
         return false;
     }

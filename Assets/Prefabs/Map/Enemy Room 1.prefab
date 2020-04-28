@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door:
   - {fileID: 4896916291019419646}
+  Blocker: []
 --- !u!114 &4896916289182669688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,8 +241,8 @@ MonoBehaviour:
   - {fileID: 789846323326647663, guid: ec9e3a09b15e89e4fb111384d1895bc6, type: 3}
   SpawnedEnemies: []
   SpawnLocations: []
-  enemyTypes: 1
   MaxEnemies: 0
+  EnemySpawnRatio: 100
   allEnemiesDead: 0
   active: 0
 --- !u!1 &4896916289578680138
@@ -420,6 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: []
+  Blocker: []
 --- !u!114 &4896916291019419644
 MonoBehaviour:
   m_ObjectHideFlags: 0

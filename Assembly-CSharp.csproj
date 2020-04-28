@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ControlManager.cs" />
+    <Compile Include="Assets\IceLogic.cs" />
+    <Compile Include="Assets\IceStopper.cs" />
     <Compile Include="Assets\Scripts\AllThings.cs" />
     <Compile Include="Assets\Scripts\Bosses\BossDetectInRoom.cs" />
     <Compile Include="Assets\Scripts\Bosses\BossKnockBack.cs" />
@@ -142,6 +144,7 @@
     <Compile Include="Assets\Scripts\WhiteBloodCells\BROKENBarrier_Destruction.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCells\Projectile_Destruction.cs" />
     <Compile Include="Assets\Scripts\WhiteBloodCells\WhiteBloodCell.cs" />
+    <Compile Include="Assets\stopPlayer.cs" />
     <Compile Include="Assets\TitleInputs.cs" />
     <Compile Include="Assets\UIcontrols.cs" />
     <Compile Include="Assets\UIEnable.cs" />

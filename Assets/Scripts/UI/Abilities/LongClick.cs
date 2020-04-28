@@ -36,41 +36,41 @@ public class LongClick : MonoBehaviour
     public GameObject buttonShock;
     public GameObject buttonNurse;
 
-  void Start()
-  {   //disables skills that the player does not have
-      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(0) == false)
-      {
+    void Start()
+    {   //disables skills that the player does not have
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(0) == false)
+        {
             DeployButton.gameObject.SetActive(false);
-      }
-      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(1) == false)
-      {
+        }
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(1) == false)
+        {
             HealButton.gameObject.SetActive(false);
-      }
-      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(2) == false)
-      {
+        }
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(2) == false)
+        {
             ShockButton.gameObject.SetActive(false);
-      }
-      if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(3) == false)
-      {
+        }
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<SkillCache>().getHasSkill(3) == false)
+        {
             NurseButton.gameObject.SetActive(false);
-      }
-  }
+        }
+    }
 
-  public void onEnable()
+    public void onEnable()
     {
-        if(CellDuration != 0)
+        if (CellDuration != 0)
         {
             StartCoroutine(CoolDown(CellDuration, 1));
         }
-        if(HealDuration != 0)
+        if (HealDuration != 0)
         {
             StartCoroutine(CoolDown(HealDuration, 2));
         }
-        if(ShockDuration != 0)
+        if (ShockDuration != 0)
         {
             StartCoroutine(CoolDown(ShockDuration, 3));
         }
-        if(NurseDuration != 0)
+        if (NurseDuration != 0)
         {
             StartCoroutine(CoolDown(NurseDuration, 4));
         }
@@ -182,21 +182,21 @@ public class LongClick : MonoBehaviour
             {
                 case 1:
                     CellDuration -= duration;
-                    buttonDeploy.GetComponent<NumbersCoolDownScript>().currentNumberTime( CellDuration);    //send current cooldown to textbox 
+                    buttonDeploy.GetComponent<NumbersCoolDownScript>().currentNumberTime(CellDuration);    //send current cooldown to textbox 
                     DeployImage.fillAmount = (float)1 - (CellDuration / DeployCellCooldown);
                     break;
                 case 2:
-                    HealDuration-= duration;
+                    HealDuration -= duration;
                     buttonHeal.GetComponent<NumbersCoolDownScript>().currentNumberTime(HealDuration);
                     HealImage.fillAmount = (float)1 - (HealDuration / HealCooldown);
                     break;
                 case 3:
-                    ShockDuration-= duration;
+                    ShockDuration -= duration;
                     buttonShock.GetComponent<NumbersCoolDownScript>().currentNumberTime(ShockDuration);
                     ShockImage.fillAmount = (float)1 - (ShockDuration / ShockCooldown);
                     break;
                 case 4:
-                    NurseDuration-= duration;
+                    NurseDuration -= duration;
                     buttonNurse.GetComponent<NumbersCoolDownScript>().currentNumberTime(NurseDuration);
                     NurseImage.fillAmount = (float)1 - (NurseDuration / NurseCooldown);
                     break;
@@ -204,8 +204,8 @@ public class LongClick : MonoBehaviour
         }
     }
 
-  //manually changes the total duration of a skill's cooldown
-  public void alterCooldown(string skill, float val)
+    //manually changes the total duration of a skill's cooldown
+    public void alterCooldown(string skill, float val)
     {
         if (skill == "DeployedCell")
         {
@@ -225,40 +225,36 @@ public class LongClick : MonoBehaviour
         }
     }
 
-  //changes the potency of the heal ability
-  public void alterHealVal(float val)
-  {
-    healVal = val;
-  }
+    //changes the potency of the heal ability
+    public void alterHealVal(float val)
+    {
+        healVal = val;
+    }
 
-  //changes the potency of the heal ability
-  public void alterSpeed(float val)
-  {
-    speed = val;
-  }
+    //changes the potency of the heal ability
+    public void alterSpeed(float val)
+    {
+        speed = val;
+    }
 
-  //activates a skill
-  public void grantSkill(int skill)
-  {
-    if (skill == 0)
+    //activates a skill
+    public void grantSkill(int skill)
     {
-      DeployButton.interactable = true;
-      DeployImage.color = new Color(255, 255, 255, 1f);
+        if (skill == 0)
+        {
+            DeployButton.gameObject.SetActive(true);
+        }
+        if (skill == 1)
+        {
+            HealButton.gameObject.SetActive(true);
+        }
+        if (skill == 2)
+        {
+            ShockButton.gameObject.SetActive(true);
+        }
+        if (skill == 3)
+        {
+            NurseButton.gameObject.SetActive(true);
+        }
     }
-    if (skill == 1)
-    {
-      HealButton.interactable = true;
-      HealImage.color = new Color(255, 255, 255, 1f);
-    }
-    if (skill == 2)
-    {
-      ShockButton.interactable = true;
-      ShockImage.color = new Color(255, 255, 255, 1f);
-    }
-    if (skill == 3)
-    {
-      NurseButton.interactable = true;
-      NurseImage.color = new Color(255, 255, 255, 1f);
-    }
-  }
 }

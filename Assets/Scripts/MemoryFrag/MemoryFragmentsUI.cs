@@ -44,4 +44,9 @@ public class MemoryFragmentsUI : MonoBehaviour
         fragmentCount = PlayerPrefs.GetInt("MemFrags");
         updateMemoryFragmentUI();
     }
+
+    public int getCount()
+    {
+        return fragmentCount;
+    }
 }

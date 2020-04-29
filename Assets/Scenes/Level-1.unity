@@ -434,6 +434,12 @@ Transform:
   m_Father: {fileID: 326784380}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &545971766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5874474055064775, guid: 239241e8d16fb424eafb306783e4b754,
+    type: 3}
+  m_PrefabInstance: {fileID: 8390230042471050697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &550305540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,12 +1086,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7663261224132494036, guid: 7abf6a04ce3c6214c9f9f66c46f1ccc1,
     type: 3}
   m_PrefabInstance: {fileID: 7663261223072485360}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1139817987 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8390230041898707290, guid: 239241e8d16fb424eafb306783e4b754,
-    type: 3}
-  m_PrefabInstance: {fileID: 8390230042471050697}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1157655034 stripped
 MonoBehaviour:
@@ -2362,11 +2362,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: UI
@@ -2511,6 +2506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 7.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c6a228d45b2fa40994aa07aea66803, type: 3}
@@ -47777,7 +47777,7 @@ PrefabInstance:
         type: 3}
       propertyPath: SkillTreeMenu
       value: 
-      objectReference: {fileID: 1139817987}
+      objectReference: {fileID: 545971766}
     - target: {fileID: 7300335081885149470, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: Controls
@@ -47882,7 +47882,7 @@ PrefabInstance:
         type: 3}
       propertyPath: SkillTreeMenu
       value: 
-      objectReference: {fileID: 1139817987}
+      objectReference: {fileID: 0}
     - target: {fileID: 1813481641264496362, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: ResetMenu
@@ -48989,6 +48989,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8390230042180243694, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: skillTree
+      value: 
+      objectReference: {fileID: 545971766}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 239241e8d16fb424eafb306783e4b754, type: 3}
 --- !u!1 &8390230042471050698 stripped

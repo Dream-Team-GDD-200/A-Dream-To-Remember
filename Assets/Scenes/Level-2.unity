@@ -2580,7 +2580,7 @@ PrefabInstance:
         type: 3}
       propertyPath: SkillTreeMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 506319118}
     - target: {fileID: 1813481641264496362, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: PauseMenu
@@ -4130,11 +4130,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8390230041898707290, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8390230043071224266, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4555,6 +4550,11 @@ PrefabInstance:
       propertyPath: skillTree
       value: 
       objectReference: {fileID: 506319118}
+    - target: {fileID: 8390230041898707290, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 239241e8d16fb424eafb306783e4b754, type: 3}
 --- !u!224 &506319116 stripped

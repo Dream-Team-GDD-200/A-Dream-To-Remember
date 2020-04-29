@@ -16546,7 +16546,7 @@ PrefabInstance:
         type: 3}
       propertyPath: SkillTreeMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1794929933}
     - target: {fileID: 1813481641264496362, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: ResetMenu
@@ -117810,16 +117810,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.001159668
       objectReference: {fileID: 0}
-    - target: {fileID: 8390230042180243693, guid: 239241e8d16fb424eafb306783e4b754,
-        type: 3}
-      propertyPath: m_TagString
-      value: SkillTree
-      objectReference: {fileID: 0}
     - target: {fileID: 8390230042180243694, guid: 239241e8d16fb424eafb306783e4b754,
         type: 3}
       propertyPath: skillTree
       value: 
       objectReference: {fileID: 1794929933}
+    - target: {fileID: 8390230042180243693, guid: 239241e8d16fb424eafb306783e4b754,
+        type: 3}
+      propertyPath: m_TagString
+      value: SkillTree
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 239241e8d16fb424eafb306783e4b754, type: 3}
 --- !u!1 &1794929926 stripped

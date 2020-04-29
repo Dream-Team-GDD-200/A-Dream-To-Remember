@@ -2362,6 +2362,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: UI
@@ -2506,11 +2511,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 7.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2952643542368991251, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c6a228d45b2fa40994aa07aea66803, type: 3}
@@ -47882,7 +47882,7 @@ PrefabInstance:
         type: 3}
       propertyPath: SkillTreeMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 545971766}
     - target: {fileID: 1813481641264496362, guid: c7cae10e23f75e24abf88178bed9fb4f,
         type: 3}
       propertyPath: ResetMenu

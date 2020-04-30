@@ -116,6 +116,14 @@ public class FinalBossHandler : MonoBehaviour
 
     public void SwitchHit()
     {
-        bossHealth.DealDamage(20f);
+        if (currentStage == 2)
+        {
+            bossHealth.SetHealth(60f);
+        } 
+        else if (currentStage == 4)
+        {
+            bossHealth.SetHealth(20f);
+        }
+        
     }
 }

@@ -2382,6 +2382,11 @@ PrefabInstance:
       propertyPath: ControlsOverlay
       value: 
       objectReference: {fileID: 2952643541264175983}
+    - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: ReferenceToTransition
+      value: 
+      objectReference: {fileID: 775543664}
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_LocalPosition.x

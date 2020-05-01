@@ -61,18 +61,28 @@ public class Controller : MonoBehaviour
     }
     public void startGame()
     {
+ 
         //set the 3 levels to not clear
-        if(!PlayerPrefs.HasKey("level1clear")){
+        if (!PlayerPrefs.HasKey("level1clear")){
             PlayerPrefs.SetInt("level1clear", 0);
         }else if(!PlayerPrefs.HasKey("level1clear")){
             PlayerPrefs.SetInt("level2clear", 0);
         }else if(!PlayerPrefs.HasKey("level1clear")){
             PlayerPrefs.SetInt("level3clear", 0);
         }
-        UICanvas.GetComponent<Canvas>().enabled = false;
-        timeStartedLerping = Time.time;
-        doTransition = true;
-        StartCoroutine(switchScene());
+
+        if (SceneManager.GetActiveScene().name == "CharacterSelect") //if in characters selsect
+        {
+            StartCoroutine(AltSwitchScene());
+        }
+        else //on  main menu
+        {
+            UICanvas.GetComponent<Canvas>().enabled = false;
+            timeStartedLerping = Time.time;
+            doTransition = true;
+            StartCoroutine(switchScene());
+        }
+ 
     }
     public void playerSelect()
     {
@@ -103,6 +113,7 @@ public class Controller : MonoBehaviour
         float timeSinceStarted = Time.time - timeStartedLerping;
         float percentageComplete = timeSinceStarted / lerpTime;
         var result = Vector3.Lerp(start, end, percentageComplete);
+ 
         return result;
     }
 
@@ -116,15 +127,40 @@ public class Controller : MonoBehaviour
         return result;
     }
 
-    IEnumerator switchScene()
+    IEnumerator switchScene() //zoom in transition for main menu
     {
         yield return new WaitForSeconds(1f);
         doTransition = false;
+     
+
         if (PlayerPrefs.GetInt("FirstStory") == 0)
         {
             PlayerPrefs.SetInt("FirstStory", 1);
             SceneManager.LoadScene(7);
         } else
+        {
+            SceneManager.LoadScene(3);
+        }
+    }
+    IEnumerator AltSwitchScene() //transition used for character select scene
+    {
+        //best code, i swear
+        GameObject.FindWithTag("CharacterSelectButtonContainer").gameObject.transform.GetChild(0).GetComponent<Button>().interactable = false;
+        GameObject.FindWithTag("CharacterSelectButtonContainer").gameObject.transform.GetChild(1).GetComponent<Button>().interactable = false;
+        GameObject.FindWithTag("CharacterSelectButtonContainer").gameObject.transform.GetChild(2).GetComponent<Button>().interactable = false;
+        GameObject.FindWithTag("CharacterSelectButtonContainer").gameObject.transform.GetChild(3).GetComponent<Button>().interactable = false;
+        GameObject.FindWithTag("CharacterSelectButtonContainer").gameObject.transform.GetChild(4).GetComponent<Button>().interactable = false;
+        GameObject.FindWithTag("CharacterSelectButtonContainer").gameObject.transform.GetChild(5).GetComponent<Button>().interactable = false;
+        
+        yield return StartCoroutine(Transitionref.GetComponent<FadeOut>().UndoFade());
+
+
+        if (PlayerPrefs.GetInt("FirstStory") == 0)
+        {
+            PlayerPrefs.SetInt("FirstStory", 1);
+            SceneManager.LoadScene(7);
+        }
+        else
         {
             SceneManager.LoadScene(3);
         }

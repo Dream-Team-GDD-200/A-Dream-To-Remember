@@ -12,6 +12,7 @@ public class PauseController : MonoBehaviour
     public GameObject pauseOverlay;
     public GameObject UI;
     public GameObject ControlsOverlay;
+    public GameObject ReferenceToTransition;
     [Header("Scripts and Transforms")]
     AllThings MasterList;
     Transform deactivateButton;
@@ -62,11 +63,11 @@ public class PauseController : MonoBehaviour
     }
     public void worldSelect()
     {
-        SceneManager.LoadScene("Overworld");
+        StartCoroutine(transitionToOverWorld());
     }
     public void characterSelect()
     {
-        SceneManager.LoadScene("CharacterSelect");
+        StartCoroutine(transitionToCharacterSelect());
     }
     public void openControls()
     {
@@ -80,5 +81,19 @@ public class PauseController : MonoBehaviour
             ControlsOverlay.SetActive(true);
             isactive = true;
         }
+    }
+
+    IEnumerator transitionToOverWorld() //transition to overworld with fade script
+    {
+        pauseOverlay.SetActive(false);
+        yield return StartCoroutine(ReferenceToTransition.GetComponent<FadeOut>().UndoFade());
+        SceneManager.LoadScene("Overworld");
+    }
+
+    IEnumerator transitionToCharacterSelect()
+    {
+        pauseOverlay.SetActive(false);
+        yield return StartCoroutine(ReferenceToTransition.GetComponent<FadeOut>().UndoFade());
+        SceneManager.LoadScene("CharacterSelect");
     }
 }

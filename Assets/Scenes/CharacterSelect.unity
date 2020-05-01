@@ -697,6 +697,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5369389164759084277}
+    - target: {fileID: 1127867186217042271, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_TagString
+      value: CharacterSelectButtonContainer
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 81dbcd6e7e1882844bae82ace3cae283, type: 3}

@@ -14,6 +14,8 @@ public class Cutscene : MonoBehaviour
     private bool moveTextIn = false;
     private bool moveTextOut = false;
     private bool moveBarsOut = false;
+    private bool moveToSwitch = false;
+    private bool switchToPlayer = false;
 
     public Camera doctorCamera;
     public GameObject UI;
@@ -28,6 +30,8 @@ public class Cutscene : MonoBehaviour
     private Vector3 docCamPos;
     private Vector3 bossPos;
 
+    private Vector3 switchPos;
+
     private float lerpT = 1f;
 
     private float camSize = 5f;
@@ -37,6 +41,11 @@ public class Cutscene : MonoBehaviour
     {
         BossIntroUI.GetComponent<Canvas>().enabled = false;
         bossPos = new Vector3(this.gameObject.transform.position.x + 1.5f, this.gameObject.transform.position.y, -1);
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            switchPos = GameObject.FindGameObjectWithTag("KillSwitch").transform.position;
+            switchPos.z = -1f;
+        }
     }
 
     // Update is called once per frame
@@ -72,6 +81,16 @@ public class Cutscene : MonoBehaviour
         {
             upperBar.GetComponent<RectTransform>().localPosition = Lerp(new Vector3(0, 0, 0), new Vector3(0, 210, 0), startLerpToBossTime, lerpT / 2);
             lowerBar.GetComponent<RectTransform>().localPosition = Lerp(new Vector3(0, 0, 0), new Vector3(0, -210, 0), startLerpToBossTime, lerpT / 2);
+        }
+
+        else if (moveToSwitch)
+        {
+            doctorCamera.transform.position = Lerp(bossPos, switchPos, startLerpToBossTime, lerpT);
+        }
+
+        else if (switchToPlayer)
+        {
+            doctorCamera.transform.position = Lerp(switchPos, docCamPos, startLerpToBossTime, lerpT);
         }
     }
 
@@ -134,11 +153,31 @@ public class Cutscene : MonoBehaviour
 
         BossIntroUI.SetActive(false);
         startLerpToBossTime = Time.time;
-        moveToPlayer = true;
 
-        yield return new WaitForSeconds(lerpT);
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            moveToSwitch = true;
 
-        moveToPlayer = false;
+            yield return new WaitForSeconds(lerpT * 3);
+
+            startLerpToBossTime = Time.time;
+            moveToSwitch = false;
+
+            switchToPlayer = true;
+
+            yield return new WaitForSeconds(lerpT);
+
+            switchToPlayer = false;
+        }
+        else
+        {
+            moveToPlayer = true;
+
+            yield return new WaitForSeconds(lerpT);
+
+            moveToPlayer = false;
+        }
+        
 
         // ENABLE UI
         UI.GetComponent<Canvas>().enabled = true;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TriggerBoss : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class TriggerBoss : MonoBehaviour
         bossRef.gameObject.GetComponent<Cutscene>().beginCutscene();
 
         yield return new WaitForSeconds(8f);
+
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            yield return new WaitForSeconds(4f);
+        }
 
         // Enable the boss
         bossRef.GetComponent<MoveLevelTwoBossRight>().enabled = true;

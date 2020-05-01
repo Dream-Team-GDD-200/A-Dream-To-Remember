@@ -312,6 +312,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3995524327911933128, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552025205518724924, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2616533116457318063, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -321,6 +331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: openControls
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559354861123682561, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2976463389118235508, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
@@ -517,6 +532,36 @@ PrefabInstance:
       propertyPath: m_MatchWidthOrHeight
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9058046020529253289, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5369389164759084277}
+    - target: {fileID: 9058046020529253289, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetProgress
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404482427063709420, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: noBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404482427063709420, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5369389164759084277}
+    - target: {fileID: 8469750604242037063, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469750604242037063, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5369389164759084277}
     m_RemovedComponents:
     - {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 81dbcd6e7e1882844bae82ace3cae283, type: 3}
@@ -584,6 +629,7 @@ MonoBehaviour:
   Transitionref: {fileID: 0}
   UICanvas: {fileID: 2093870401}
   Controls: {fileID: 714408293}
+  Data: {fileID: 11400000, guid: 7644b41c842d7234a97e227ca996ef01, type: 2}
   cam: {fileID: 1715078986}
   preGameUI: {fileID: 1262333268}
   resetProgressUI: {fileID: 71854545}

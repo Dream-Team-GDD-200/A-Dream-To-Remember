@@ -567,6 +567,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3995524327911933128, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552025205518724924, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2616533116457318063, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -577,50 +587,20 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: openControls
       objectReference: {fileID: 0}
-    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+    - target: {fileID: 3559354861123682561, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
-      propertyPath: Transitionref
-      value: 
-      objectReference: {fileID: 2133986832}
-    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1281271102}
-    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: UICanvas
-      value: 
-      objectReference: {fileID: 882159548}
-    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: Controls
-      value: 
-      objectReference: {fileID: 3559354861697636370}
-    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: ControlButton
-      value: 
-      objectReference: {fileID: 1698516354}
-    - target: {fileID: 4404482427063709420, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: noBtn
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9058046020529253289, guid: 81dbcd6e7e1882844bae82ace3cae283,
+    - target: {fileID: 3559354861371588154, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: resetProgress
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2976463389118235508, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8469750604242037063, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: resetBtn
       objectReference: {fileID: 0}
     - target: {fileID: 7436399063196428340, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
@@ -641,11 +621,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.000061035156
-      objectReference: {fileID: 0}
-    - target: {fileID: 5552025205518724924, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7099781609032346291, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
@@ -687,6 +662,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: ControlButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3559354861123682560, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306370920641670306, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -519
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: Transitionref
+      value: 
+      objectReference: {fileID: 2133986832}
+    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1281271102}
+    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: UICanvas
+      value: 
+      objectReference: {fileID: 882159548}
+    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: Controls
+      value: 
+      objectReference: {fileID: 3559354861697636370}
+    - target: {fileID: 3559354860261802677, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: ControlButton
+      value: 
+      objectReference: {fileID: 1698516354}
     - target: {fileID: 3559354860261802676, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -742,21 +752,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3559354861123682560, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559354861371588156, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3559354861371588154, guid: 81dbcd6e7e1882844bae82ace3cae283,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6375419160836565600, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_Sprite
@@ -768,6 +763,11 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3559354861371588156, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7861821817406895452, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
       propertyPath: m_Sprite
@@ -778,6 +778,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Type
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9058046020529253289, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetProgress
       objectReference: {fileID: 0}
     - target: {fileID: 3395137545754261910, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
@@ -790,10 +795,15 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4306370920641670306, guid: 81dbcd6e7e1882844bae82ace3cae283,
+    - target: {fileID: 4404482427063709420, guid: 81dbcd6e7e1882844bae82ace3cae283,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -519
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: noBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8469750604242037063, guid: 81dbcd6e7e1882844bae82ace3cae283,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetBtn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81dbcd6e7e1882844bae82ace3cae283, type: 3}

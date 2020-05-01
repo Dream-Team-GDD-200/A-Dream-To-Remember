@@ -11,7 +11,7 @@ public class GoInRoom : MonoBehaviour
             try
             {
                 collision.gameObject.GetComponent<DetectInRoom>().activate();
-            } catch (Exception e) { print(e.Message); }
+            } catch (Exception e) { }
             
         }
     }

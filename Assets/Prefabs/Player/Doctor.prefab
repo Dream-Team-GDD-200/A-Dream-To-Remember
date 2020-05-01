@@ -587,6 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f83d80ffe5fbc04480d82d8dadbf0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Data: {fileID: 11400000, guid: 7644b41c842d7234a97e227ca996ef01, type: 2}
 --- !u!114 &5137415486842192846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -614,6 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SkillTreeMenu: {fileID: 0}
+  ControlsMenu: {fileID: 0}
   Controls: {fileID: 0}
   PauseMenu: {fileID: 0}
   SkillTree: {fileID: 0}

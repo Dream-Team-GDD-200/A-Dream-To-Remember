@@ -16,6 +16,8 @@ public class Controller : MonoBehaviour
     public GameObject Controls;
 
     private bool doTransition = false;
+    [Header("Data")]
+    public SkillTreeData Data;
     [Header("Camera")]
     public Camera cam;
 
@@ -137,7 +139,8 @@ public class Controller : MonoBehaviour
         {
             PlayerPrefs.SetInt("FirstStory", 1);
             SceneManager.LoadScene(7);
-        } else
+        }
+        else
         {
             SceneManager.LoadScene(3);
         }
@@ -198,12 +201,12 @@ public class Controller : MonoBehaviour
 
         if (SystemInfo.deviceType == DeviceType.Desktop)
         {
-            Screen.SetResolution(1200, 800, false, 60);
+            Screen.SetResolution(1280, 800, false, 60);
             PlayerPrefs.SetInt("Controls", 1); // 1 is the controls for pc
         }
         else if (SystemInfo.deviceType == DeviceType.Handheld)
         {
-            Screen.SetResolution(1200, 800, true, 30);
+            Screen.SetResolution(1280, 800, true, 30);
             PlayerPrefs.SetInt("Controls", 0); // 0 is the controls for mobile'
             ControlButton.enabled = false;
         }
@@ -211,6 +214,7 @@ public class Controller : MonoBehaviour
         resetProgressUI.SetActive(false);
         preGameUI.SetActive(true);
         StartButton.interactable = false;
+        Data.resetData();
     }
 
     public void noBtn()

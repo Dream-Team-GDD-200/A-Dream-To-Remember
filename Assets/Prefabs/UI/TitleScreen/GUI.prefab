@@ -779,6 +779,7 @@ MonoBehaviour:
   Transitionref: {fileID: 0}
   UICanvas: {fileID: 0}
   Controls: {fileID: 0}
+  Data: {fileID: 11400000, guid: 7644b41c842d7234a97e227ca996ef01, type: 2}
   cam: {fileID: 0}
   preGameUI: {fileID: 3559354861123682561}
   resetProgressUI: {fileID: 3995524327911933128}
@@ -1466,7 +1467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2976463389118235508
 RectTransform:
   m_ObjectHideFlags: 0

@@ -55,7 +55,7 @@ public class SkillTreeButtons : MonoBehaviour
         UpdateCosts();
     }
 
-    private void closeAll(int exception = 0)
+    public void closeAll(int exception = 0)
     {
         switch (exception)
         {

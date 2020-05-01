@@ -4555,6 +4555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: UI
@@ -4673,11 +4678,6 @@ PrefabInstance:
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2952643542018890083, guid: 84c6a228d45b2fa40994aa07aea66803,
@@ -4963,6 +4963,11 @@ PrefabInstance:
       propertyPath: SkillTree
       value: 
       objectReference: {fileID: 2033379162}
+    - target: {fileID: 3601736359698874663, guid: 578376e56b9a36b4486278c7d210bc9b,
+        type: 3}
+      propertyPath: ControlsMenu
+      value: 
+      objectReference: {fileID: 2124599650}
     - target: {fileID: 4025084147596000788, guid: 578376e56b9a36b4486278c7d210bc9b,
         type: 3}
       propertyPath: m_Offset.y

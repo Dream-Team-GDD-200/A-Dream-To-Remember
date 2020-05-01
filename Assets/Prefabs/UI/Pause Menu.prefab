@@ -279,7 +279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -56}
+  m_AnchoredPosition: {x: 2, y: -170.1}
   m_SizeDelta: {x: 279, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2952643540726651912
@@ -1080,6 +1080,7 @@ MonoBehaviour:
   WorldSelect: {fileID: 2952643542018890083}
   MainMenu: {fileID: 2952643540883264179}
   Controls: {fileID: 5371044009765366036}
+  isactive: 0
 --- !u!1 &2998333977045171563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -170.09998}
+  m_AnchoredPosition: {x: 2, y: -56}
   m_SizeDelta: {x: 279, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4339544167069224273

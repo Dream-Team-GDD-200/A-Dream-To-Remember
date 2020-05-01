@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class UIcontrols : MonoBehaviour
 {
-    [Header("GameObjects")]
+    [Header("Menu's")]
     public GameObject SkillTreeMenu;
+    public GameObject ControlsMenu;
+    [Header("Buttons")]
     public GameObject Controls;
     [Header("Scripts")]
     public PauseController PauseMenu;
@@ -32,17 +34,23 @@ public class UIcontrols : MonoBehaviour
             {
                 SkillTree.openMenu();
             }
-            PauseMenu.openMenu();
-            pauseMenu = true;
+            else
+            {
+                PauseMenu.openMenu();
+                pauseMenu = true;
+            }
         }
         else
         {
-            PauseMenu.closeMenu();
-            if (PauseMenu.isactive)
+            if (ControlsMenu.activeSelf)
             {
                 PauseMenu.openControls();
             }
-            pauseMenu = false;
+            else
+            {
+                PauseMenu.closeMenu();
+                pauseMenu = false;
+            }
         }
     }
     public void OpenTree()

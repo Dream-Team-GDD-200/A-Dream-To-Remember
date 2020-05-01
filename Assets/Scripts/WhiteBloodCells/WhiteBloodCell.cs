@@ -32,7 +32,6 @@ public class WhiteBloodCell : MonoBehaviour
         projectile = Instantiate(baseProjectile, fireLocation.position, fireLocation.rotation);
         projectile.GetComponent<Rigidbody2D>().velocity = projectileVelocity;
         projectile.transform.parent = GameObject.FindGameObjectWithTag("Projectile_Parent").transform;
-        Debug.Log(projectileVelocity);
     }
 
     public void Deploy()

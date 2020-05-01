@@ -14,7 +14,7 @@ public class NurseSpawn : MonoBehaviour
   void Start()
   {
     //Creates a projectile and deployable cell off screen. This allows the Shoot and Deploy functions to call parent objects that cannot be destroyed.
-    baseNurse = Instantiate(baseNurse, new Vector3(2000, 2000, 2000), fireLocation.rotation);
+    //baseNurse = Instantiate(baseNurse, new Vector3(2000, 2000, 2000), fireLocation.rotation);
 
     playerMovement = GetComponent<PlayerMovement>();
   }
@@ -67,6 +67,7 @@ public class NurseSpawn : MonoBehaviour
     //}
 
     nurse = Instantiate(baseNurse, new Vector3(fireLocation.position.x, fireLocation.position.y, fireLocation.position.z), fireLocation.rotation);
+    nurse.GetComponent<TriageEffect>().setNurseLocation(fireLocation.position);
     Destroy(nurse, NurseDurationMax);
     NurseDuration = 60 * NurseDurationMax;
   }

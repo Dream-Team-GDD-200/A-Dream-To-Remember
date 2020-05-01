@@ -4576,6 +4576,11 @@ PrefabInstance:
       propertyPath: Controls
       value: 
       objectReference: {fileID: 2124599649}
+    - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: ReferenceToTransition
+      value: 
+      objectReference: {fileID: 948878459}
     - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_IsActive

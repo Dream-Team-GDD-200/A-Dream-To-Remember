@@ -8218,6 +8218,11 @@ PrefabInstance:
       propertyPath: UI
       value: 
       objectReference: {fileID: 714618112}
+    - target: {fileID: 2952643542388275862, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: ReferenceToTransition
+      value: 
+      objectReference: {fileID: 1154632081}
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -32,7 +32,7 @@ public class UIcontrols : MonoBehaviour
         {
             if(SkillTreeMenu != null && SkillTreeMenu.activeSelf)
             {
-                SkillTree.openMenu();
+                OpenTree();
             }
             else
             {

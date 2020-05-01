@@ -2080,7 +2080,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7b2dd30eccf79fe4b9e37d3fb1a0e4ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3892,7 +3892,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e582979c3b462fc49a9d2d349bb28cb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4437,6 +4437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1947082887}
+  - component: {fileID: 1947082888}
   m_Layer: 0
   m_Name: RoomSprites
   m_TagString: Untagged
@@ -4464,6 +4465,34 @@ Transform:
   m_Father: {fileID: 1506828091}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947082888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947082886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd1857d3f744334699dae2a28be9313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Room1: {fileID: 1331231760}
+  TWallHallway: {fileID: 788204337}
+  Room2: {fileID: 1599129920}
+  Room3: {fileID: 1868742339}
+  LastHallway: {fileID: 1721798818}
+  cleanRoom1: {fileID: 21300000, guid: c209cc14c6bd0654ea72b0afde053d5e, type: 3}
+  cleanTWallHallway: {fileID: 21300000, guid: 3eeef614d87ae0246ac1f1564a2ed697, type: 3}
+  cleanRoom2: {fileID: 21300000, guid: c6bdb46b229545c4e8763afc2e6fe2c9, type: 3}
+  cleanRoom3: {fileID: 21300000, guid: bc9cea565ae558543ae435e44b2d5fba, type: 3}
+  cleanLastHallway: {fileID: 21300000, guid: afc3343f41fa8a94493b9278371ae401, type: 3}
+  corruptRoom1: {fileID: 21300000, guid: c41c458714ad1eb489a7ddf84035008a, type: 3}
+  corruptTWallHallway: {fileID: 21300000, guid: 7b2dd30eccf79fe4b9e37d3fb1a0e4ba,
+    type: 3}
+  corruptRoom2: {fileID: 21300000, guid: 8dbb8a71bb9d3784497446101026b4df, type: 3}
+  corruptRoom3: {fileID: 21300000, guid: e402d4a09f74b694da85565ace59fed9, type: 3}
+  corruptLastHallway: {fileID: 21300000, guid: e582979c3b462fc49a9d2d349bb28cb6, type: 3}
 --- !u!224 &2033379160 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3291024910801927658, guid: c7f991cdfee93a84faf5efaaa3aca1e4,
@@ -4581,11 +4610,6 @@ PrefabInstance:
       propertyPath: ReferenceToTransition
       value: 
       objectReference: {fileID: 948878459}
-    - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4689,6 +4713,11 @@ PrefabInstance:
     - target: {fileID: 2952643542388275861, guid: 84c6a228d45b2fa40994aa07aea66803,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1668567467625105447, guid: 84c6a228d45b2fa40994aa07aea66803,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2952643542018890083, guid: 84c6a228d45b2fa40994aa07aea66803,

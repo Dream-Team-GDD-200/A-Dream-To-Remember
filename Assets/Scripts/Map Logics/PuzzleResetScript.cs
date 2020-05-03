@@ -84,7 +84,7 @@ public class PuzzleResetScript : MonoBehaviour
         refToUI.gameObject.transform.GetChild(4).gameObject.SetActive(true); 
         refToUI.gameObject.transform.GetChild(5).gameObject.SetActive(true);
         refToUI.gameObject.transform.GetChild(7).gameObject.SetActive(true);
-        refToUI.gameObject.transform.GetChild(9).gameObject.SetActive(true); 
+      
         resetPuzzleMenu.SetActive(false);
         Time.timeScale = 1f; //unpauses game  -- this one is still needed in this function (unlike the restpuzzle function) as neither fade functions are called here
         Invoke("AllowPlayerToPressButtonAgain", 2f);
@@ -129,7 +129,8 @@ public class PuzzleResetScript : MonoBehaviour
         refToUI.gameObject.transform.GetChild(4).gameObject.SetActive(true);
         refToUI.gameObject.transform.GetChild(5).gameObject.SetActive(true);
         refToUI.gameObject.transform.GetChild(7).gameObject.SetActive(true);
-        refToUI.gameObject.transform.GetChild(9).gameObject.SetActive(true);
+        refToUI.gameObject.transform.GetChild(8).gameObject.SetActive(true);
+
         Time.timeScale = 1; //now that we know for sure that it is done, unpause the game
 
 

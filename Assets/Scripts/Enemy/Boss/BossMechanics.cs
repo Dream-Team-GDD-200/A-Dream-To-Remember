@@ -108,7 +108,7 @@ public class BossMechanics: MonoBehaviour
             timeBoxSpawns--;
             if (timeBoxSpawns == 0)
             {
-                BoxSpawner.SpawnBox();
+                //BoxSpawner.SpawnBox(); istantied boxes for some reason acted oddly, decided to just have boxes pre spawned in and disabled this for now
                 StartCoroutine(doTheRoar());
             }
         }

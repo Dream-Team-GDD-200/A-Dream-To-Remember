@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: b63e96ccf93514e4b9840204502b0850
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4057741648486518041
+    second: DTR_RockandChestRecolor_0
+  - first:
+      213: -5082616558582238734
+    second: DTR_RockandChestRecolor_1
+  - first:
+      213: -5931368494206135020
+    second: DTR_RockandChestRecolor_2
+  - first:
+      213: 6728272016627668442
+    second: DTR_RockandChestRecolor_3
+  - first:
+      213: -8167270228850409372
+    second: DTR_RockandChestRecolor_4
+  - first:
+      213: -2726661058556587227
+    second: DTR_RockandChestRecolor_5
+  - first:
+      213: 4264280421772068865
+    second: DTR_RockandChestRecolor_6
+  - first:
+      213: -473854948809931811
+    second: DTR_RockandChestRecolor_7
+  - first:
+      213: 2902216709565792086
+    second: DTR_RockandChestRecolor_8
+  - first:
+      213: -5035579832522774024
+    second: DTR_RockandChestRecolor_9
+  - first:
+      213: 1343250324368647580
+    second: DTR_RockandChestRecolor_10
+  - first:
+      213: 5369890556338167776
+    second: DTR_RockandChestRecolor_11
+  - first:
+      213: -7598205028876789108
+    second: DTR_RockandChestRecolor_12
+  - first:
+      213: 4061850402598018677
+    second: DTR_RockandChestRecolor_13
+  - first:
+      213: -1777723437974841281
+    second: DTR_RockandChestRecolor_14
+  - first:
+      213: -662434002582214815
+    second: DTR_RockandChestRecolor_15
+  - first:
+      213: -6273197158351424547
+    second: DTR_RockandChestRecolor_16
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +91,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -63,7 +114,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +147,364 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 130
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d4ad83efd81124b8cbd5b1a0bafd36
+      internalID: -4057741648486518041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 130
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c453d1c96b56dd48a9933a79586eb13
+      internalID: -5082616558582238734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 130
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39357660beb664947a0e3de83c82733b
+      internalID: -5931368494206135020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 91
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd3953549435f543881c3a67e5b12c9
+      internalID: 6728272016627668442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 91
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2bce2194c4c53448092434e05c520d
+      internalID: -8167270228850409372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 91
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9528878f8aa914aa8f11bd49b1fe90
+      internalID: -2726661058556587227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 84
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245e5acd161ac8d45bfdf26138cab118
+      internalID: 4264280421772068865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_7
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3404d8c87b41cdc42877878841eb5311
+      internalID: -473854948809931811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 84
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad6b48ee5a8a6b41a940f943d71b36c
+      internalID: 2902216709565792086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_9
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 58
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73a95cc5b03b7441a4a707e18ab90de
+      internalID: -5035579832522774024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_10
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 58
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8f9f743a836794e83207e973e2d077
+      internalID: 1343250324368647580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 64
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e82922df242d8f48bd38f3b01c54458
+      internalID: 5369890556338167776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 58
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762d548a8f32dbf47b6dc12bf51d7a83
+      internalID: -7598205028876789108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 58
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a3ff76cf88ddd4a986a47eb51da5ed
+      internalID: 4061850402598018677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_14
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 58
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1cad4ec8ed0cf439af46d38eb435fb
+      internalID: -1777723437974841281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 26
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8a886adb84375428d41681ed4c8eee
+      internalID: -662434002582214815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DTR_RockandChestRecolor_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 26
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50764091c94bb0049a37c3db75f2abe5
+      internalID: -6273197158351424547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

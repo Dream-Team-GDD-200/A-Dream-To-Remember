@@ -29,9 +29,9 @@ public class DetectInRoom : MonoBehaviour
     }
     public void activate()
     {
-        //Checks to see if the player is in the room with the enemy (will make this more industrial later)
         if (!SpawnedOnce && !doorBlock)
         {
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             //block player path
             doors.blockPath();
             // Activate spawner

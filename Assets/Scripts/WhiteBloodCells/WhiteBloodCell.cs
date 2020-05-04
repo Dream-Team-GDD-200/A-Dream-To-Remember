@@ -21,7 +21,8 @@ public class WhiteBloodCell : MonoBehaviour
         //Creates a projectile and deployable cell off screen. This allows the Shoot and Deploy functions to call parent objects that cannot be destroyed.
         baseProjectile = Instantiate(projectile, new Vector3(1000, 1000, 1000), fireLocation.rotation);
         baseBarrier = Instantiate(barrier, new Vector3(-1000, -1000, -1000), fireLocation.rotation);
-
+        baseBarrier.transform.parent = GameObject.FindGameObjectWithTag("Projectile_Parent").transform;
+        baseProjectile.transform.parent = GameObject.FindGameObjectWithTag("Projectile_Parent").transform;
         playerMovement = GetComponent<PlayerMovement>();
     }
   // Update is called once per frame
@@ -69,8 +70,12 @@ public class WhiteBloodCell : MonoBehaviour
         //  barrier = Instantiate(baseBarrier, fireLocation.position, fireLocation.rotation);
         //  Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
         //}
-
+        if (barrier)
+        {
+            Destroy(barrier);
+        }
         barrier = Instantiate(baseBarrier, fireLocation.position, fireLocation.rotation);
+        barrier.transform.parent = GameObject.FindGameObjectWithTag("Projectile_Parent").transform;
         Rigidbody2D body = barrier.GetComponent<Rigidbody2D>();
 
         cellHealth = cellHealthMax;

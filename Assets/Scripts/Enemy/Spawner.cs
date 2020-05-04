@@ -48,7 +48,7 @@ public class Spawner : MonoBehaviour
                 int temp;
                 do
                 {
-                    temp = Random.Range(0, SpawnLocations.Length);
+                    temp = Random.Range(0, SpawnLocations.Length - 1);
                 } while (usedPositions[temp] == true);
                 Debug.Log("Temp " + temp);
                 Vector2 position = SpawnLocations[temp].transform.position;

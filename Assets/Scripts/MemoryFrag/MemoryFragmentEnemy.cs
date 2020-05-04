@@ -13,7 +13,7 @@ public class MemoryFragmentEnemy : MonoBehaviour
     private void Start()
     {
         rand = Random.Range(0, 50);
-        if (rand < 20 || rand > 40)
+        if (rand < 5 || rand > 45)
         {
             dropsFragment = true;
         }

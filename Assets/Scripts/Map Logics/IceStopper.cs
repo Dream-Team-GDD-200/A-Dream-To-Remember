@@ -12,12 +12,15 @@ public class IceStopper : MonoBehaviour
         {
             stopSlidding = true;
             Vector2 temp = gameObject.GetComponent<PlayerMovement>().movement;
-            temp *= -0.10f;
+            temp *= -0.10f; //mvoes them a little ways a way from the wall dadadadadadadadad
+            Debug.Log(temp);
             gameObject.transform.position = gameObject.transform.position + new Vector3(temp.x, temp.y, 0); //bump player a bit away from where they collided
-    
+            
+
         }
     }
 
+    /*
     private void OnCollisionExit2D(Collision2D collision)
     {
        if(collision.collider is BoxCollider2D)
@@ -26,6 +29,7 @@ public class IceStopper : MonoBehaviour
         }
      
     }
+    */
 
 
 }

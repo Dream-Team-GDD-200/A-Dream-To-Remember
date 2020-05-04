@@ -13,8 +13,6 @@ public class IceLogic : MonoBehaviour
     private bool useUpdate = false;
     private GameObject refToUserInput;
 
-    static int currentColliding = 0;
-
     public void Start()
     {
         refToUserInput = GameObject.FindWithTag("UI");
@@ -94,10 +92,11 @@ public class IceLogic : MonoBehaviour
              {
                 PlayerIsSlidding = false; //player is no longer slidding
                 useUpdate = false; //no longer run this function
-
+                Debug.Log(PlayerIsSlidding);
                 //turn ui and input back on
                 refToUserInput.SetActive(true);
                 GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().enabled = true;
+                GameObject.FindWithTag("Player").GetComponent<IceStopper>().stopSlidding = false;
             }
 
         }

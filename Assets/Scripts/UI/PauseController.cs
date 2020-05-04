@@ -46,6 +46,7 @@ public class PauseController : MonoBehaviour
         try
         {
             MasterList.disableAll();
+            Time.timeScale = 0;
             GameObject.FindGameObjectWithTag("Boss").GetComponent<AIPath>().enabled = false;
         }catch(Exception e) { }
        
@@ -57,6 +58,7 @@ public class PauseController : MonoBehaviour
         try
         {
             MasterList.enableAll();
+            Time.timeScale = 1;
             GameObject.FindGameObjectWithTag("Boss").GetComponent<AIPath>().enabled = true;
         }
         catch (Exception e) { }

@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 3510592589224867383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.626, y: -1.382, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.15}
   m_Children:
   - {fileID: 4323433868141647083}
   m_Father: {fileID: 0}
@@ -102,8 +102,8 @@ SpriteRenderer:
   m_SortingLayerID: -1369085851
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 93159031d5e37884897e805aa5a937fd, type: 3}
-  m_Color: {r: 0.10849059, g: 0.80724514, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: be788f7690bebb74f9aa2bfaea64adc5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -126,12 +126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireLocation: {fileID: 4323433868141647083}
-  baseProjectile: {fileID: 9067168126549139797, guid: da3dab2ffbbbdb3458f27c3c32f4e5e8,
-    type: 3}
+  player: {fileID: 0}
   projectile: {fileID: 9067168126549139797, guid: da3dab2ffbbbdb3458f27c3c32f4e5e8,
     type: 3}
-  projectileSpeed: 10
-  validShot: 1
+  projectileSpeed: 6
 --- !u!61 &2910690090127724565
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149,7 +147,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.6, y: 7.2}
+    oldSize: {x: 1.5, y: 1.75}
     newSize: {x: 9.6, y: 7.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

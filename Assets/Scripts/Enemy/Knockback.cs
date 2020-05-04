@@ -30,7 +30,7 @@ public class Knockback : MonoBehaviour
             other.gameObject.GetComponent<PlayerMovement>().movement = new Vector2(0, 0);
         }
         // if colliding with deployed white blood cell
-        if (other.gameObject.tag == "DeployedCell" || other.gameObject.tag == "Ally")
+        if (other.gameObject.tag == "DeployedCell")
         {
           // add a knockback away from collision
           Vector2 knockback = transform.position - other.transform.position;

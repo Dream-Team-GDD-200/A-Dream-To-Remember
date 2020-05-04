@@ -3194,6 +3194,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 7644b41c842d7234a97e227ca996ef01,
         type: 2}
+    - target: {fileID: 4242903979430466020, guid: f4d1eb37025b43f448820742e044c21b,
+        type: 3}
+      propertyPath: m_Text
+      value: Increases the effectiveness of your Heal ability's speed boost.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4d1eb37025b43f448820742e044c21b, type: 3}
 --- !u!224 &6348415934274460557 stripped

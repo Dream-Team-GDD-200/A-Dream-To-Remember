@@ -61,6 +61,10 @@ public class HealthDoctor : MonoBehaviour
     public void heal(float healAmt)
     {
         currentHealth += healAmt;
+        if(currentHealth > 100f)
+        {
+            currentHealth = 100f;
+        }
         healthBar.SetHealth(currentHealth);
     }
 

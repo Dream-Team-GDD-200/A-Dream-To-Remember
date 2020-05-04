@@ -11,7 +11,7 @@ public class TriageEffect : MonoBehaviour
     private float shotTimeMax = 100;
     private float shotTime = 100;
     private Vector2 playerLocation = new Vector2(0, 0);
-    private Vector2 NurseLocation = Vector2.zero;
+    private Vector2 NurseLocation = new Vector2(1000, 1000);
     private float healVal = 2;
     private Vector2 projectileVelocity;
 

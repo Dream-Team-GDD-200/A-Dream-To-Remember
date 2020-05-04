@@ -28,7 +28,9 @@ public class LongClick : MonoBehaviour
     private float speed = 5f; //the amount of speed granted by the speed boost ability
     [Header("Speed Sound")]
     public AudioClip speedBoost; // audiio clip for the speed boost
-
+    [Header("Animation Objects")]
+    public GameObject ShockAnimation;
+    public GameObject HealAnimation;
     [Header("Reference To Text object")]
     //references to the buttons so they can send that button the respective cooldownnumber
     public GameObject buttonDeploy;
@@ -87,6 +89,7 @@ public class LongClick : MonoBehaviour
     IEnumerator waitForAnimHeal()
     {
         yield return new WaitForSeconds(0.75f);
+        HealAnimation.GetComponent<SpriteRenderer>().enabled = false;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().resetSpeed();
         GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("healing", false);
     }
@@ -95,6 +98,7 @@ public class LongClick : MonoBehaviour
     {
         yield return new WaitForSeconds(0.833f);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("shocking", false);
+        ShockAnimation.GetComponent<SpriteRenderer>().enabled = false;
     }
     //this is function is to deploy the cell when the button is clicked
     public void deployCell()
@@ -119,6 +123,7 @@ public class LongClick : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").GetComponent<HealEffect>().Heal();
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().clip = speedBoost;
             GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>().Play();
+            HealAnimation.GetComponent<SpriteRenderer>().enabled = true;
             StartCoroutine(waitForAnimHeal());
             cooldown(2);
         }
@@ -130,6 +135,7 @@ public class LongClick : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("shocking", true);
             GameObject.FindGameObjectWithTag("Player").GetComponent<StunField>().Shock();
+            ShockAnimation.GetComponent<SpriteRenderer>().enabled = true;
             StartCoroutine(waitForAnimShock());
             cooldown(3);
         }

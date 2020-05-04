@@ -40,7 +40,7 @@ public class Credits : MonoBehaviour
 
         if (moveText)
         {
-            AllText.transform.position = AllText.transform.position + new Vector3(0f, 0.25f, 0f);
+            AllText.transform.position = AllText.transform.position + new Vector3(0f, 0.55f, 0f);
             if (AllText.transform.localPosition.y >= (1225f + 400f))
             {
                 moveText = false;

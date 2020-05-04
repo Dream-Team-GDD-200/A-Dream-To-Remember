@@ -12,7 +12,6 @@ public class SkillCache : MonoBehaviour
      * 1 = speed boost, 
      * 2 = shock, 
      * 3 = nurse.*/
-    private bool[] hasSkill = { true, true, false, false };
 
     /* Set to true if the doctor has unlocked the corresponding morph. 
      * index 0 = shock duration increase
@@ -28,7 +27,7 @@ public class SkillCache : MonoBehaviour
     private float stunDuration = 2f;
     public bool getHasSkill(int index)
     {
-        if (index < 0 || index > hasSkill.Length)
+        if (index < 0 || index > Data.Skill.Length - 1)
         {
             return false;
         }
@@ -40,7 +39,7 @@ public class SkillCache : MonoBehaviour
     }
     public void setHasSkill(int index, bool val)
     {
-        if (index < 0 || index > hasSkill.Length)
+        if (index < 0 || index > Data.Skill.Length - 1)
         {
             //do nothing
         }
@@ -52,7 +51,7 @@ public class SkillCache : MonoBehaviour
     }
     public bool getHasMorph(int index)
     {
-        if (index < 0 || index > Data.Activness.Count)
+        if (index < 0 || index > Data.Activness.Count - 1)
         {
             return false;
         }
@@ -64,7 +63,7 @@ public class SkillCache : MonoBehaviour
     }
     public void setHasMorph(int index, bool val)
     {
-        if (index < 0 || index > Data.Activness.Count)
+        if (index < 0 || index > Data.Activness.Count - 1)
         {
             //do nothing
         }
